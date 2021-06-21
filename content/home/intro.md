@@ -6,13 +6,13 @@ widget: starter.blog.intro
 headless: true
 
 # Order that this section will appear in.
-weight: 10
+weight: 24
 
-title: ✏️ Blog Template
-subtitle: 'For [Wowchemy Website Builder](https://wowchemy.com/)'
+title: 鹏维的小木屋
+subtitle: 音乐、摄影和诗
 
 design:
   background:
-    color: '#090a0b'
+    color: '#3f5863'
     text_color_light: true
 ---
