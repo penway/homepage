@@ -155,13 +155,6 @@
                 </div>
             </div>
             <div class="box">
-				<script type="text/javascript">
-					var date = new Date();
-					var year = date.getFullYear();
-					var month = date.getMonth();
-					var day  = date.getDay();
-					var blank = document.getElementsByTagName("span");
-				</script>
                 <div class="item">
                     <span class="title">请假开始时间</span>
                     <span id="startTime">2021-09-02 14时</span>
@@ -170,6 +163,35 @@
                     <span class="title">请假结束时间</span>
                     <span id="endTime">2021-09-02 18时</span>
                 </div>
+				<script type="text/javascript">
+					var date = new Date();
+					var year = date.getFullYear();
+
+					var nmonth = parseInt(date.getMonth()) + 1;
+					if (nmonth < 10) {
+						var month = "0" + nmonth.toString();
+					} else {
+						var month = nmonth.toString();
+					}
+
+					var nday  = parseInt(date.getDate());
+					if (nday < 10) {
+						var day = "0" + nday.toString();
+					} else {
+						var day = nday.toString();
+					}
+					var hour = date.getHours();
+
+					var rwere = parseInt(hour);
+					var swere = rwere - 1;
+					var st = document.getElementById("startTime");
+					var et = document.getElementById("endTime");
+					st.innerHTML = year+"-"+month+"-"+day+" "+swere.toString()+"时";
+					et.innerHTML = year+"-"+month+"-"+day+" 21时";
+					
+					var last = document.getElementById("qjsxs");
+					last.innerHTML = (21 - swere).toString()+"小时";
+				</script>
             </div>
         </div>
         <div class="explain" style="border-top: #f3f3f3 0px solid; margin-top: -30px;overflow: auto;">
