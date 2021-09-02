@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://yqtb.nwpu.edu.cn/wx/xg/xsqj/qjsq/qjsq_info.jsp?id=rtuoj3415505986k68cgl0kvai6z68h4&lb=xs -->
+<html lang="zh-CN" class="pixel-ratio-1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./请假详细信息_files/weui.css">
+    <link rel="stylesheet" href="./请假详细信息_files/weuix.css">
+    <link rel="stylesheet" href="./请假详细信息_files/main.css">
+    <link rel="stylesheet" href="./请假详细信息_files/home.css">
+    <link rel="stylesheet" href="./请假详细信息_files/font.css">
+    <script type="text/javascript" src="./请假详细信息_files/jquery.min.js.download"></script>
+    <script src="./请假详细信息_files/zepto.min.js.download"></script>
+    <script src="./请假详细信息_files/zepto.weui.js.download"></script>
+    <script src="./请假详细信息_files/php.js.download"></script>
+    <script src="./请假详细信息_files/lrz.min.js.download"></script>
+    <script type="text/javascript" src="./请假详细信息_files/layer.js.download"></script><link rel="stylesheet" href="./请假详细信息_files/layer.css" id="layui_layer_skinlayercss" style="">
+    <script type="text/javascript" src="./请假详细信息_files/yz.common.js.download"></script>
+    <title>请假详细信息</title>
+    <style type="text/css">
+    .weui-cells.custom .weui-cell {
+	    padding: 12px 15px;
+	}
+	.weui-cell {
+	    position: initial;
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	}
+	.weui-cells.custom .weui-cell .weui-cell__bd {
+	    max-width: 30%;
+	}
+	.weui-cell__bd {
+	    -webkit-box-flex: 1;
+	    flex: 1;
+	}
+	.r-mark {
+	    color: #f00;
+	    padding-right: 5px;
+	    font-style: normal;
+	}
+	.weui-cells.custom .weui-cell .weui-cell__ft {
+	    flex: 1;
+	    text-align: right;
+	    color: #999999;
+	}
+	.weui-input {
+	    width: 100%;
+	    border: 0;
+	    outline: 0;
+	    -webkit-appearance: none;
+	    background-color: transparent;
+	    font-size: inherit;
+	    color: inherit;
+	    height: 1.47058824em;
+	    line-height: 1.47058824;
+	}
+	.container.leavedetails .leaveinfo.notpass .info .name span {
+	    color: #fff;
+	}
+	.container.leavedetails .flow>ul>li .content .ttl {
+	    font-weight: 500;
+	}
+	.container.leavedetails .flow>ul>li .avatar {
+	    width: 40px;
+	    height: 40px;
+	    font-size: 15px;
+	}
+	.container.leavedetails .leaveinfo .infodetails .box .item span {
+	    font-weight: 500;
+	    font-size: 16px;
+	}
+	.container.leavedetails .leaveinfo .explain .box .infocontent {
+	    margin: 0;
+	    flex: 1;
+	    font-weight: 500;
+	    color: #3961b0;
+	}
+	.container.leavedetails .leaveinfo.pass .info .name span {
+	      color: #FFF;
+	}
+	#fhan{
+		transform:rotate(-180deg);
+	}
+	.info .weui-cell__ft:after {
+	    content: " ";
+	    display: inline-block;
+	    height: 6px;
+	    width: 6px;
+	    border-width: 2px 2px 0 0;
+	    border-color: #C8C8CD;
+	    border-style: solid;
+	    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -4px;
+	    right: 10px;
+	}
+	.container.leavedetails .leaveinfo.pass:after {
+	    right: 55px;
+	    top: 67px;
+	}
+	.container.leavedetails .leaveinfo.notpass:after {
+	    right: 55px;
+	    top: 67px;
+	}
+    </style>
+</head>
+<body class="ispc">
+<div class="container leavedetails">
+	<div class="topbar" style="height: 52px;">
+	   <div class="top-head">
+	      <div>
+			<a onclick="goback();">
+				<i class="iconfont icon-back" style="color: #FFF;"></i>
+			</a>
+		  </div>
+	      <div>请假信息</div>
+	       <div>
+	       	 <a href="http://yqtb.nwpu.edu.cn/wx/xg/yz-mobile/index.jsp">
+	          	<i class="iconfont icon-fangzi" style="color: #FFF;"></i>
+	         </a>
+	       </div>  
+	    </div>
+ 	</div>
+    <!--审核通过 调用class  pass   为通过调用  notpass-->
+    <div class="leaveinfo pass">
+      <form id="form1" name="form1">  
+        <div class="info gcp" data-target="/wx/xg/yz-mobile/userInfo.jsp" data-form="form1" style="position:relative;">
+            <div class="avatar" style="width: 45px;height: 45px;font-size: 17px;">
+                浩宇
+            </div>
+            <div class="name">
+                <span style="font-size: 16px;">王浩宇</span>
+                <span style="font-size: 12px;color: #cac0c0fa;">审批已通过</span>
+            </div>
+            <div class="weui-cell__ft"></div>
+        </div>
+      </form>
+        <div class="infodetails">
+            <div class="box">
+                <div class="item">
+                    <span class="title">所在学院</span>
+                    <span>工程学院</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="item">
+                    <span class="title">请假类型</span>
+                    <span>项目出差</span>
+                </div>
+                <div class="item">
+                    <span class="title">请假时长</span>
+                    <span id="qjsxs">4小时</span>
+                </div>
+            </div>
+            <div class="box">
+				<script type="text/javascript">
+					var date = new Date();
+					var year = date.getFullYear();
+					var month = date.getMonth();
+					var day  = date.getDay();
+					var blank = document.getElementsByTagName("span");
+				</script>
+                <div class="item">
+                    <span class="title">请假开始时间</span>
+                    <span id="startTime">2021-09-02 14时</span>
+                </div>
+                <div class="item">
+                    <span class="title">请假结束时间</span>
+                    <span id="endTime">2021-09-02 18时</span>
+                </div>
+            </div>
+        </div>
+        <div class="explain" style="border-top: #f3f3f3 0px solid; margin-top: -30px;overflow: auto;">
+        	<div class="box">
+                <span class="title">行程范围</span>
+                <p class="infocontent">西安市内</p>
+            </div>
+            <div class="box">
+                <span class="title">事由说明</span>
+                <p class="infocontent" style="white-space: pre-line">外出进行焊接工作，大学生方程式大赛工作需要</p>
+            </div>
+            
+            <div class="box">
+                <span class="title">前往目的地</span>
+                <p class="infocontent">草塘镇</p>
+            </div>
+            
+            
+            
+            <div class="box">
+            	<!-- 此处的type表示请假延期还是销假；1：请假延期;2为销假 -->
+           		
+            	<a href="http://yqtb.nwpu.edu.cn/wx/xg/xsqj/qjsq/qjxc_add.jsp?id=rtuoj3415505986k68cgl0kvai6z68h4&amp;mark=qjsq_info&amp;lb=xs" style="width: 45%;height: 46px;margin-top: 15px;background-color: #54c3d2;color: #fff;" class="weui-btn bg-blue">添加行程</a>
+            	
+            	<a href="http://yqtb.nwpu.edu.cn/wx/xg/xsqj/qjsq/qjsq_xsxj.jsp?id=rtuoj3415505986k68cgl0kvai6z68h4" style="width: 45%;background-color: #46ad77;color: #fff;" class="weui-btn bg-blue">销假</a>
+            </div>
+           
+            
+            
+            
+        </div>
+    </div>
+    <div class="flow">
+        <ul>
+            <li>
+                <!--审核通过 调用class  pass   为通过调用  notpass-->
+                <div class="avatar">
+                	鹏维
+                </div>
+                <div class="content">
+                    <div class="ttl"><span class="text" style="font-size: 16px;">发起申请</span> <span class="time">08-31 22:47</span></div>
+                </div>
+            </li>
+            
+            
+            
+            <li>
+                <!--审核通过 调用class  pass   为通过调用  notpass-->
+                <div class="avatar pass">
+                	张宁
+                </div>
+                <div class="content">
+                    <div class="ttl"><span class="text" style="font-size: 16px;">张宁审核（已通过）</span> <span class="time">09-01 09:43</span></div>
+                    <div class="ctn">批量审核通过</div>
+                </div>
+            </li>
+            
+            <li>
+                <!--审核通过 调用class  pass   为通过调用  notpass-->
+                <div class="avatar pass">
+                	张龙
+                </div>
+                <div class="content">
+                    <div class="ttl"><span class="text" style="font-size: 16px;">张龙审核（已通过）</span> <span class="time">09-01 10:40</span></div>
+                    <div class="ctn">一键审核通过</div>
+                </div>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <div class="pointer">
+                    <i class="icon"></i>
+                </div>
+                <div class="content pointer">
+                    <div class="ttl">审批共耗时11小时53分钟</div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="footer-copy-space"></div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#titlebtn").click(function () {
+            let titlebtn = $("#titlebtn");
+            let titlecontent = $("#titlecontent");
+            if (titlecontent.is(':hidden')) {
+                titlebtn.removeClass("up").addClass("dowm");
+                $("#titlecontent").show();
+            }else{
+                titlebtn.removeClass("dowm").addClass("up");
+                $("#titlecontent").hide();
+            }
+        });
+    });
+    
+    function cancelQj(id){
+    	$.confirm("您确定驳回该请假申请?", "提示", function() {
+            $.ajax({
+				url:'/wx/xg/xsqj/qjsh/qj_js_util.jsp',
+				data:{actionType:'cancelJsQj',id:id},
+				dataType:'json',
+				type:'post',
+				success:function(data){
+					if(data.state!=null&&data.state=='1'){
+						layer.msg('撤销成功！',{time:3000},function(){
+							goback();
+						});
+					};
+				},error:function(request, textStatus, errorThrown){
+					if(request.status==403){
+						alert("非法字符,拒绝访问！");
+					}else{
+						alert("操作出现异常，请稍后再试！"+request.status);
+					};
+				}
+			});
+	    }, function() {
+	        //取消操作
+	    });
+    }
+    
+    
+	//返回
+    function goback(){
+    	var lb = 'xs';
+    	if(lb == 'xs' || lb==''){
+			window.location.href = "./请假列表.html";
+    	}else if(lb == 'db'){
+			window.location.href = "/wx/xg/xsqj/qjsh/qj_js_list.jsp?flag=1";
+    	}else if(lb == 'yb'){
+			window.location.href = "/wx/xg/xsqj/qjsh/qj_js_list.jsp?flag=2";
+    	}else if(lb == 'yx'){
+			window.location.href = "/wx/xg/xsqj/qjsh/qj_js_list.jsp?flag=3";
+    	}else if(lb == 'yxj'){
+			window.location.href = "/wx/xg/xsqj/qjsh/qj_js_list.jsp?flag=4";
+    	}else {
+			window.location.href = "javascript:history.back(-1);";
+    	}
+    }
+</script>
+<script src="./请假详细信息_files/checkdev.js.download"></script>
+
+
+</body></html>
