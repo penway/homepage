@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: 鹏维的小木屋 # Website name
-baseurl: 'wangpengwei.com' # Website URL
+baseurl: 'penway.cn' # Website URL
 copyright: '2021 penway' # Footer text, e.g. '© {year} Me'
 
 ############################
