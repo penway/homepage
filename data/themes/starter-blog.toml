@@ -10,15 +10,15 @@ primary = "#003d8c"
 # Menu
 menu_primary = "#fff"
 menu_text = "#34495e"
-menu_text_active = "#2962ff"
+menu_text_active = "#003d8c"
 menu_title = "#2b2b2b"
 
 # Home sections
-home_section_odd = "rgb(255, 255, 255)"
-home_section_even = "rgb(255, 255, 255)"
+home_section_odd = "#2b2b2b"
+home_section_even = "#2b2b2b"
 
 [dark]
-  background = "#0f0f0f"
-  home_section_odd = "#0f0f0f"
-  home_section_even = "#0f0f0f"
-  menu_primary = "#0f0f0f"
+  background = "#1e1e1e"
+  home_section_odd = "#1e1e1e"
+  home_section_even = "#1e1e1e"
+  menu_primary = "#1e1e1e"
