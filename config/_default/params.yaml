@@ -50,7 +50,7 @@ edit_page:
     post: false
 show_related:
   post: true
-email: test@example.org
+email: penway@mail.nwpu.edu.cn
 sharing_image: ''
 reading_time: true
 section_pager: true
@@ -75,7 +75,7 @@ comments:
   commento:
     url: ''
 search:
-  provider: wowchemy
+  provider: penway # wowchemy
   algolia:
     app_id: ''
     api_key: ''
