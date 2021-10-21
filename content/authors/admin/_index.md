@@ -21,7 +21,7 @@ interests:
 - Artificial Intelligence
 - Race Car Engineering
 
-education:
+# education:
 courses:
 #  - course: PhD in Artificial Intelligence
 #    institution: Stanford University
