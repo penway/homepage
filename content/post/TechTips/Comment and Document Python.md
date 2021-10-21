@@ -1,18 +1,18 @@
 ---
-title: 【算法】01 二路归并
+title: 【杂记】python的注释和文档
 subtitle: 
 
 # Summary for listings and search engines
-summary: 算法，二路归并
+summary: 杂记 python 注释 文档 comment doc document
 
 # Link this post with a project
-projects: [Algorithm]
+projects: [杂记]
 
 # Date published
-date: "2021-09-16T00:00:00Z"
+date: "2021-10-21T00:00:00Z"
 
 # Date updated
-lastmod: "2021-09-16T00:00:00Z"
+lastmod: "2021-10-21T00:00:00Z"
 
 # Is this an unpublished draft?
 draft: false
@@ -52,10 +52,10 @@ authors:
 - penway
 
 tags:
-- 算法
+- 
 
 categories:
-- 算法
+- 
 ---
 ## 【读书笔记】为Python写注释与文档
 
