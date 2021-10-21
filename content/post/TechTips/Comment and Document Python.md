@@ -1,20 +1,42 @@
 ---
-title:【读书笔记】为Python写注释与文档
+title: 【算法】01 二路归并
 subtitle: 
 
 # Summary for listings and search engines
 summary: 算法，二路归并
 
 # Link this post with a project
-projects: [TechTips]
+projects: [Algorithm]
+
+# Date published
+date: "2021-09-16T00:00:00Z"
+
+# Date updated
+lastmod: "2021-09-16T00:00:00Z"
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
+image:
+  caption: 'Image credit: [**Unsplash**](./featured.jpg)'
+  focal_point: ""
+  placement: 2
+  preview_only: false
 
 authors:
 - penway
 
-categories:
-- 读书笔记
----
+tags:
+- 算法
 
+categories:
+- 算法
+---
 ## 【读书笔记】为Python写注释与文档
 
 原文链接：[Documenting Python Code: A Complete Guide – Real Python](https://realpython.com/documenting-python-code/)
@@ -81,3 +103,7 @@ categories:
 
 - 许可证（开源工程）
 - 文档文件夹（开源工程）
+
+## License
+
+Copyright 2021 王鹏维
