@@ -21,7 +21,7 @@ interests:
 - Artificial Intelligence
 - Race Car Engineering
 
-# education:
+education:
 courses:
 #  - course: PhD in Artificial Intelligence
 #    institution: Stanford University
@@ -54,5 +54,5 @@ courses:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "penway@mail.nwpu.edu.cn"
+# email: "penway@mail.nwpu.edu.cn"
 ---
