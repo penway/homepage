@@ -11,7 +11,7 @@ role: Mechanic Technical Director
 # Organizations/Affiliations
 organizations:
 - name: Northwestern Polytechnical University
-- Soaring Racing Team
+- name: Soaring Racing Team
 #   url: ""
 
 # Short bio (displayed in user profile at end of posts)
