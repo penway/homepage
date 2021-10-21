@@ -3,7 +3,7 @@
 widget: starter.blog.intro
 
 # This file represents a page section.
-headless: true
+headless: false
 
 # Order that this section will appear in.
 weight: 24
