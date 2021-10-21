@@ -5,7 +5,7 @@
 
 title: 鹏维的小木屋 # Website name
 baseurl: 'penway.cn' # Website URL
-copyright: '2021 penway' # Footer text, e.g. '© {year} Me'
+copyright: '© {year} penway' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
