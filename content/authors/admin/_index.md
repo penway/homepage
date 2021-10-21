@@ -15,11 +15,11 @@ organizations:
 #   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-# bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include computer vision, artificial intelligence and software engineering. I am a FSAE race car crew member at the same time, designing suspension system.
 
 interests:
 - Artificial Intelligence
-- Race Car Suspension Engineering
+- Race Car Engineering
 
 education:
 # courses:
