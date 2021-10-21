@@ -1,5 +1,5 @@
 ---
-title:【读书笔记】为Python写注释与文档
+title: 【读书笔记】为Python写注释与文档
 subtitle: 
 
 # Summary for listings and search engines
