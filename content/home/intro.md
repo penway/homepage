@@ -6,7 +6,7 @@ widget: starter.blog.intro
 headless: false
 
 # Order that this section will appear in.
-weight: 24
+weight: 12
 
 title: 鹏维的小木屋
 subtitle: 音乐、摄影和诗
