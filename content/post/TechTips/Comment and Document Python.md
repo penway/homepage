@@ -8,12 +8,36 @@ summary: 算法，二路归并
 # Link this post with a project
 projects: [TechTips]
 
+# Date published
+date: "2021-10-21T00:00:00Z"
+
+# Date updated
+lastmod: "2021-10-21T00:00:00Z"
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
+image:
+  caption: 'Image credit: [**Unsplash**](./featured.jpg)'
+  focal_point: ""
+  placement: 2
+  preview_only: false
+
 authors:
 - penway
+
+tags:
+- 
 
 categories:
 - 读书笔记
 ---
+
 
 ## 【读书笔记】为Python写注释与文档
 
