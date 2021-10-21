@@ -54,5 +54,5 @@ courses:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-#email: ""
+email: "penway@mail.nwpu.edu.cn"
 ---
