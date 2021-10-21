@@ -21,8 +21,8 @@ interests:
 - Artificial Intelligence
 - Race Car Suspension Engineering
 
-#education:
-courses:
+education:
+# courses:
 #  - course: PhD in Artificial Intelligence
 #    institution: Stanford University
 #    year: 2012
