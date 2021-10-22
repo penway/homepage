@@ -22,10 +22,11 @@ interests:
 - Race Car Engineering
 
 education:
+courses:
 - course: BSc in Software Engineering
   institution: Northwestern Polytechnical University
   year: 2019
-# courses:
+
 # - course: BSc in Software Engineering
 #   institution: Northwestern Polytechnical University
 #   year: 2019
