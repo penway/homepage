@@ -72,8 +72,6 @@ gallery_item:
 
 文档为用户而生，表述代码的用途与用法。
 
-![car](/assets/media/albms/photo/car.jpeg)
-
 #### 注释基础
 
 - 用 # 开头
