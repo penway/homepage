@@ -56,6 +56,4 @@ courses:
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 # email: "penway@mail.nwpu.edu.cn"
 ---
-
-# Testing page
-try on
+My research interests include computer vision, artificial intelligence and software engineering. I am a FSAE race car crew member at the same time, designing suspension system.
