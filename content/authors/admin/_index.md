@@ -56,3 +56,6 @@ courses:
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 # email: "penway@mail.nwpu.edu.cn"
 ---
+
+# Testing page
+try on
