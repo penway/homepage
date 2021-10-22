@@ -23,9 +23,9 @@ featured: false
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: 'Image credit: [**Unsplash**](./featured.jpg)'
+  caption: 'Image credit: [**Soaring Racing**](./featured.jpg)'
   focal_point: ""
-  placement: 2
+  placement: 1
   preview_only: false
 
 authors:
