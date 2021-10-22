@@ -72,7 +72,7 @@ gallery_item:
 
 文档为用户而生，表述代码的用途与用法。
 
-![car.jpeg](yes)
+![car](car.jpeg)
 
 #### 注释基础
 
