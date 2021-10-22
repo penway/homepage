@@ -56,6 +56,11 @@ tags:
 
 categories:
 - 杂记
+
+gallery_item:
+- album: photo
+  image: car.jpeg
+  caption: 速翼
 ---
 ## 【读书笔记】为Python写注释与文档
 
@@ -127,8 +132,3 @@ categories:
 ## License
 
 Copyright 2021 王鹏维
-
-gallery_item:
-- album: photo
-  image: car.jpeg
-  caption: 速翼
