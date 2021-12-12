@@ -9,7 +9,7 @@ headless: false
 weight: 12
 
 title: 鹏维的小木屋
-subtitle: 音乐、摄影和诗
+subtitle: 科学、艺术与工程
 
 design:
   background:
