@@ -1,11 +1,11 @@
 ---
-title: 艺术哲学 第一章 艺术品的本质
+title: 电影与60年代 01
 subtitle: 
 
 summary: 读书笔记 艺术
-date: "2021-12-10T00:00:00Z"
-lastmod: "2021-12-19T00:00:00Z"
-featured: false
+date: "2021-12-25T00:00:00Z"
+lastmod: "2021-12-25T00:00:00Z"
+featured: true
 
 tags: -读书笔记 -艺术
 categories: 读书笔记
