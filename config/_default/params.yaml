@@ -75,7 +75,7 @@ comments:
   commento:
     url: ''
 search:
-  provider: penway # wowchemy
+  provider: penway
   algolia:
     app_id: ''
     api_key: ''
