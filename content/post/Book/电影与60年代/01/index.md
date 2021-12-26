@@ -13,7 +13,7 @@ tags:
 categories: 读书笔记
 
 image:
-  caption: '[**The Creation of Adam**](./featured.jpg)'
+  caption: '[**Dunkirk**](./featured.jpg)'
   focal_point: ""
   placement: 2
   preview_only: false
