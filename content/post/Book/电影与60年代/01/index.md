@@ -8,9 +8,8 @@ lastmod: "2021-12-25T00:00:00Z"
 featured: true
 
 tags: 
-  -读书笔记 
   -艺术
-categories: 读书笔记
+categories: 电影与60年代
 
 image:
   caption: '[**Dunkirk**](./featured.jpg)'
@@ -29,4 +28,5 @@ gallery_item:
 
 ## Featured Movies
 Forest Gump（以弱智的视角忘记60s的伤痛）
+
 Dunkirk（危机来临了，所以我们才会回望危机）
