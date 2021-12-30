@@ -21,6 +21,4 @@ gallery_item:
 - album: photo
   image: 
   caption: 
-
-draft: true
 ---
