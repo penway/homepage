@@ -1,11 +1,11 @@
 ---
 title: 电影与60年代 01
-subtitle: 二战与之后的历史社会
+subtitle: 六十年代前史：二战与之后的历史社会
 
 summary: 二战之后的历史社会
 date: "2021-12-25T00:00:00Z"
-lastmod: "2021-12-25T00:00:00Z"
-featured: true
+lastmod: "2021-12-30T00:00:00Z"
+featured: false
 
 tags: 
   -艺术
