@@ -65,3 +65,9 @@ Space complexity: $O(1)$
 Just 256+4 integers.
 
 (I have checked out the solutions and only to find my solution not bad XD)
+
+## Improvement
+
+The overall algorithm is good while having some details to be improved.
+
+Current is not a necessary. Replacing it with head and tail pointer will avoid current--, to improve a little.
