@@ -70,7 +70,7 @@ x \\\\ y \\\\ 1
 \begin{bmatrix} 
 x \\\\ y \\\\ z \\\\ 1
 \end{bmatrix}
-\\\\
+\\ \\
 \begin{bmatrix}
 x \\\\ y \\\\ w
 \end{bmatrix}
