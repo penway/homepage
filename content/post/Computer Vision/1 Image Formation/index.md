@@ -233,7 +233,7 @@ P'=(\frac {f'} {z_0}x, \frac {f'} {z_0}y)
 $$
 
 $$
-M = K\begin{bmatrix}R&T\end{bmatrix}=\begin{bmatrix}A&b\\0&1\end{bmatrix}
+M = K\begin{bmatrix}R&T\end{bmatrix}=\begin{bmatrix}A&b\\\\0&1\end{bmatrix}
 $$
 
 #### 透视投影 projective
@@ -241,7 +241,7 @@ $$
 适用于3D-2D映射，用于运动恢复结构、SLAM。
 
 $$
-M = K\begin{bmatrix}R&T\end{bmatrix}=\begin{bmatrix}A&b\\v&1\end{bmatrix}
+M = K\begin{bmatrix}R&T\end{bmatrix}=\begin{bmatrix}A&b\\\\ v&1\end{bmatrix}
 $$
 
 
