@@ -119,7 +119,7 @@ x \\\\ y \\\\ z \\\\ 1
 \alpha x + c_x \\\\ \beta y + c_y \\\\ 1
 \end{bmatrix}
 $$
-其中$\begin{bmatrix}\alpha& 1& c_x\\0& \beta& c_x\\0& 0& 1\\\end{bmatrix}$叫做相机矩阵$K$，里面的参数即为内部参数，所以目前整个方程可以改写成
+其中$\begin{bmatrix} \alpha& 1& c_x \\\\ 0& \beta& c_x \\\\ 0& 0& 1 \\\\ \end{bmatrix}$叫做相机矩阵$K$，里面的参数即为内部参数，所以目前整个方程可以改写成
 $$P'=MP=K\begin{bmatrix}I& 0\end{bmatrix}P$$
 其中 $\alpha\ \beta$ 和相机的焦距以及像素大小有关；$c_x\ c_y$ 和相机的相机的成像平面的位置有关。
 
