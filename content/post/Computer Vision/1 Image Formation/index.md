@@ -84,8 +84,14 @@ $$
 
 这样就可以进行矩阵运算了：
 
-$$\begin{bmatrix}     1& 0& 0& 0\\     0& 1& 0& 0\\     0& 0& \dfrac 1 {f'}& 0\end{bmatrix} 
-\begin{bmatrix} x \\ y \\ z\\ 1 \end{bmatrix} = \begin{bmatrix} x\\ y\\ \frac z {f'} \end{bmatrix} \rightarrow (f'\dfrac x z, f'\dfrac y z)$$
+$$
+\begin{bmatrix}     1& 0& 0& 0 \\\\ 0& 1& 0& 0 \\\\ 0& 0& \dfrac 1 {f'}& 0\end{bmatrix} 
+\begin{bmatrix} x \\\\ y \\\\ z \\\\ 1 \end{bmatrix} 
+= 
+\begin{bmatrix} x \\ y\\ \frac z {f'} \end{bmatrix} 
+\rightarrow 
+(f'\dfrac x z, f'\dfrac y z)
+$$
 
 #### 实际情况
 
