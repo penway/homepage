@@ -1,5 +1,4 @@
 ---
-
 title: 图像形成
 subtitle: 
 
@@ -15,7 +14,6 @@ image:
   focal_point: ""
   placement: 2
   preview_only: false
-
 ---
 
 ## 针孔相机
