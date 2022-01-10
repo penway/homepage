@@ -45,7 +45,7 @@ $$
 
 焦距越小，FOV越大，反之亦然。
 
-## 针孔相机的几何模型
+## 几何模型
 
 相机的内部参数是指相机本身的特性，外部参数是指相机在世界中的位置。
 
@@ -195,3 +195,71 @@ $$
 $$
 P'=(\dfrac{m_1P_w}{m_3P_w}, \dfrac{m_2P_w}{m_3P_w})
 $$
+
+### 透视类型
+
+#### 基本假设
+
+假设世界坐标系和相机坐标系相同，即没有旋转和平移；相机内部没有倾斜，感光芯片为方块像素，没有失真，像平面中心为原点。
+$$
+M = 
+\begin{bmatrix} 
+f&0&0&0\\
+0&f&0&0\\
+0&0&1&0
+\end{bmatrix}
+$$
+
+#### 基本透视投影
+
+焦距归一化为1
+$$
+P'=
+\begin{bmatrix} 
+1&0&0&0\\
+0&1&0&0\\
+0&0&1&0
+\end{bmatrix}
+\begin{bmatrix}
+x\\y\\z\\1
+\end{bmatrix}
+=
+\begin{bmatrix}
+x\\y\\z
+\end{bmatrix}
+\\
+\rightarrow
+P'=(\frac x z, \frac y z)
+$$
+
+#### 弱透视投影 perspective
+
+景深相对于场景到相机的距离较小，即当场景目标很小或距离远时，适用于图像识别。
+
+![perspective](E:\Caldron\homepage\content\post\Computer Vision\1 Image Formation\04.png)
+$$
+P'=(\frac {f'} {z_0}x, \frac {f'} {z_0}y)
+$$
+
+$$
+M = K\begin{bmatrix}R&T\end{bmatrix}=\begin{bmatrix}A&b\\0&1\end{bmatrix}
+$$
+
+#### 透视投影 projective
+
+适用于3D-2D映射，用于运动恢复结构、SLAM。
+$$
+M = K\begin{bmatrix}R&T\end{bmatrix}=\begin{bmatrix}A&b\\v&1\end{bmatrix}
+$$
+
+
+#### 正交投影
+
+$$
+P'=P
+$$
+
+## 相机标定
+
+通过已知外部参数求出内部参数。
+
