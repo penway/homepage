@@ -143,16 +143,21 @@ $$
 $$
 
 相机的旋转比较复杂，假设相点$P'=(u',v')$，旋转之前的是$(u_0,v_0)$
+
 $$
 v'sin(\theta)=v_0 \\\\ 
 u'=u-cos(\theta)v'=u-cot(\theta)v
 $$
+
 整理得
+
 $$
 u = \alpha \frac x z - \alpha cot(\theta) \dfrac y z + u_0 \\\\
 v = \dfrac \beta {sin(\theta)} \dfrac y z + v_0
 $$
+
 因此整个方程可以写成：
+
 $$
 \begin{bmatrix}
 \alpha & -\alpha cot(\theta)& c_x& 0 \\\\
@@ -178,6 +183,7 @@ R_{2 \times 2}& T \\\\
 $$
 
 四维的情况也是同理：
+
 $$
 \begin{bmatrix}R_{3 \times 3}& T\\\\
 0& 1\end{bmatrix}_{4 \times 4}
@@ -186,10 +192,13 @@ $$
 ### 相机参数
 
 所有的参数合起来就是下面的方程：
+
 $$
 P'_{3 \times 1} = M_{3 \times 4}P_w = K_{3 \times 3} \begin{bmatrix}R&T\end{bmatrix}_{3 \times 4} P_{w\ 4 \times 1}
 $$
+
 令 $M=\begin{bmatrix}m_1\\m_2\\m_3\end{bmatrix}$，可以得到
+
 $$
 P'=(\dfrac{m_1P_w}{m_3P_w}, \dfrac{m_2P_w}{m_3P_w})
 $$
@@ -199,6 +208,7 @@ $$
 #### 基本假设
 
 假设世界坐标系和相机坐标系相同，即没有旋转和平移；相机内部没有倾斜，感光芯片为方块像素，没有失真，像平面中心为原点。
+
 $$
 M = 
 \begin{bmatrix} 
@@ -229,6 +239,7 @@ $$
 #### 透视投影 projective
 
 适用于3D-2D映射，用于运动恢复结构、SLAM。
+
 $$
 M = K\begin{bmatrix}R&T\end{bmatrix}=\begin{bmatrix}A&b\\v&1\end{bmatrix}
 $$
