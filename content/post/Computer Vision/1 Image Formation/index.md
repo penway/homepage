@@ -160,12 +160,7 @@ $$
 
 $$ \begin{bmatrix} \alpha & -\alpha cot(\theta)& c_x& 0 \\\\ 0& \dfrac\beta{sin(\theta)}& c_x& 0 \\\\ 0& 0& 1& 0 \\\\ \end{bmatrix} \begin{bmatrix} x \\\\ y \\\\ z \\\\ 1 \end{bmatrix} = \begin{bmatrix} u \\\\ v \\\\ 1 \end{bmatrix} = P' $$
 
-$$
-\begin{bmatrix}
-R_{2 \times 2}& T \\\\
-0& 1
-\end{bmatrix}_{3\times 3}
-$$
+$$ \begin{bmatrix} R_{2 \times 2} & T \\\\ 0& 1 \end{bmatrix}_{3\times 3} $$
 
 四维的情况也是同理：
 
