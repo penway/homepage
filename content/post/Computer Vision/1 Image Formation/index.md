@@ -157,9 +157,7 @@ $$
 
 $$
 P'_{3 \times 1} = M_{3 \times 4}P_w = K_{3 \times 3}
-\begin{bmatrix}
-R&T
-\end{bmatrix}_{3 \times 4} P_{w\ 4 \times 1}
+{[R&T]}_{3 \times 4} P_{w\ 4 \times 1}
 $$
 
 令 $M=\begin{bmatrix}m_1 \\\\ m_2 \\\\ m_3 \end{bmatrix}$，可以得到
