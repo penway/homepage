@@ -107,18 +107,7 @@ $$
 
 因此整个方程可以写成：
 
-$$\begin{bmatrix}
-\alpha & 1 & c_x & 0 \\\\
-0 & \beta & c_x & 0 \\\\\
-0& 0& 1& 0\\\\
-\end{bmatrix}
-\begin{bmatrix}
-x \\\\ y \\\\ z \\\\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-\alpha x + c_x \\\\ \beta y + c_y \\\\ 1
-\end{bmatrix}$$
+$$ \begin{bmatrix} \alpha & 1 & c_x & 0 \\\\ 0 & \beta & c_x & 0 \\\\\ 0& 0& 1& 0\\\\ \end{bmatrix} \begin{bmatrix} x \\\\ y \\\\ z \\\\ 1 \end{bmatrix} = \begin{bmatrix} \alpha x + c_x \\\\ \beta y + c_y \\\\ 1 \end{bmatrix} $$
 
 其中$\begin{bmatrix} \alpha& 1& c_x \\\\ 0& \beta& c_x \\\\ 0& 0& 1 \\\\ \end{bmatrix}$叫做相机矩阵$K$，里面的参数即为内部参数，所以目前整个方程可以改写成
 $$
