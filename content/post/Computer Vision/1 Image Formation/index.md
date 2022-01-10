@@ -153,12 +153,35 @@ u = \alpha \frac x z - \alpha cot(\theta) \dfrac y z + u_0 \\\\
 v = \dfrac \beta {sin(\theta)} \dfrac y z + v_0
 $$
 因此整个方程可以写成：
-$$\begin{bmatrix}\alpha& -\alpha cot(\theta)& c_x& 0\\0& \dfrac\beta{sin(\theta)}& c_x& 0\\0& 0& 1& 0\\\end{bmatrix}\begin{bmatrix}x\\y\\z\\1\end{bmatrix}=\begin{bmatrix} u \\ v \\ 1 \end{bmatrix}= P'$$
+$$
+\begin{bmatrix}
+\alpha & -\alpha cot(\theta)& c_x& 0 \\\\
+0& \dfrac\beta{sin(\theta)}& c_x& 0 \\\\
+0& 0& 1& 0 \\\\
+\end{bmatrix}
+\begin{bmatrix}
+x \\\\ y \\\\ z \\\\ 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+u \\\\ v \\\\ 1 
+\end{bmatrix}
+= 
+P'
+$$
 
-$$\begin{bmatrix}R_{2 \times 2}& T\\0& 1\end{bmatrix}_{3\times 3}$$
+$$
+\begin{bmatrix}
+R_{2 \times 2}& T \\\\
+0& 1
+\end{bmatrix}_{3\times 3}
+$$
 
 四维的情况也是同理：
-$$\begin{bmatrix}R_{3 \times 3}& T\\0& 1\end{bmatrix}_{4 \times 4}$$
+$$
+\begin{bmatrix}R_{3 \times 3}& T\\\\
+0& 1\end{bmatrix}_{4 \times 4}
+$$
 
 ### 相机参数
 
