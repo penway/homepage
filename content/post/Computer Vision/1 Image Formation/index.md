@@ -108,8 +108,9 @@ $$
 因此整个方程可以写成：
 $$
 \begin{bmatrix}
-\alpha& 1& c_x& 0\\\\
-0& \beta& c_x& 0\\0& 0& 1& 0\\\\
+\alpha & 1 & c_x & 0 \\\\
+0 & \beta & c_x & 0 \\\\\
+0& 0& 1& 0\\\\
 \end{bmatrix}
 \begin{bmatrix}
 x \\\\ y \\\\ z \\\\ 1
