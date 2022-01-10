@@ -10,7 +10,7 @@ tags: -计算机
 categories: 计算机视觉
 
 image:
-  caption: 'Image credit: [**The Creation of Adam**](./featured.jpg)'
+  caption: 'Image credit: [**pinhole camera**](./featured.jpg)'
   focal_point: ""
   placement: 2
   preview_only: false
