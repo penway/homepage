@@ -155,7 +155,7 @@ $$
 
 所有的参数合起来就是下面的方程：
 $$
-P'\\_{3 \times 1} = M_{3 \times 4}P_w = K\\_{3 \times 3} {[R \\ T]}\\_{3 \times 4} P\\_{w\ 4 \times 1}
+P'\_{3 \times 1} = M_{3 \times 4}P_w = K\_{3 \times 3} {[R \\ T]}\_{3 \times 4} P\_{w\ 4 \times 1}
 $$
 令 $M=\begin{bmatrix}m_1 \\\\ m_2 \\\\ m_3 \end{bmatrix}$，可以得到
 
