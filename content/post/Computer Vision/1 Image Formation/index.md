@@ -20,6 +20,29 @@ image:
 
 # 图像形成 Image Formation
 
+## 针孔相机
+
+![针孔相机示意图](E:\Caldron\homepage\content\post\Computer Vision\1 Image Formation\00.png)
+
+假设小孔只能透过一条光线...
+
+## 透镜相机
+
+细透镜方程:
+
+![lens](E:\Caldron\homepage\content\post\Computer Vision\1 Image Formation\02)
+$$
+\dfrac 1 f = \dfrac 1 u + \dfrac 1 v\\
+f:焦距\\
+u:物距\\
+v:相距
+$$
+景深与光圈
+
+![depth](E:\Caldron\homepage\content\post\Computer Vision\1 Image Formation\03.png)
+
+光圈（孔径）缩小，即使不在焦点上的物体也可以近似聚焦，所以景深就变大了。
+
 ## 3D 到 2D 的坐标变换
 
 ### 理想情况
@@ -68,12 +91,3 @@ $$
 
 前面的推导的前提是相机和世界处于同一个坐标系之下，而实际情况并非如此。
 
-## 透镜
-
-细透镜方程:
-$$
-\dfrac 1 f = \dfrac 1 u + \dfrac 1 v\\
-f:焦距\\
-u:物距\\
-v:相距
-$$
