@@ -18,8 +18,6 @@ image:
 
 ---
 
-# 图像形成 Image Formation
-
 ## 针孔相机
 
 ![针孔相机示意图](https://penway.cn/post/computer-vision/1-image-formation/00.png)
