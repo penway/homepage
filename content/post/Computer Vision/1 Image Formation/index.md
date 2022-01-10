@@ -221,7 +221,7 @@ $$
 #### 基本透视投影
 
 焦距归一化为1
-$$P'=\begin{bmatrix} 1&0&0&0\\0&1&0&0\\0&0&1&0\end{bmatrix}\begin{bmatrix}x\\y\\z\\1\end{bmatrix}\begin{bmatrix}x\\y\\z\end{bmatrix} \\ \rightarrow P'=(\frac x z, \frac y z)$$
+$$P'=\begin{bmatrix} 1&0&0&0\\\\0&1&0&0\\\\0&0&1&0\end{bmatrix}\begin{bmatrix}x\\\\ y\\\\ z\\\\ 1\end{bmatrix}\begin{bmatrix}x\\y\\z\end{bmatrix} \\ \rightarrow P'=(\frac x z, \frac y z)$$
 
 #### 弱透视投影 perspective
 
