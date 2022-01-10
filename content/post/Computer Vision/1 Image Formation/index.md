@@ -177,7 +177,7 @@ $$
 P'_{3 \times 1} = M_{3 \times 4}P_w = K_{3 \times 3} \begin{bmatrix}R&T\end{bmatrix}_{3 \times 4} P_{w\ 4 \times 1}
 $$
 
-令 $M=\begin{bmatrix}m_1\\m_2\\m_3\end{bmatrix}$，可以得到
+令 $M=\begin{bmatrix}m_1 \\\\ m_2 \\\\ m_3 \end{bmatrix}$，可以得到
 
 $$
 P'=(\dfrac{m_1P_w}{m_3P_w}, \dfrac{m_2P_w}{m_3P_w})
@@ -192,8 +192,8 @@ $$
 $$
 M = 
 \begin{bmatrix} 
-f&0&0&0\\
-0&f&0&0\\
+f&0&0&0\\\\
+0&f&0&0\\\\
 0&0&1&0
 \end{bmatrix}
 $$
