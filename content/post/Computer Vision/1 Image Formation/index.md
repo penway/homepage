@@ -26,7 +26,7 @@ image:
 
 细透镜方程:
 
-![lens](https://penway.cn/post/computer-vision/1-image-formation/02)
+![lens](https://penway.cn/post/computer-vision/1-image-formation/02.png)
 $$ \dfrac 1 f = \dfrac 1 u + \dfrac 1 v \\\\ f:焦距 \\\\ u:物距 \\\\ v:相距 $$
 景深与光圈
 
