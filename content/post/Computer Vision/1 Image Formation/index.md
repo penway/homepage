@@ -143,7 +143,10 @@ $$
 $$
 
 相机的旋转比较复杂，假设相点$P'=(u',v')$，旋转之前的是$(u_0,v_0)$
-$$v'sin(\theta)=v_0\\u'=u-cos(\theta)v'=u-cot(\theta)v$$
+$$
+v'sin(\theta)=v_0 \\\\ 
+u'=u-cos(\theta)v'=u-cot(\theta)v
+$$
 整理得
 $$u = \alpha \frac x z - \alpha cot(\theta) \dfrac y z + u_0\\v = \dfrac \beta {sin(\theta)} \dfrac y z + v_0$$
 因此整个方程可以写成：
