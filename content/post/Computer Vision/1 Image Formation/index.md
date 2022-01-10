@@ -158,21 +158,7 @@ $$
 
 因此整个方程可以写成：
 
-$$
-\begin{bmatrix}
-\alpha & -\alpha cot(\theta)& c_x& 0 \\\\
-0& \dfrac\beta{sin(\theta)}& c_x& 0 \\\\
-0& 0& 1& 0 \\\\
-\end{bmatrix} \begin{bmatrix}
-x \\\\ y \\\\ z \\\\ 1
-\end{bmatrix}
-=
-\begin{bmatrix}
-u \\\\ v \\\\ 1 
-\end{bmatrix}
-= 
-P'
-$$
+$$ \begin{bmatrix} \alpha & -\alpha cot(\theta)& c_x& 0 \\\\ 0& \dfrac\beta{sin(\theta)}& c_x& 0 \\\\ 0& 0& 1& 0 \\\\ \end{bmatrix} \begin{bmatrix} x \\\\ y \\\\ z \\\\ 1 \end{bmatrix} = \begin{bmatrix} u \\\\ v \\\\ 1 \end{bmatrix} = P' $$
 
 $$
 \begin{bmatrix}
