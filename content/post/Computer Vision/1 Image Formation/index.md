@@ -27,12 +27,7 @@ image:
 细透镜方程:
 
 ![lens](https://penway.cn/post/computer-vision/1-image-formation/02)
-$$
-\dfrac 1 f = \dfrac 1 u + \dfrac 1 v\\
-f:焦距\\
-u:物距\\
-v:相距
-$$
+$$ \dfrac 1 f = \dfrac 1 u + \dfrac 1 v\\f:焦距\\u:物距\\v:相距 $$
 景深与光圈
 
 ![depth](https://penway.cn/post/computer-vision/1-image-formation/03.png)
@@ -57,39 +52,19 @@ $$
 
 这是一个3d到2d的投影图，根据相似三角形的关系，可以得到
 
-$$
-(x,y,z) \rightarrow(f'\dfrac x z, f'\dfrac y z)
-$$
+$$(x,y,z) \rightarrow(f'\dfrac x z, f'\dfrac y z)$$
 
 如果想把这个东西用矩阵运算的形式表示，会发现是无法做到的，因为这个不是线性的变换（有除以z的引入）。
 
-$$
-\begin{bmatrix} x\\y\\z \end{bmatrix} \rightarrow \begin{bmatrix} f'\dfrac x z \\ f'\dfrac y z \end{bmatrix}
-$$
+$$\begin{bmatrix} x\\y\\z \end{bmatrix} \rightarrow \begin{bmatrix} f'\dfrac x z \\ f'\dfrac y z \end{bmatrix}$$
 
 但是可以再加一层变换做到这一点，所以有了坐标的齐次形式：
 
-$$
-(x, y)\rightarrow \begin{bmatrix} x\\y\\1 \end{bmatrix}
-\ \ \ \ \ \ \ \ 
-(x, y, z)\rightarrow \begin{bmatrix} x\\y\\z\\1 \end{bmatrix}\\
-\begin{bmatrix}x\\y\\w\end{bmatrix} \rightarrow(\dfrac x w, \dfrac y w)\ \ \ \ \ \ \ \ \begin{bmatrix}x\\y\\z\\w\end{bmatrix} \rightarrow(\dfrac x w, \dfrac y w, \dfrac z w)
-$$
+$$(x, y)\rightarrow \begin{bmatrix} x\\y\\1 \end{bmatrix}\ \ \ \ \ \ \ \ (x, y, z)\rightarrow\begin{bmatrix} x\\y\\z\\1 \end{bmatrix}\\\begin{bmatrix}x\\y\\w\end{bmatrix}\rightarrow(\dfrac x w, \dfrac y w)\ \ \ \ \ \ \ \ \begin{bmatrix}x\\y\\z\\w\end{bmatrix} \rightarrow(\dfrac x w, \dfrac y w, \dfrac z w) $$
 
 这样就可以进行矩阵运算了：
 
-$$
-\begin{bmatrix} 
-    1& 0& 0& 0\\ 
-    0& 1& 0& 0\\ 
-    0& 0& \dfrac 1 {f'}& 0
-\end{bmatrix} 
-\begin{bmatrix} x\\y\\z\\1 \end{bmatrix} 
-= 
-\begin{bmatrix} x\\ y\\ \frac z {f'} \end{bmatrix} 
-\rightarrow 
-(f'\dfrac x z, f'\dfrac y z)
-$$
+$$\begin{bmatrix}     1& 0& 0& 0\\     0& 1& 0& 0\\     0& 0& \dfrac 1 {f'}& 0\end{bmatrix} \begin{bmatrix} x\\y\\z\\1 \end{bmatrix} = \begin{bmatrix} x\\ y\\ \frac z {f'} \end{bmatrix} \rightarrow (f'\dfrac x z, f'\dfrac y z)$$
 
 #### 实际情况
 
@@ -104,27 +79,9 @@ $$
 加上相机的平移（也就是相机坐标系的原点未知），得到的点应该是这样的：$ (\dfrac {\alpha x} z + c_x, \dfrac{\beta y} z + c_y) \rightarrow \begin{bmatrix} \alpha x + c_x z\\ \beta y + c_y z\\ z \end{bmatrix} $
 
 因此整个方程可以写成：
-$$
-\begin{bmatrix}
-\alpha& 1& c_x& 0\\
-0& \beta& c_x& 0\\
-0& 0& 1& 0\\
-\end{bmatrix}
-\begin{bmatrix}
-x\\y\\z\\1
-\end{bmatrix}
-=
-\begin{bmatrix} \alpha x + c_x \\ \beta y + c_y \\ 1 \end{bmatrix}
-$$
-其中$\begin{bmatrix}
-\alpha& 1& c_x\\
-0& \beta& c_x\\
-0& 0& 1\\
-\end{bmatrix}
-$叫做相机矩阵$K$，里面的参数即为内部参数，所以目前整个方程可以改写成
-$$
-P'=MP=K\begin{bmatrix}I& 0\end{bmatrix}P
-$$
+$$\begin{bmatrix}\alpha& 1& c_x& 0\\0& \beta& c_x& 0\\0& 0& 1& 0\\\end{bmatrix}\begin{bmatrix}x\\y\\z\\1\end{bmatrix}=\begin{bmatrix} \alpha x + c_x \\ \beta y + c_y \\ 1 \end{bmatrix}$$
+其中$\begin{bmatrix}\alpha& 1& c_x\\0& \beta& c_x\\0& 0& 1\\\end{bmatrix}$叫做相机矩阵$K$，里面的参数即为内部参数，所以目前整个方程可以改写成
+$$P'=MP=K\begin{bmatrix}I& 0\end{bmatrix}P$$
 其中 $\alpha\ \beta$ 和相机的焦距以及像素大小有关；$c_x\ c_y$ 和相机的相机的成像平面的位置有关。
 
 ### 外部参数
@@ -137,53 +94,19 @@ $$
 
 外部的平移和内部是相同的所以矩阵的形式也是一样的：
 
-$$
-\begin{bmatrix}
-\alpha& 1& c_x& 0\\
-0& \beta& c_x& 0\\
-0& 0& 1& 0\\
-\end{bmatrix}
-$$
+$$\begin{bmatrix}\alpha& 1& c_x& 0\\0& \beta& c_x& 0\\0& 0& 1& 0\\\end{bmatrix}$$
 
 相机的旋转比较复杂，假设相点$P'=(u',v')$，旋转之前的是$(u_0,v_0)$
-$$
-v'sin(\theta)=v_0\\
-u'=u-cos(\theta)v'=u-cot(\theta)v
-$$
+$$v'sin(\theta)=v_0\\u'=u-cos(\theta)v'=u-cot(\theta)v$$
 整理得
-$$
-u = \alpha \frac x z - \alpha cot(\theta) \dfrac y z + u_0\\
-v = \dfrac \beta {sin(\theta)} \dfrac y z + v_0
-$$
+$$u = \alpha \frac x z - \alpha cot(\theta) \dfrac y z + u_0\\v = \dfrac \beta {sin(\theta)} \dfrac y z + v_0$$
 因此整个方程可以写成：
-$$
-\begin{bmatrix}
-\alpha& -\alpha cot(\theta)& c_x& 0\\
-0& \dfrac\beta{sin(\theta)}& c_x& 0\\
-0& 0& 1& 0\\
-\end{bmatrix}
-\begin{bmatrix}
-x\\y\\z\\1
-\end{bmatrix}
-=
-\begin{bmatrix} u \\ v \\ 1 \end{bmatrix}
-= P'
-$$
+$$\begin{bmatrix}\alpha& -\alpha cot(\theta)& c_x& 0\\0& \dfrac\beta{sin(\theta)}& c_x& 0\\0& 0& 1& 0\\\end{bmatrix}\begin{bmatrix}x\\y\\z\\1\end{bmatrix}=\begin{bmatrix} u \\ v \\ 1 \end{bmatrix}= P'$$
 
-$$
-\begin{bmatrix}
-R_{2 \times 2}& T\\
-0& 1
-\end{bmatrix}_{3\times 3}
-$$
+$$\begin{bmatrix}R_{2 \times 2}& T\\0& 1\end{bmatrix}_{3\times 3}$$
 
 四维的情况也是同理：
-$$
-\begin{bmatrix}
-R_{3 \times 3}& T\\
-0& 1
-\end{bmatrix}_{4 \times 4}
-$$
+$$\begin{bmatrix}R_{3 \times 3}& T\\0& 1\end{bmatrix}_{4 \times 4}$$
 
 ### 相机参数
 
