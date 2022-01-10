@@ -189,7 +189,7 @@ $$P'=\begin{bmatrix} 1&0&0&0\\\\0&1&0&0\\\\0&0&1&0\end{bmatrix}\begin{bmatrix}x\
 
 景深相对于场景到相机的距离较小，即当场景目标很小或距离远时，适用于图像识别。
 
-![perspective](E:\Caldron\homepage\content\post\Computer Vision\1 Image Formation\04.png)
+![perspective](https://penway.cn/post/computer-vision/1-image-formation/04.png)
 $$
 P'=(\frac {f'} {z_0}x, \frac {f'} {z_0}y)
 $$
