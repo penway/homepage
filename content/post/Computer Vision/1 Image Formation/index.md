@@ -60,7 +60,26 @@ $$\begin{bmatrix} x \\\\ y \\\\ z \end{bmatrix} \rightarrow \begin{bmatrix} f'\d
 
 但是可以再加一层变换做到这一点，所以有了坐标的齐次形式：
 
-$$(x, y)\rightarrow \begin{bmatrix} x\\y\\1 \end{bmatrix}\ \ \ \ \ \ \ \ (x, y, z)\rightarrow\begin{bmatrix} x\\y\\z\\1 \end{bmatrix}\\\begin{bmatrix}x\\y\\w\end{bmatrix}\rightarrow(\dfrac x w, \dfrac y w)\ \ \ \ \ \ \ \ \begin{bmatrix}x\\y\\z\\w\end{bmatrix} \rightarrow(\dfrac x w, \dfrac y w, \dfrac z w) $$
+$$
+(x, y) \rightarrow 
+\begin{bmatrix} 
+x \\\\ y \\\\ 1
+\end{bmatrix}
+\ \ \ \ \ \ \ \ 
+(x, y, z) \rightarrow
+\begin{bmatrix} 
+x \\\\ y \\\\ z \\\\ 1
+\end{bmatrix}
+\\\\
+\begin{bmatrix}
+x \\\\ y \\\\ w
+\end{bmatrix}
+\rightarrow (\dfrac x w, \dfrac y w) \ \ \ \ \ \ \ \ 
+\begin{bmatrix}
+x \\\\ y \\\\ z \\\\ w
+\end{bmatrix}
+\rightarrow(\dfrac x w, \dfrac y w, \dfrac z w)
+$$
 
 这样就可以进行矩阵运算了：
 
