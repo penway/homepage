@@ -120,7 +120,9 @@ x \\\\ y \\\\ z \\\\ 1
 \end{bmatrix}
 $$
 其中$\begin{bmatrix} \alpha& 1& c_x \\\\ 0& \beta& c_x \\\\ 0& 0& 1 \\\\ \end{bmatrix}$叫做相机矩阵$K$，里面的参数即为内部参数，所以目前整个方程可以改写成
-$$P'=MP=K\begin{bmatrix}I& 0\end{bmatrix}P$$
+$$
+P'=MP=K\begin{bmatrix}I& 0\end{bmatrix}P
+$$
 其中 $\alpha\ \beta$ 和相机的焦距以及像素大小有关；$c_x\ c_y$ 和相机的相机的成像平面的位置有关。
 
 ### 外部参数
@@ -133,7 +135,11 @@ $$P'=MP=K\begin{bmatrix}I& 0\end{bmatrix}P$$
 
 外部的平移和内部是相同的所以矩阵的形式也是一样的：
 
-$$\begin{bmatrix}\alpha& 1& c_x& 0\\0& \beta& c_x& 0\\0& 0& 1& 0\\\end{bmatrix}$$
+$$
+\begin{bmatrix}
+\alpha& 1& c_x& 0\\\\0& \beta& c_x& 0\\\\0& 0& 1& 0\\\\
+\end{bmatrix}
+$$
 
 相机的旋转比较复杂，假设相点$P'=(u',v')$，旋转之前的是$(u_0,v_0)$
 $$v'sin(\theta)=v_0\\u'=u-cos(\theta)v'=u-cot(\theta)v$$
