@@ -163,8 +163,7 @@ $$
 \alpha & -\alpha cot(\theta)& c_x& 0 \\\\
 0& \dfrac\beta{sin(\theta)}& c_x& 0 \\\\
 0& 0& 1& 0 \\\\
-\end{bmatrix}
-\begin{bmatrix}
+\end{bmatrix} \begin{bmatrix}
 x \\\\ y \\\\ z \\\\ 1
 \end{bmatrix}
 =
