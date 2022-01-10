@@ -56,7 +56,7 @@ $$(x,y,z) \rightarrow(f'\dfrac x z, f'\dfrac y z)$$
 
 如果想把这个东西用矩阵运算的形式表示，会发现是无法做到的，因为这个不是线性的变换（有除以z的引入）。
 
-$$\begin{bmatrix} x \\ y \\ z \end{bmatrix} \rightarrow \begin{bmatrix} f'\dfrac x z \\ f'\dfrac y z \end{bmatrix}$$
+$$\begin{bmatrix} x \\\\ y \\\\ z \end{bmatrix} \rightarrow \begin{bmatrix} f'\dfrac x z \\ f'\dfrac y z \end{bmatrix}$$
 
 但是可以再加一层变换做到这一点，所以有了坐标的齐次形式：
 
