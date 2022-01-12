@@ -10,7 +10,7 @@ categories: Algorithm
 
 ## Description
 
-[String to Integer (atoi) - LeetCode](https://leetcode.com/problems/string-to-integer-atoi/)https://leetcode.com/problems/reverse-integer/)
+[String to Integer (atoi) - LeetCode](https://leetcode.com/problems/string-to-integer-atoi/)
 
 ## First Thought
 
