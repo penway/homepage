@@ -5,7 +5,7 @@
 
 # Appearance
 
-theme: minimal # Choose a theme from https://wowchemy.com/docs/getting-started/install-hugo-extended/#themes
+theme: academic
 day_night: true
 font: ''
 font_size: M
