@@ -3,7 +3,7 @@ design:
     columns: 2
     font_size: small
     width: wide
-    
+
 ---
 # About Me
 - Wang Pengwei
@@ -18,3 +18,6 @@ Examples of my previous projects:
 - Combustion Formula Student Race Car (Technical Director and Suspension Engineer, 2020-2021)
 - Optimization on some Image Generation Models (2023, Graduation Paper, top 5%)
 - Website of a weight management and parts management system (2022) [github](https://github.com/penway/WDC)
+
+// add a button to resume
+[Resume](/assets/media/CV_WangPengwei.pdf){: .btn .btn-blue }
