@@ -1,21 +1,34 @@
 ---
 ---
-<div style="display: flex; justify-content: space-between;">
-  <div style="width: 48%;">
-    ** About Me **
-    - Wang Pengwei
-    - Graduate Student @ [Robotics, CDE, NUS](https://cde.nus.edu.sg/)
+<section id="about" class="home-section wg-blank">
+    <div class="home-section-bg"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div style="display:flex; justify-content:space-between; align-items: flex-start;">
+                    <div style="width:48%; padding:10px;">
+                        <strong>About Me</strong>
+                        <ul>
+                            <li>Wang Pengwei</li>
+                            <li>Graduate Student @ <a href="https://cde.nus.edu.sg/">Robotics, CDE, NUS</a></li>
+                        </ul>
+                    </div>
+                    <div style="width:48%; padding:10px;">
+                        <p>I am widely interested in technologies about computer science and mechanical engineering...</p>
+                        <p>Apart from course projects, I am currently working on:</p>
+                        <ul>
+                            <li>Reinforcement Learning</li>
+                            <li>Computer Vision</li>
+                        </ul>
+                        <pre><code class="hljs markdown">Examples of my previous projects:
+- Combustion Formula Student Race Car
+- Optimization on some Image Generation Models
+- Website of a weight management and parts management system <a href="https://github.com/penway/WDC">github</a>
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-  </div>
-  <div style="width: 48%;">
-    I am widely interested in technologies about computer science and machenical engineering. I am also interested in computational neuroscience and cognitive science.
-    Apart from course projects, I am currently working on:
-    - Reinforcement Learning
-    - Computer Vision
-
-    Examples of my previous projects:
-    - Combustion Formula Student Race Car (Technical Director and Suspension Engineer, 2020-2021)
-    - Optimization on some Image Generation Models (2023, Graduation Paper, top 5%)
-    - Website of a weight management and parts management system (2022) [github](https://github.com/penway/WDC)
-  </div>
-</div>
