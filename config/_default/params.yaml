@@ -8,7 +8,7 @@
 theme: minimal # Choose a theme from https://wowchemy.com/docs/getting-started/install-hugo-extended/#themes
 day_night: true
 font: ''
-font_size: L
+font_size: M
 
 # SEO
 
