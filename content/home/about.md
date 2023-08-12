@@ -23,5 +23,5 @@ Examples of my previous projects:
     href="https://penway.cn/CV_WangPengwei.pdf"
     target="_blank"
     class="button"
-    style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; rounded: 10px;"
+    style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 10px;"
 >Download CV</a>
