@@ -1,35 +1,36 @@
 ---
 # Display name
-title: penway Wang
+title: penway
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Mechanic Technical Director
+role: Robotics Master Student
 
 # Organizations/Affiliations
 organizations:
-- name: Northwestern Polytechnical University
-- name: Soaring Racing Team
+- name: National University of Singapore
 #   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include computer vision, artificial intelligence and software engineering. I am a FSAE race car crew member at the same time, designing suspension system.
+bio: My research interests include computer vision, artificial intelligence and software engineering.
 
 interests:
+- Computer Vision
 - Artificial Intelligence
 - Race Car Engineering
+- Phychology
 
 education:
 courses:
-- course: BSc in Software Engineering
+- course: BEng in Software Engineering
   institution: Northwestern Polytechnical University
   year: 2019
 
-# - course: BSc in Software Engineering
-#   institution: Northwestern Polytechnical University
-#   year: 2019
+- course: MSc in Robotics
+  institution: National University of Singapore
+  year: 2023
 
 #  - course: PhD in Artificial Intelligence
 #    institution: Stanford University
@@ -43,22 +44,23 @@ courses:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 # social:
-# - icon: envelope
-#   icon_pack: fas
-#   link: 'about/#contact'  # For a direct email link, use "mailto:test@example.org".
+- icon: envelope
+  icon_pack: fas
+  link: 'mailto:wang_pengwei@u.nus.edu'  # For a direct email link, use "mailto:test@example.org".
 # - icon: twitter
 #   icon_pack: fab
 #   link: https://twitter.com/GeorgeCushen
-# - icon: github
-#   icon_pack: fab
-#   link: https://github.com/gcushen
+- icon: github
+  icon_pack: fab
+  link: https://github.com/penway/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+- icon: cv
+  icon_pack: ai                                                                                                                                                                                                                                                                                                             
+  link: files/CV_WangPengwei_2023.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 # email: "penway@mail.nwpu.edu.cn"
 ---
-My research interests include computer vision, artificial intelligence and software engineering. I am a FSAE race car crew member at the same time, designing suspension system.
+# BIO
+penway is the former team member of JUSTICE League
