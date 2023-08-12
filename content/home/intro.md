@@ -13,6 +13,6 @@ subtitle: 科学、艺术与工程
 
 design:
   background:
-    color: '#3f5863'
+    color: '#102b4d'
     text_color_light: true
 ---
