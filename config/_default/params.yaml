@@ -5,10 +5,10 @@
 
 # Appearance
 
-theme: minimalist
+theme: starter-blog
 day_night: true
 font: ''
-font_size: M
+font_size: L
 
 # SEO
 
