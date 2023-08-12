@@ -1,4 +1,9 @@
 ---
+design:
+    columns: 2
+    font_size: small
+    width: wide
+    
 ---
 # About Me
 - Wang Pengwei
