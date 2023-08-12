@@ -19,4 +19,5 @@ Examples of my previous projects:
 - Optimization on some Image Generation Models (2023, Graduation Paper, top 5%)
 - Website of a weight management and parts management system (2022) [github](https://github.com/penway/WDC)
 
-[Resume](/assets/media/CV_WangPengwei.pdf){: .btn .btn-blue }
+// add a html button
+<a href="https://penway.cn/CV_WangPengwei.pdf" target="_blank" class="button">Download CV</a>
