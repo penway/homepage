@@ -10,6 +10,6 @@ main:
   - name: About
     url: about/
     weight: 20
-  - name: Gallary
-    url: gallary/
+  - name: Posts
+    url: post/
     weight: 12
