@@ -5,7 +5,7 @@
 
 # Appearance
 
-theme: wowchemy-hugo-modules-academic
+theme: minimalist
 day_night: true
 font: ''
 font_size: M
