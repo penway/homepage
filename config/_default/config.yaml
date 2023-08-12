@@ -12,7 +12,7 @@ copyright: '© {year} penway' # Footer text, e.g. '© {year} Me'
 ############################
 
 defaultContentLanguage: en
-hasCJKLanguage: en
+hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
