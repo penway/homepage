@@ -2,10 +2,9 @@
 // https://wowchemy.com/templates/
 
 .home-section {
-  padding: 0;  // previously 3em 0 3em 0
+  padding: 3em 0 3em 0;  // previously 3em 0 3em 0
   width: 100%;
   font-size: 20px;
-  margin: 0 auto;  // previously none
 }
 
 .home-section .row {
@@ -14,7 +13,7 @@
 
 // Adjusting the font size for the interests list
 .ul-interests li {
-  font-size: 6px; // Adjust the font size for the list items as needed
+  font-size: 16px; // Adjust the font size for the list items as needed
 }
 
 
@@ -29,7 +28,7 @@
 
 .home-section > .content {
   width: 45em;
-  max-width: calc(100% - 4em);
+  // max-width: calc(100% - 4em);
   margin: 0 auto;
 }
 
