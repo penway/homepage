@@ -12,6 +12,13 @@ headless: true
 # Order that this section appears on the page.
 weight: 20
 
+# make this widget wider and with smaller font
+design:
+  columns: "2"
+  background:
+    color: "#ffffff"
+    text_color_light: true
+
 # omit title
 title: ""
 

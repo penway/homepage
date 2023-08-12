@@ -17,10 +17,11 @@ organizations:
 bio: My research interests include computer vision, artificial intelligence and software engineering.
 
 interests:
+- Robotics
 - Computer Vision
 - Artificial Intelligence
 - Race Car Engineering
-- Phychology
+- Computational Phychology
 
 education:
 courses:
@@ -62,5 +63,3 @@ courses:
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 # email: "penway@mail.nwpu.edu.cn"
 ---
-# BIO
-penway is the former team member of JUSTICE League
