@@ -2,9 +2,10 @@
 // https://wowchemy.com/templates/
 
 .home-section {
-  padding: 3em 0 3em 0;
+  padding: 0;  // previously 3em 0 3em 0
   width: 100%;
   font-size: 20px;
+  margin: 0 auto;  // previously none
 }
 
 .home-section .row {
