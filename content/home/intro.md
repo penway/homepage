@@ -9,10 +9,10 @@ headless: false
 weight: 12
 
 title: 鹏维的小木屋
-subtitle: 科学、艺术与工程
+subtitle: 科学 | 艺术 | 工程
 
 design:
   background:
-    color: '#102b4d'
+    color: '#10304d'
     text_color_light: true
 ---
