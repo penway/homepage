@@ -3,7 +3,6 @@ design:
     columns: 2
     font_size: small
     width: wide
-
 ---
 # About Me
 - Wang Pengwei
@@ -19,9 +18,4 @@ Examples of my previous projects:
 - Optimization on some Image Generation Models (2023, Graduation Paper, top 5%)
 - Website of a weight management and parts management system (2022) [github](https://github.com/penway/WDC)
 
-<a 
-    href="https://penway.cn/CV_WangPengwei.pdf"
-    target="_blank"
-    class="button"
-    style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 10px;"
->Download CV</a>
+{{% staticref "uploads/CV_WangPengwei.pdf" "newtab" %}}Download my CV{{% /staticref %}}
