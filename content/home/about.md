@@ -19,5 +19,9 @@ Examples of my previous projects:
 - Optimization on some Image Generation Models (2023, Graduation Paper, top 5%)
 - Website of a weight management and parts management system (2022) [github](https://github.com/penway/WDC)
 
-// add a html button
-<a href="https://penway.cn/CV_WangPengwei.pdf" target="_blank" class="button">Download CV</a>
+<a 
+    href="https://penway.cn/CV_WangPengwei.pdf"
+    target="_blank"
+    class="button"
+    style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; rounded: 10px;"
+>Download CV</a>
