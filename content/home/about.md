@@ -1,4 +1,5 @@
 ---
+id: home_about
 ---
 <section id="about" class="home-section wg-blank">
     <div class="home-section-bg"></div>
