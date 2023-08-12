@@ -7,7 +7,7 @@
 I am widely interested in technologies about computer science and machenical engineering. I am also interested in computational neuroscience and cognitive science.
 Apart from course projects, I am currently studying on:
 - Reinforcement Learning
-- Computer Vision
+- Computaional Neuroscience
 
 Examples of my previous projects:
 - Combustion Formula Student Race Car (Technical Director and Suspension Engineer, 2020-2021)
