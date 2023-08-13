@@ -9,10 +9,10 @@ main:
     weight: 10
   - name: About
     url: about/
-    weight: 20
+    weight: 30
   - name: Courses
     url: category/course-notes/
-    weight: 30
+    weight: 40
   - name: Posts
     url: post/
-    weight: 12
+    weight: 20
