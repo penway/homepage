@@ -74,6 +74,6 @@
 }
 
 .article-container {
-  max-width: calc(100% - 4em);
+  max-width: min(calc(100% - 6em), 800px); // 800px for mobile, 100% for desktop
   margin: 0 auto;
 }
