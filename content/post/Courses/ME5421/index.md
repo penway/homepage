@@ -45,3 +45,18 @@ gallery_item:
 
 ## Introduction
 Introduction, Spatial Descriptions and Transformations, Manipulator Forward and Inverse Kinematics, Mechanics of Robot Motion, Static Forces and Torques
+
+Lecturer: [Prof Marcelo H. Ang Jr](https://cde.nus.edu.sg/me/staff/ang-jr-marcelo-h/)
+
+## Contents
+### 1. Introduction, Spatial Descriptions and Transformations
+Robot definition. Robot classification. Robotics system components. Notations. Position definitions. Coordinate frames. Different orientation descriptions. Free vectors. Translations, rotations and relative motion. Homogeneous transformations.
+
+### 2. Manipulator Forward and Inverse Kinematics
+Link coordinate frames. Denavit-Hartenberg convention. Joint and end-effector Cartesian space. Forward kinematics transformations of position. Inverse kinematics of position. Solvability. Trigonometric equations. Closed-Form Solutions. Workspace.
+
+### 3. Mechanics of Robot Motion
+Translational and rotational velocities. Velocity Transformations. The Manipulator Jacobian. Forward and inverse kinematics of velocity. Singularities of robot motion.
+
+### 4. Static Forces and Compliance
+Transformations of static forces and moments. Joint and End-Effector force/torque transformations.
