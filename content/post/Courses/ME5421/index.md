@@ -43,6 +43,8 @@ gallery_item:
   caption:
 ---
 
+**This Blog will continue to be updated as the course progresses. Notes, code and ideas will be added as I go along.**
+
 ## Introduction
 Introduction, Spatial Descriptions and Transformations, Manipulator Forward and Inverse Kinematics, Mechanics of Robot Motion, Static Forces and Torques
 
