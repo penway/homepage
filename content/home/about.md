@@ -4,7 +4,7 @@ weight: 20
 # About Me
 - Wang Pengwei
 - Graduate Student @ Robotics, CDE, NUS
-- [email](mailto:wang_pengwei@u.nus.edu)  [github](https://github.com/penway/)
+[email](mailto:wang_pengwei@u.nus.edu) | [github](https://github.com/penway/) | {{% staticref "uploads/CV_WangPengwei.pdf" "newtab" %}}CV{{% /staticref %}}
 
 I am widely interested in technologies about computer science and machenical engineering. I am also interested in computational neuroscience and cognitive science.
 Apart from course projects, I am currently studying on:
@@ -16,5 +16,3 @@ Examples of my previous projects:
 - Optimization on some Image Generation Models (2023, Graduation Paper, top 5%)
 - Website of a weight management and parts management system (2022) 
   [github](https://github.com/penway/WDC)
-
-> {{% staticref "uploads/CV_WangPengwei.pdf" "newtab" %}}Download my CV{{% /staticref %}}
