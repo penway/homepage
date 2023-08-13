@@ -15,5 +15,5 @@ Apart from course projects, I am currently studying on:
 Examples of my previous projects:
 - Combustion Formula Student Race Car (Technical Director and Suspension Engineer, 2020-2021)
 - Optimization on some Image Generation Models (2023, Graduation Paper, top 5%)
-- Website of a weight management and parts management system (2022) 
-  [github](https://github.com/penway/WDC)
+- Website of a weight management and parts management system (2022) | 
+  [GitHub](https://github.com/penway/WDC)
