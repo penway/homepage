@@ -41,6 +41,9 @@ gallery_item:
 - album: 
   image:
   caption:
+
+deisgn:
+  font-size: 14px
 ---
 
 # Chapter 1
