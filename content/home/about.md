@@ -2,8 +2,9 @@
 weight: 20
 ---
 # About Me
-- Wang Pengwei
-- Graduate Student @ Robotics, CDE, NUS
+## Wang Pengwei
+I am a graduate student majoring in Robotics at CDE, NUS.
+
 [email](mailto:wang_pengwei@u.nus.edu) | [github](https://github.com/penway/) | {{% staticref "uploads/CV_WangPengwei.pdf" "newtab" %}}CV{{% /staticref %}}
 
 I am widely interested in technologies about computer science and machenical engineering. I am also interested in computational neuroscience and cognitive science.
