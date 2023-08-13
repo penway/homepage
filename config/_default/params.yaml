@@ -52,7 +52,7 @@ edit_page:
     post: false
 show_related:
   post: true
-email: penway@mail.nwpu.edu.cn
+email: ''
 sharing_image: ''
 reading_time: true
 section_pager: true

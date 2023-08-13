@@ -43,7 +43,5 @@ gallery_item:
   caption:
 ---
 
-# Start of Robotics Kinematics
-
 ## Introduction
 Introduction, Spatial Descriptions and Transformations, Manipulator Forward and Inverse Kinematics, Mechanics of Robot Motion, Static Forces and Torques

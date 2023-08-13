@@ -11,7 +11,7 @@ main:
     url: about/
     weight: 20
   - name: Courses
-    url: courses/
+    url: category/course-notes/
     weight: 30
   - name: Posts
     url: post/

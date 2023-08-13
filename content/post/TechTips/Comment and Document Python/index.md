@@ -128,7 +128,3 @@ gallery_item:
 
 - 许可证（开源工程）
 - 文档文件夹（开源工程）
-
-## License
-
-Copyright 2021 王鹏维
