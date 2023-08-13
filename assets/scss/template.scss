@@ -72,3 +72,8 @@
   max-width: 200px;
   max-height: 200px;
 }
+
+.article-container {
+  max-width: calc(100% - 4em);
+  margin: 0 auto;
+}
