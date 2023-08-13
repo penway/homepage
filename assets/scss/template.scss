@@ -74,7 +74,13 @@
 }
 
 .article-container {
-  max-width: min(calc(100% - 6em), 800px); // 800px for mobile, 100% for desktop
+  max-width: 100%; /* Default to 100% width for narrow screens */
   margin: 0 auto;
   font-size: medium;
+}
+
+@media screen and (min-width: 1000px) {
+  .article-container {
+    max-width: calc(100% - 6em); /* Apply a different max-width for screens wider than 1000px */
+  }
 }
