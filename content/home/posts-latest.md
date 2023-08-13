@@ -15,7 +15,7 @@ subtitle = ""
   page_type = "post"
 
   # Choose how much pages you would like to display (0 = all pages)
-  count = 1
+  count = 4
 
   # Choose how many pages you would like to offset by
   offset = 0
@@ -36,14 +36,14 @@ subtitle = ""
     enable = false
 
 [design]
-  columns = "1"
+  columns = "2"
 
   # Toggle between the various page layout types.
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 2
+  view = 3
 
 [design.background]
   # Apply a background color, gradient, or image.
