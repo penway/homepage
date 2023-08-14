@@ -23,12 +23,12 @@ categories:
 ### Problem 1
 Frame B is initially coincident to frame A in Figure1(a). Frame B is then rotated 30 degrees  about the vector described by the directed line segment from P to Q (following the right-hand rule). Determine the position and orientation of the new frame B with respect to frame A. Express your answer in the form of a homogeneous transformation matrix.
 
-![Figure 1](/img/ME5421/Drill1/Figure1.png)
+![Figure 1](./Figure1.png)
 
 ### Solution 1
 First, calculate the rotation matrix using the Rodrigues rotation formula. Then using a point on the line segment, calculate the translation vector. Finally, combine the rotation matrix and translation vector into a homogeneous transformation matrix.
 
-![Figure 2](/img/ME5421/Drill1/Figure2.png)
+![Figure 2](./Figure2.png)
 
 $$
 PQ = Q - P = \begin{bmatrix}1 \\ 3 \\ 2\end{bmatrix} - \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix} = \begin{bmatrix}1 \\ 2 \\ 2\end{bmatrix} = \begin{bmatrix}{1}/{3} \\ {2}/{3} \\ {2}/{3}\end{bmatrix} \\
