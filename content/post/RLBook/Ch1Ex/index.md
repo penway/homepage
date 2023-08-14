@@ -35,16 +35,15 @@ tags:
 - 
 
 categories:
-- Notes
+- RL_Book
 
 gallery_item:
 - album: 
   image:
   caption:
-
-deisgn:
-  font-size: 14px
 ---
+
+This is the exercise from the book *Reinforcement Learning: An Introduction* by Richard S. Sutton and Andrew G. Barto, 2014 2015. I will provide my own answer (as I am new to this very immature), but also a GPT judge and answer. Just for your reference!
 
 # Chapter 1
 ## Exercise 1.1: Self-Play
@@ -84,3 +83,57 @@ deisgn:
 > 4. **Should Symmetrically Equivalent Positions Have the Same Value?**: While it is tempting to say that symmetrically equivalent positions should have the same value, this might not always be the case if the opponent behaves differently in these positions. If the opponent does not recognize and act identically in symmetric situations, the value of those positions could indeed differ. In playing against an irrational or inconsistent opponent, recognizing symmetries might not always lead to identical value assessments.
 > 
 > Your answer captures the essential idea of leveraging symmetries in tic-tac-toe to enhance the learning process, but **considering the opponent's behavior adds an extra layer of complexity that could affect the equivalence of symmetric states**.
+
+
+## Exercise 1.3: Greedy Play
+
+**Q**: Suppose the reinforcement learning player was greedy, that is, it always played the move that brought it to the position that it rated the best. Would it learn to play better, or worse, than a nongreedy player? What problems might occur?
+
+**A**: If this is a well-trained player, as the game tic-tac-toc is relatively simple. It can optimize all the situation during the training. So a greedy strategy can finally be useful. If it is a not well-trained player, non-greedy solution is kind of depend on luck. If is during training, there is no point for exploration so the player can stuck to a local optimum.
+
+**GPT**:
+
+> If the agent is already well-trained and has an accurate value function, then greedy play can be optimal for playing tic-tac-toe. However, the challenge arises when greedy play is used during the training phase. A strictly greedy approach can lead to a lack of exploration of other actions, potentially causing the agent to become stuck in a local optimum and never discovering better strategies. A non-greedy strategy, introducing some level of exploration, can prevent this and help the agent discover a globally optimal policy. Your response correctly highlights the nuances of greedy play, recognizing its suitability for a well-trained agent and potential problems during the learning phase.
+
+
+## Exercise 1.4: Learning from Exploration
+
+**Q**: Suppose learning updates occurred after all moves, including exploratory moves. If the step-size parameter is appropriately reduced over time, then the state values would converge to a set of probabilities. What are the two sets of probabilities computed when we do, and when we do not, learn from exploratory moves? Assuming that we do continue to make exploratory moves, which set of probabilities might be better to learn? Which would result in more wins?
+
+**A**: If we do not learn from exploratory moves, the result might be determined. I think learning from exploratory moves can be benificial anyway. (But I really do not understand the difference)
+
+**GPT**:
+> In reinforcement learning, exploratory moves are actions that are taken to explore different parts of the state space rather than exploiting current knowledge to select the best action. The difference between learning from exploratory moves or not affects how the agent updates its value estimates.
+>
+> 1. **When Learning from Exploratory Moves**: The value estimates will reflect both the optimal policy (what the agent thinks is best) and the exploration policy (trying new things). This could lead to more robust learning as the agent is factoring in all experiences, but it may also be noisier since the exploratory moves might not align with the optimal strategy.
+>
+> 2. **When Not Learning from Exploratory Moves**: The value estimates will be more focused on the optimal policy since only the greedy moves (those considered best) are used for learning. This could make the value estimates more precise for playing optimally but might miss out on valuable learning experiences from exploration.
+>
+> If the agent continues to make exploratory moves, learning from them might be more beneficial. It can help the agent discover unexpected strategies or nuances of the game that lead to better overall play. Learning from all experiences, including exploration, can provide a more comprehensive view of the environment, potentially resulting in more wins.
+>
+> However, the ideal approach depends on the specific task, the nature of the exploration, and how well the agent can generalize from its exploratory experiences. The choice between learning from exploratory moves or not can be a nuanced decision, with potential trade-offs between robustness and precision.
+
+
+## Exercise 1.5: Other Improvements
+
+**Q**: Can you think of other ways to improve the reinforcement learning player? Can you think of any better way to solve the tic-tac-toe problem as posed?
+
+**A**: Possible improvement: 1. Add some prior knowledge to the player, like a better start strategy. 2. Use a better designed opponent.
+Other solution: using genetic algorithm can be good.
+
+**GPT**:
+> The field of reinforcement learning provides a plethora of techniques and strategies that could be applied to enhance the tic-tac-toe player. Some creative ways might include:
+>
+> 1. **Hierarchical Learning**: Breaking down the game into different phases (e.g., opening, mid-game, end-game) and training specialized sub-agents for each phase. This could enable more tailored strategies for different parts of the game.
+>
+> 2. **Meta-Learning**: Developing an agent that can learn how to learn more effectively by experimenting with different learning rates, exploration strategies, or other hyperparameters during training. This can lead to more adaptive and robust learning.
+>
+> 3. **Multi-Agent Training**: Training multiple agents with different strategies against each other in a round-robin fashion. By doing this, the agent can gain a broader understanding of various strategies and learn to counter a wide array of opponent behaviors.
+>
+> 4. **Model-Based Planning**: Creating a model of the opponent's behavior and using it for look-ahead planning, like Monte Carlo Tree Search. This would enable the agent to anticipate the opponent's moves and respond more strategically.
+>
+> 5. **Transfer Learning**: If the agent has been trained on similar games, leveraging this knowledge to jump-start the learning in tic-tac-toe could save time and lead to more effective strategies.
+>
+> 6. **Interactive Learning**: Allowing human players to interact with the agent, providing feedback or challenging it with unique strategies, can also be a way to fine-tune the agent's performance.
+>
+> Combining some or all of these strategies, along with continuous monitoring and iterative refinement, could lead to a highly sophisticated tic-tac-toe player, able to adapt to different opponents and situations.
