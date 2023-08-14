@@ -144,3 +144,6 @@ ISO: robot will stop when hit something
 universal robot will sense the current to stop, but not very accurate, and it is not back-drivable
 impedance control: if you have force torque sensors in joints, you can control the dynamics that is not physical
 appearant mass, appearant stiffness, appearant damping
+
+
+## Chapter 1: Introduction, Spatial Descriptions and Transformations
