@@ -31,11 +31,6 @@ Frame B is initially coincident to frame A in Figure1(a). Frame B is then rotate
 3. Combine the rotation matrix and translation vector into a homogeneous transformation matrix.
 
 ![Figure 2](./Figure2.png)
-{{< math >}}
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-{{< /math >}}
 
 ```python
 import numpy as np
