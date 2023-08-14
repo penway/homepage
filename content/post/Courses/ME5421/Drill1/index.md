@@ -30,7 +30,6 @@ First, calculate the rotation matrix using the Rodrigues rotation formula. Then 
 
 ![Figure 2](./Figure2.png)
 
-
 ```python
 import numpy as np
 from scipy.spatial.transform import Rotation as R

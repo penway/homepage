@@ -54,7 +54,7 @@ R & t \\
 0 & 1
 \end{bmatrix} \\
 
-t = -RP + P
+t = -RP + P \\
 
 T = \begin{bmatrix}
 R & -RP + P \\
