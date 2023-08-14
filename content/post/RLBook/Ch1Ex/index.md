@@ -41,18 +41,6 @@ gallery_item:
 - album: 
   image:
   caption:
-
-design:
-  spacing:
-    padding:
-      - 1.9rem
-      - '0'
-      - 1.9rem
-      - '0'
-  background:
-    color: navy
-    gradient_end: SkyBlue
-    text_color_light: true
 ---
 
 This is the exercise from the book *Reinforcement Learning: An Introduction* by Richard S. Sutton and Andrew G. Barto, 2014 2015. I will provide my own answer (as I am new to this very immature), but also a GPT judge and answer. Just for your reference!
