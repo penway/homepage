@@ -28,32 +28,33 @@ Frame B is initially coincident to frame A in Figure1(a). Frame B is then rotate
 ### Solution 1
 First, calculate the rotation matrix using the Rodrigues rotation formula. Then using a point on the line segment, calculate the translation vector. Finally, combine the rotation matrix and translation vector into a homogeneous transformation matrix.
 
-{{< math >}}
+![Figure 2](/img/ME5421/Drill1/Figure2.png)
+
 $$
-PQ = Q - P = \begin{bmatrix}1 \\\\ 3 \\\\ 2\end{bmatrix} - \begin{bmatrix}0 \\\\ 1 \\\\ 0\end{bmatrix} = \begin{bmatrix}1 \\\\ 2 \\\\ 2\end{bmatrix} = \begin{bmatrix}{1}/{3} \\\\ {2}/{3} \\\\ {2}/{3}\end{bmatrix} \\\\
+PQ = Q - P = \begin{bmatrix}1 \\ 3 \\ 2\end{bmatrix} - \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix} = \begin{bmatrix}1 \\ 2 \\ 2\end{bmatrix} = \begin{bmatrix}{1}/{3} \\ {2}/{3} \\ {2}/{3}\end{bmatrix} \\
 
 \theta = 30^{\circ} = \frac{\pi}{6} \text{ rad} \\
 
 K = \begin{bmatrix}
-0 & -{2}/{3} & 2/3 \\\\
-{2}/{3} & 0 & -{1}/{3} \\\\
+0 & -{2}/{3} & 2/3 \\
+{2}/{3} & 0 & -{1}/{3} \\
 -{2}/{3} & {1}/{3} & 0
-\end{bmatrix} \\\\
-R = I + \sin(\theta)K + (1 - \cos(\theta))K^2 \\\\
+\end{bmatrix} \\
+R = I + \sin(\theta)K + (1 - \cos(\theta))K^2 \\
 
 let\ T = \begin{bmatrix}
-R & t \\\\
+R & t \\
 0 & 1
-\end{bmatrix} \\\\
+\end{bmatrix} \\
 
 t = -RP + P
 
 T = \begin{bmatrix}
-R & -RP + P \\\\
+R & -RP + P \\
 0 & 1
 \end{bmatrix}
 $$
-{{< math >}}
+
 
 ```python
 import numpy as np
