@@ -1,5 +1,5 @@
 ---
-title: Start of Robotics Kinematics
+title: Robotics Kinematics Lesson 1
 subtitle: Notes for ME5421
 
 # Summary for listings and search engines
@@ -12,7 +12,7 @@ projects: [ME5421]
 date: '2023-08-13T00:00:00Z'
 
 # Date updated
-lastmod: '2023-08-13T00:00:00Z'
+lastmod: '2023-08-14T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
@@ -43,7 +43,7 @@ gallery_item:
   caption:
 ---
 
-**This Blog will continue to be updated as the course progresses. Notes, code and ideas will be added as I go along.**
+**This Blog will continue to be updated as the course progresses. Notes, code and ideas will be added as I go along. Check out the course notes at the top ↑ ;)**
 
 ## Introduction
 Introduction, Spatial Descriptions and Transformations, Manipulator Forward and Inverse Kinematics, Mechanics of Robot Motion, Static Forces and Torques
