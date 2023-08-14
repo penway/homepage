@@ -2,16 +2,19 @@ import numpy as np
 from scipy.spatial.transform import Rotation as R
 
 # Given points P and Q
-P = np.array([0, 1, 0])
-Q = np.array([1, 3, 2])
+P = np.array([0, 3, 0])
+Q = np.array([1, 0, 2])
+degree = 30
 
 # Calculate rotation axis (from P to Q) and normalize
 rotation_axis = Q - P
 rotation_axis = rotation_axis.astype(float)
 rotation_axis /= np.linalg.norm(rotation_axis)
 
+print(rotation_axis)
+
 # Define rotation (30 degrees around the axis)
-rotation = R.from_rotvec(30 * np.pi / 180 * rotation_axis)
+rotation = R.from_rotvec(np.deg2rad(degree) * rotation_axis)
 
 # Rotation matrix
 R_corrected = rotation.as_matrix()
@@ -23,8 +26,8 @@ T_corrected[:3, :3] = R_corrected
 # Translation part of the homogeneous transformation matrix (point P)
 T_corrected[:3, 3] = -R_corrected @ P + P
 
-# Resulting transformation matrix
-print(T_corrected)
+# Resulting transformation matrix, with precision of 3 decimal places
+print(np.round(T_corrected, 3))
 
 
 # check the answer by calculating the new position of Q, which should be [1, 3, 2] the same as the original Q
@@ -37,28 +40,5 @@ else:
 
 
 '''
-$$
-PQ = Q - P = \begin{bmatrix}1 \\ 3 \\ 2\end{bmatrix} - \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix} = \begin{bmatrix}1 \\ 2 \\ 2\end{bmatrix} = \begin{bmatrix}{1}/{3} \\ {2}/{3} \\ {2}/{3}\end{bmatrix} \\
 
-\theta = 30^{\circ} = \frac{\pi}{6} \text{ rad} \\
-
-K = \begin{bmatrix}
-0 & -{2}/{3} & 2/3 \\
-{2}/{3} & 0 & -{1}/{3} \\
--{2}/{3} & {1}/{3} & 0
-\end{bmatrix} \\
-R = I + \sin(\theta)K + (1 - \cos(\theta))K^2 \\
-
-let\ T = \begin{bmatrix}
-R & t \\
-0 & 1
-\end{bmatrix} \\
-
-t = -RP + P \\
-
-T = \begin{bmatrix}
-R & -RP + P \\
-0 & 1
-\end{bmatrix}
-$$
 '''

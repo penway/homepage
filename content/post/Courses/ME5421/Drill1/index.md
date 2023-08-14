@@ -26,9 +26,16 @@ Frame B is initially coincident to frame A in Figure1(a). Frame B is then rotate
 ![Figure 1](./Figure1.png)
 
 ### Solution 1
-First, calculate the rotation matrix using the Rodrigues rotation formula. Then using a point on the line segment, calculate the translation vector. Finally, combine the rotation matrix and translation vector into a homogeneous transformation matrix.
+1. Calculate the rotation matrix using the Rodrigues rotation formula. 
+2. Then using a point on the line segment, calculate the translation vector. 
+3. Combine the rotation matrix and translation vector into a homogeneous transformation matrix.
 
 ![Figure 2](./Figure2.png)
+{{< math >}}
+$$
+\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
+$$
+{{< /math >}}
 
 ```python
 import numpy as np
