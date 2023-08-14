@@ -34,3 +34,31 @@ if np.allclose(Q_corrected[:3], Q):
     print('Correct')
 else:
     print('Incorrect')
+
+
+'''
+$$
+PQ = Q - P = \begin{bmatrix}1 \\ 3 \\ 2\end{bmatrix} - \begin{bmatrix}0 \\ 1 \\ 0\end{bmatrix} = \begin{bmatrix}1 \\ 2 \\ 2\end{bmatrix} = \begin{bmatrix}{1}/{3} \\ {2}/{3} \\ {2}/{3}\end{bmatrix} \\
+
+\theta = 30^{\circ} = \frac{\pi}{6} \text{ rad} \\
+
+K = \begin{bmatrix}
+0 & -{2}/{3} & 2/3 \\
+{2}/{3} & 0 & -{1}/{3} \\
+-{2}/{3} & {1}/{3} & 0
+\end{bmatrix} \\
+R = I + \sin(\theta)K + (1 - \cos(\theta))K^2 \\
+
+let\ T = \begin{bmatrix}
+R & t \\
+0 & 1
+\end{bmatrix} \\
+
+t = -RP + P
+
+T = \begin{bmatrix}
+R & -RP + P \\
+0 & 1
+\end{bmatrix}
+$$
+'''
