@@ -95,4 +95,8 @@ all ceramic need sinterring, because the ceramic is made of powder, and the powd
 Solid solution: mixing two solid together, and they are mixed at atomic level, to form a new material.
 
 *page 45*
-Mechanical properties is always important even for materail that is not used for mechanical purpose. Such as some material used in sea water,
+
+Mechanical properties is always important even for materail that is not used for mechanical purpose. Such as some material used in sea water. And many failure of material is due to mechanical failure.
+
+*page 50*
+If several material have very different thermal expansion coefficient, there will be large residual stress when they are bonded together.
