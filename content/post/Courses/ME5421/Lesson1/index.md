@@ -108,16 +108,17 @@ Arm (primarily resposible for corase positioning) link 123(Cartesian Robot) + Wr
 Orientation worksapce: set of all possible orientations reachable
 
 ### Cartesian， Cylinrical， Spherical Robot
-Cartesian Robot: TTT RRR
-Cylinrical Robot: RTT RRR
-Spherical Robot: RRT RRR
+T: translation joint; R: rotation joint
+**Cartesian Robot**: TTT RRR
+**Cylinrical Robot**: RTT RRR
+**Spherical Robot**: RRT RRR
 So when we are talking about spherical or cylindrical or cartesian robot, we are talking about the first 3 links, i.e. arm workspace
 ( sometimes changing size of link will be same in kinematics, but not in dynamics )
 
 ### SCARA: Selective Compliant Assembly Robot Arm: RRT RRR; ISO 8373:2012
 
-accerleration: m + b + k + G
-(mass: overcome inertia, damping: overcome friction (air, water, etc.), stiffness, gravity)
+**accerleration**: m + b + k + G
+(mass: overcome inertia, damping: overcome friction (air, water, etc.), stiffness: if there is a spring in the system, gravity)
 
 SCARA can be fast because the first two links do not need to overcome gravity
 GearBox(theta_N to theta_1): more torque, less speed, (most of the motor has gearbox, which are not back-drivable, or else it will be back-drivable)
@@ -140,7 +141,7 @@ like with two arms
 increase payload, increase stiffness
 
 ### Service Robot
-### Collaborative Robot Co-X CoBot
+### Collaborative Robot (Co-X, CoBot)
 ISO: robot will stop when hit something
 universal robot will sense the current to stop, but not very accurate, and it is not back-drivable
 impedance control: if you have force torque sensors in joints, you can control the dynamics that is not physical
