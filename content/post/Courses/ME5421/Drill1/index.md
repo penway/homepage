@@ -36,11 +36,11 @@ $$$$
 k = \frac{Q - P}{\|Q - P\|} \\
 $$$$
 so, skew\ matrix\ K = \begin{bmatrix} 0 & -k_z & k_y \\ k_z & 0 & -k_x \\ -k_y & k_x & 0 \end{bmatrix} \\
-
+$$$$
 R = I + \sin(\theta)K + (1 - \cos(\theta))K^2 \\
-
+$$$$
 t = -R \cdot P + P \\
-
+$$$$
 T = \begin{bmatrix} R & t \\ 0 & 1 \end{bmatrix}
 $${{< /math >}}
 
