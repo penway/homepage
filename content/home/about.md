@@ -7,6 +7,8 @@ I am a graduate student majoring in Robotics at CDE, NUS.
 
 [E-mail](mailto:wang_pengwei@u.nus.edu) | [GitHub](https://github.com/penway/) | {{% staticref "uploads/CV_WangPengwei.pdf" "newtab" %}}CV{{% /staticref %}}
 
+{{< cta cta_text="Get my CV" cta_link="uploads/CV_WangPengwei.pdf" cta_new_tab="true" >}}
+
 I am widely interested in technologies about computer science and machenical engineering. I am also interested in computational neuroscience and cognitive science.
 Apart from course projects, I am currently studying on:
 - Reinforcement Learning
