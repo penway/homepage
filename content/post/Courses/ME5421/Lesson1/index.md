@@ -45,6 +45,8 @@ gallery_item:
 
 **This Blog will continue to be updated as the course progresses. Notes, code and ideas will be added as I go along. Check out the course notes at the top ↑ ;)**
 
+{{< toc >}}
+
 ## Introduction
 Introduction, Spatial Descriptions and Transformations, Manipulator Forward and Inverse Kinematics, Mechanics of Robot Motion, Static Forces and Torques
 
@@ -89,15 +91,16 @@ Autonomous Driving is both!
 
 A Typical Robot System: Sensing+Understanding, Planning, Exceuting, Learning
 
-Kinematics
+## Basic Kinematics
 
-manipulater:
-  hand: end-effecter
-  embrace: whole body manipulation
+some manipulater:
+  - hand: end-effecter
+  - embrace: whole body manipulation
 
 Base(Link0) - Joint1 - Link1 - Joint2 - Link2
 Joints: Sliding-Translational, Rotating-Rotational
 
+### Workspace
 The space reachable by last link is called the workspace(sometimes, arm workspace)
 
 Arm (primarily resposible for corase positioning) link 123(Cartesian Robot) + Wrist (fine positioning) link 456
