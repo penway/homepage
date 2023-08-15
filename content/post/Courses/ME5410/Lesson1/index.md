@@ -20,6 +20,8 @@ categories:
 share: false
 ---
 
+{{% toc %}}
+
 Hightlight: sensor and actuator, material is because of that
 Shape memory alloy, electrical material
 
