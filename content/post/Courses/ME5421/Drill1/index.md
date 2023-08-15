@@ -30,7 +30,11 @@ Frame B is initially coincident to frame A in Figure1(a). Frame B is then rotate
 2. Then using a point on the line segment, calculate the translation vector. 
 3. Combine the rotation matrix and translation vector into a homogeneous transformation matrix.
 
-
+{{< math >}}
+$$
+a
+$$
+{{< /math >}}
 
 ```python
 import numpy as np
