@@ -64,7 +64,7 @@ locale:
 features:
   syntax_highlighter:
     enable: true
-    theme: nord
+    theme: "nord"
 
   math:
     enable: true
