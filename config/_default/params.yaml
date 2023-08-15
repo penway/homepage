@@ -64,7 +64,7 @@ locale:
 features:
   syntax_highlighter:
     enable: true
-    theme-light: xcode-light
+    theme-light: github-light
     theme-dark: xcode-dark
 
   math:
