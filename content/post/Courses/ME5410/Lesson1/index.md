@@ -20,6 +20,8 @@ categories:
 share: false
 ---
 
+**Note for the PDF**
+
 Hightlight: sensor and actuator, material is because of that
 Shape memory alloy, electrical material
 
@@ -37,7 +39,9 @@ Page 9: Robotic Matrial can mean putting up a lot of materials together to make 
 important: Crsytal, Phase Diagram
 
 ### Atomic structure: 
+
 *page 29*
+
 bonding:
 - ionic (NaCl)
 - covalent (H2O)
@@ -49,7 +53,7 @@ bonding:
 Some properties of material is determined by the chemical bond: 
     - elastic modulus, (atomic force)
     - thermal expansion coefficient, (atomic force)
-    
+
 So, unless the nature of the bond is changed, the properties will not change.
 
 *page 31*
@@ -69,3 +73,23 @@ page 34: complicated structure
 
 atom of Ti can **shift** under the influence of electric field; and can even lead to deformation, but the movement typically small and limited, but can be more precise than using a motor.
 
+
+*page 36*
+
+14 basic cell -> 32 crystallographic point groups
+
+*page 37*
+
+crystal structure is ideal, but in reality, there are defects.
+(can be useful)
+
+*page 42*
+
+left: normal process for ceramic
+right: tape casting
+
+all ceramic need sinterring, because the ceramic is made of powder, and the powder is not bonded together, so need to be sinterring to bond them together.
+
+*page 44*
+
+Solid solution: mixing two solid together, and they are mixed at atomic level, to form a new material.
