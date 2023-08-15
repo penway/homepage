@@ -109,9 +109,13 @@ Orientation worksapce: set of all possible orientations reachable
 
 ### Cartesian， Cylinrical， Spherical Robot
 T: translation joint; R: rotation joint
+
 **Cartesian Robot**: TTT RRR
+
 **Cylinrical Robot**: RTT RRR
+
 **Spherical Robot**: RRT RRR
+
 So when we are talking about spherical or cylindrical or cartesian robot, we are talking about the first 3 links, i.e. arm workspace
 ( sometimes changing size of link will be same in kinematics, but not in dynamics )
 
@@ -128,16 +132,26 @@ Back-drivable with gearbox: add a sensor (put is a the end of the pole)
 
 
 ### Articulated Robot Arm: RRR RRR
-rotational joint can change orientation and position at the same time while prismatic joint can only change position
+
+Rotational joint can change orientation and position at the same time while prismatic joint can only change position
+
 Human is fully articulated (waist, shoulder, elbow, wrist, fingers)
-joint style + joint range motion
+
+When using a joint, one should consider: joint style and joint range motion, because some joint have limited range of motion
+
 6 joints because 6 DOF, 6 independent variables -> 6 DOF
+
 sphereal joint = 3 DOF! because 3 independent variables (human shoulder, wrist)
-if you have more joints that 6, you can have () motion, like stay your hand put but moving elbow, which is great
+
+if you have more joints that 6, you can have redundant motion, like stay your hand put but moving elbow, which is great
+- increase dexterity
+- increase robustness
+- increase flexibility
 
 
 ### Parallel Robot
-like with two arms
+robot that has more than one end-effector, like with two arms
+
 increase payload, increase stiffness
 
 ### Service Robot
