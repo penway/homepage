@@ -64,8 +64,7 @@ locale:
 features:
   syntax_highlighter:
     enable: true
-    theme-light: "xcode-light"
-    theme-dark: "xcode-dark"
+    theme: nord
 
   math:
     enable: true
