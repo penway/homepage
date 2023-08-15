@@ -30,19 +30,19 @@ Frame B is initially coincident to frame A in Figure1(a). Frame B is then rotate
 2. Then using a point on the line segment, calculate the translation vector. 
 3. Combine the rotation matrix and translation vector into a homogeneous transformation matrix.
 
-{{< math >}}$
+{{< math >}}$$
 P = \begin{bmatrix} 0 \\ 3 \\ 0 \end{bmatrix}, \quad Q = \begin{bmatrix} 1 \\ 0 \\ 2 \end{bmatrix}, \quad \theta = 30^{\circ}
-$$
+$$$$
 k = \frac{Q - P}{\|Q - P\|}
-$$
+$$$$
 so, skew\ matrix\ K = \begin{bmatrix} 0 & -k_z & k_y \\ k_z & 0 & -k_x \\ -k_y & k_x & 0 \end{bmatrix}
-$$
+$$$$
 R = I + \sin(\theta)K + (1 - \cos(\theta))K^2
-$$
+$$$$
 t = -R \cdot P + P
-$$
+$$$$
 T = \begin{bmatrix} R & t \\ 0 & 1 \end{bmatrix}
-${{< /math >}}
+$${{< /math >}}
 
 ```python
 import numpy as np
