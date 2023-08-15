@@ -41,7 +41,7 @@ R = I + \sin(\theta)K + (1 - \cos(\theta))K^2 \\
 
 t = -R \cdot P + P \\
 
-T = \begin{bmatrix} R & t \\ 0 & 1 \end{bmatrix} \\
+T = \begin{bmatrix} R & t \\ 0 & 1 \end{bmatrix}
 $${{< /math >}}
 
 ```python
