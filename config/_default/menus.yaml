@@ -13,3 +13,6 @@ main:
   - name: Courses
     url: category/course-notes/
     weight: 30
+  - name: About
+    url: #about
+    weight: 40
