@@ -104,7 +104,8 @@ Arm (primarily resposible for corase positioning) link 123(Cartesian Robot) + Wr
 
 Orientation worksapce: set of all possible orientations reachable
 
-Cartesian Robot: 
+### Cartesian， Cylinrical， Spherical Robot
+Cartesian Robot: TTT RRR
 Cylinrical Robot: RTT RRR
 Spherical Robot: RRT RRR
 So when we are talking about spherical or cylindrical or cartesian robot, we are talking about the first 3 links, i.e. arm workspace
