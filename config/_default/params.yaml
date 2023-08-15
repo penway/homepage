@@ -45,7 +45,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Wang Pengwei. This work is licensed under {license}'
+    notice: '© {year} Wang Pengwei.' # This work is licensed under {license}
     license:
       enable: false
       allow_derivatives: false
@@ -64,6 +64,8 @@ locale:
 features:
   syntax_highlighter:
     enable: true
+    theme-light: xcode-light
+    theme-dark: xcode-dark
     extra_languages:
       - r
       - latex
