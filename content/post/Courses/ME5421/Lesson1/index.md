@@ -73,24 +73,21 @@ understand + pratice problem solving
 try sample questions3
 contact TA for research
 
-[ME, EE, CS] + Social Science (Understand Humanity) + Business (Commercial) + Ethics
+Robotics need knowledge from: [ME, EE, CS] + Social Science (Understand Humanity) + Business (Commercial) + Ethics
 
-Robots do
-Things that
-- dangerous
-- dull
-- dirty
-- degrading
-- demeaning
-- driving
-( too intelligent to do )
-
-- precision
-( Human cannot do as well as machine )
+Robots do things that
+1. too intelligent to do
+  - dangerous
+  - dull
+  - dirty
+  - degrading
+  - demeaning
+2. Human cannot do as well as machine
+  - precision
 
 Autonomous Driving is both!
 
-Sensing+Understanding, Planning, Exceuting, Learning
+A Typical Robot System: Sensing+Understanding, Planning, Exceuting, Learning
 
 Kinematics
 
