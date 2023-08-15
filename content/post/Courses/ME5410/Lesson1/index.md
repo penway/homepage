@@ -18,4 +18,15 @@ categories:
 - Course Notes
 ---
 
-## 
+Hightlight: sensor and actuator, material is because of that
+Shape memory alloy, electrical material
+
+Robotic material: maerial engineering cares about many aspects of the material, while science cares maybe only one aspect of the material, like superconductivity
+
+Conventional Matrial: Arm, leg, body: mechanical properties are important
+
+Advanced Robotic Materials:
+maybe the material expand to push, 
+some material can change shape on change of electric field (mechanical field and electrical field. more: thermal field, chemical field)
+
+Page 9: Robotic Matrial can mean putting up a lot of materials together to make a **system**.

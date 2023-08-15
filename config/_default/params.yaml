@@ -135,7 +135,7 @@ marketing:
 header:
   navbar:
     enable: true
-    align: r
+    align: c
     show_logo: true
     show_language: false
     show_day_night: true
@@ -173,7 +173,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'github.com/penway/homepage'
     content_dir: content
     branch: main
   avatar:
