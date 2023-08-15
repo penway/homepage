@@ -15,4 +15,5 @@ design:
   background:
     color: '#10304d'
     text_color_light: true
+  align: center
 ---
