@@ -27,7 +27,7 @@ Frame B is initially coincident to frame A in Figure1(a). Frame B is then rotate
 
 ![Figure 1](./Figure1.png)
 
-### Solution 1
+#### Solution
 1. Calculate the rotation matrix using the Rodrigues rotation formula. 
 2. Then using a point on the line segment, calculate the translation vector. 
 3. Combine the rotation matrix and translation vector into a homogeneous transformation matrix.

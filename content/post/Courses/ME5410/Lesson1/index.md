@@ -33,3 +33,30 @@ some material can change shape on change of electric field (mechanical field and
 
 Page 9: Robotic Matrial can mean putting up a lot of materials together to make a **system**.
 
+## Basic Knowledge
+important: Crsytal, Phase Diagram
+
+### Atomic structure: 
+*page 29*
+bonding:
+- ionic (NaCl)
+- covalent (H2O)
+- metallic (Mg)
+- secondary bond (Polymer, Van der Waals?)
+
+*page 30*
+Some properties of material is determined by the chemical bond: 
+    elastic modulus, (atomic force)
+    thermal expansion coefficient, (atomic force)
+So, unless the nature of the bond is changed, the properties will not change.
+
+*page 31*
+Crystal structure of Solids
+General: Unit cell
+- Cubic
+- Tetragonal
+- Hexagonal
+more on page 32, 33
+page 34: complicated structure
+**vacancy** can effect the properties of the material
+atom of Ti can **shift** under the influence of electric field
