@@ -32,7 +32,12 @@ Frame B is initially coincident to frame A in Figure1(a). Frame B is then rotate
 
 {{< math >}}
 $$
-a
+P = \begin{bmatrix} 0 \\ 3 \\ 0 \end{bmatrix}, \quad Q = \begin{bmatrix} 1 \\ 0 \\ 2 \end{bmatrix}, \quad \theta = 30^{\circ} \\
+k = \frac{Q - P}{\|Q - P\|} \\
+so, skew\ matrix\ K = \begin{bmatrix} 0 & -k_z & k_y \\ k_z & 0 & -k_x \\ -k_y & k_x & 0 \end{bmatrix} \\
+R = I + \sin(\theta)K + (1 - \cos(\theta))K^2 \\
+t = -R \cdot P + P \\
+T = \begin{bmatrix} R & t \\ 0 & 1 \end{bmatrix}
 $$
 {{< /math >}}
 
@@ -41,8 +46,8 @@ import numpy as np
 from scipy.spatial.transform import Rotation as R
 
 # Given points P and Q
-P = np.array([0, 1, 0])
-Q = np.array([1, 3, 2])
+P = np.array([0, 3, 0])
+Q = np.array([1, 0, 2])
 
 # Calculate rotation axis (from P to Q) and normalize
 rotation_axis = Q - P
