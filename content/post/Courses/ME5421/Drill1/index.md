@@ -18,6 +18,8 @@ categories:
 - Course Notes
 ---
 
+{{% toc %}}
+
 ## Drill 1: Spatial Descriptions & Homogenous Transformations
 
 ### Problem 1
