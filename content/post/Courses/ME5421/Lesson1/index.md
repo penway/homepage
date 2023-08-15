@@ -163,3 +163,22 @@ appearant mass, appearant stiffness, appearant damping
 
 
 ## Chapter 1: Introduction, Spatial Descriptions and Transformations
+
+Position of point O in frame A
+{{< math >}}
+$$
+^AP_O = \begin{bmatrix} ^AP_{OX} \\ ^AP_{OY} \\ ^AP_{OZ} \end{bmatrix} \in \mathbb{R}^3
+$$
+{{< /math >}}
+
+if object B is in frame A and the frame B attached to B is {{< math >}} $ ^Ai_B, ^Aj_B, ^Ak_B $ {{< /math >}}, then
+{{< math >}}
+$$
+^AR_B = \begin{bmatrix}
+^Ai_{Bx} & ^Aj_{Bx} & ^Ak_{Bx} \\
+^Ai_{By} & ^Aj_{By} & ^Ak_{By} \\
+^Ai_{Bz} & ^Aj_{Bz} & ^Ak_{Bz}
+\end{bmatrix} \in \mathbb{R}^{3 \times 3}
+$$
+{{< /math >}}
+
