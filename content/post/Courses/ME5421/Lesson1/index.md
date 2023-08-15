@@ -41,6 +41,8 @@ gallery_item:
 - album: 
   image:
   caption:
+
+share: false
 ---
 
 **This Blog will continue to be updated as the course progresses. Notes, code and ideas will be added as I go along. Check out the course notes at the top ↑ ;)**
