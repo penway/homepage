@@ -63,10 +63,11 @@ locale:
 
 features:
   syntax_highlighter:
-    enable: false
+    enable: true
     extra_languages:
       - r
       - latex
+      - python
   math:
     enable: true
   privacy_pack:
