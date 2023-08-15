@@ -119,5 +119,5 @@ publications:
 
 cascade:
   - _target:
-      path: /publication/**
+      path: /post/**
     share: false
