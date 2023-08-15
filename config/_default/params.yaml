@@ -66,10 +66,7 @@ features:
     enable: true
     theme-light: xcode-light
     theme-dark: xcode-dark
-    extra_languages:
-      - r
-      - latex
-      - python
+
   math:
     enable: true
   privacy_pack:
