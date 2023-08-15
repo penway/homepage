@@ -1,6 +1,6 @@
 ---
 # Use the Intro widget of the Blog template
-widget: starter.blog.intro
+# widget: starter.blog.intro
 
 # This file represents a page section.
 headless: false
