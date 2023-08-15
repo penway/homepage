@@ -20,7 +20,7 @@ categories:
 share: false
 ---
 
-**Note for the PDF**
+## Introduction
 
 Hightlight: sensor and actuator, material is because of that
 Shape memory alloy, electrical material
@@ -35,7 +35,8 @@ some material can change shape on change of electric field (mechanical field and
 
 Page 9: Robotic Matrial can mean putting up a lot of materials together to make a **system**.
 
-## Basic Knowledge
+
+## Basic Knowledge of Materials Science and Engineering
 important: Crsytal, Phase Diagram
 
 ### Atomic structure: 
