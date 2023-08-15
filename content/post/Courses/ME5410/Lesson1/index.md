@@ -25,16 +25,20 @@ share: false
 Hightlight: sensor and actuator, material is because of that
 Shape memory alloy, electrical material
 
-Robotic material: maerial engineering cares about many aspects of the material, while science cares maybe only one aspect of the material, like superconductivity
+Robotic material: material engineering cares about many aspects of the material, while science cares maybe only one aspect of the material, like superconductivity
 
-Conventional Matrial: Arm, leg, body: mechanical properties are important
+### Convention and Advanced Robotic Materials
 
-Advanced Robotic Materials:
-maybe the material expand to push, 
+Conventional Matrial: most of the material foucs only on one job, and leading to one aspect of the material.
+e.g. Arm, leg, body: mechanical properties are important
+
+Advanced Robotic Materials: multifunctional, tightly integrated
+e.g. maybe the material expand to push, 
 some material can change shape on change of electric field (mechanical field and electrical field. more: thermal field, chemical field)
 
-Page 9: Robotic Matrial can mean putting up a lot of materials together to make a **system**.
+Robotic Matrial can mean putting up a lot of materials together to make a **system**. *(page 9)*
 
+The rest 
 
 ## Basic Knowledge of Materials Science and Engineering
 important: Crsytal, Phase Diagram
@@ -92,12 +96,13 @@ right: tape casting
 all ceramic need sinterring, because the ceramic is made of powder, and the powder is not bonded together, so need to be sinterring to bond them together.
 
 *page 44*
-
 Solid solution: mixing two solid together, and they are mixed at atomic level, to form a new material.
 
 *page 45*
-
 Mechanical properties is always important even for materail that is not used for mechanical purpose. Such as some material used in sea water. And many failure of material is due to mechanical failure.
 
 *page 50*
 If several material have very different thermal expansion coefficient, there will be large residual stress when they are bonded together.
+
+*page 53*
+Smart material is also needed with a processor to control it. But maybe itself can be sensor and actuator.
