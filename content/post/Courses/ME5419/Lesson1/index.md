@@ -9,7 +9,7 @@ date: '2023-08-15T00:00:00Z'
 lastmod: '2023-08-15T00:00:00Z'
 
 draft: false
-featured: false
+featureSigma_d: false
 
 authors:
 - penway
@@ -23,13 +23,31 @@ Given independent variables $X$ and $Y$, what is the mean and variance of $X+Y$?
 
 $$
 \begin{aligned}
-\mu_{X+Y} &= \Sigma_{z \in Z} z P_{X+Y}(z) \\
-&= \Sigma_{z \in Z} z \Sigma_{\xi \in X} P_X(\xi) P_Y(z - \xi) \\
+\mu_{X+Y} &= \sum_{z \in Z} z P_{X+Y}(z) \\
+&= \sum_{z \in Z} z \sum_{\xi \in X} P_X(\xi) P_Y(z - \xi) \\
 &let\ w=z-\xi \\
-&= \Sigma_{w \in W} \Sigma_{\xi \in X} (\xi + w) P_X(\xi) P_Y(w) \\
-&= \Sigma_{w \in W} w P_Y(w) + \Sigma_{\xi \in X} \xi P_X(\xi) (independent) \\
+&= \sum_{w \in W} \sum_{\xi \in X} (\xi + w) P_X(\xi) P_Y(w) \\
+&= \sum_{w \in W} w P_Y(w) + \sum_{\xi \in X} \xi P_X(\xi) \\
 &= \mu_Y + \mu_X \\
 \end{aligned}
 $$
 
+$$
+\begin{aligned}
+\sigma_{X+Y}^2 &= \sum_{z \in Z} (z - \mu_{X+Y})^2 P_{X+Y}(z) \\
+&= \sum_{z \in Z} (z - \mu_{X+Y})^2 \sum_{\xi \in X} P_X(\xi) P_Y(z - \xi) \\
+&let\ w=z-\xi \\
+&= \sum_{w \in W} \sum_{\xi \in X} (w + \xi - \mu_{X+Y})^2 P_X(\xi) P_Y(w) \\
+&= \sum_{w \in W} \sum_{\xi \in X} [(\xi - \mu_X) + (w - \mu_Y)]^2 P_X(\xi) P_Y(w) \\
+&= \sum_{w \in W} \sum_{\xi \in X} [(\xi - \mu_X)^2 + (w - \mu_Y)^2 + 2(\xi - \mu_X)(w - \mu_Y)] P_X(\xi) P_Y(w) \\
+&= \sum_{w \in W} \sum_{\xi \in X} (\xi - \mu_X)^2 P_X(\xi) P_Y(w) + \sum_{w \in W} \sum_{\xi \in X} (w - \mu_Y)^2 P_X(\xi) P_Y(w) + \sum_{w \in W} \sum_{\xi \in X} 2(\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
+&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) + \sum_{w \in W} \sum_{\xi \in X} 2(\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
+&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) + 2 \sum_{w \in W} \sum_{\xi \in X} (\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
+&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) + 2 \sum_{w \in W} (\mu_X - \mu_X) (\mu_Y - \mu_Y) P_Y(w) \\
+&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) + 2 (\mu_X - \mu_X) (\mu_Y - \mu_Y) \\
+&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) \\
+&= \sigma_Y^2 + \sigma_X^2 \\
+
+\end{aligned}
+$$
 {{< /math >}}
