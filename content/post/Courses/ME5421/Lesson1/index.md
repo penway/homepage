@@ -173,7 +173,8 @@ $$
 $$
 {{< /math >}}
 
-if object B is in frame A and the frame B attached to B is {{< math >}} $ ^Ai_B, ^Aj_B, ^Ak_B $ {{< /math >}}, then
+#### Rotataion Matrix
+If object B is in frame A and the frame B attached to B is {{< math >}} $ ^Ai_B, ^Aj_B, ^Ak_B $ {{< /math >}}, then
 {{< math >}}
 $$
 ^AR_B = \begin{bmatrix}
@@ -182,5 +183,12 @@ $$
 ^Ai_{Bz} & ^Aj_{Bz} & ^Ak_{Bz}
 \end{bmatrix} \in \mathbb{R}^{3 \times 3}
 $$
+$$ det(^AR_B) = +1 $$
+R is a Proper Orthogonal Matrix
+$$
+^AR_B^{-1} = {^AR_B^T} = {^BR_A} \\
+{^AR_B} {^AR_B^T} = {^BR_A} {^AR_B} = I
+$$
 {{< /math >}}
+But only three parameters are needed to describe the rotation matrix, so we can use Euler Angles, Axis-Angle, Quaternions, etc.
 
