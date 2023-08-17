@@ -32,6 +32,7 @@ $$
 \end{aligned}
 $$
 
+(I know there are nonsence involved in the below derivation, but I just want to show the process of how I get the result)
 $$
 \begin{aligned}
 \sigma_{X+Y}^2 &= \sum_{z \in Z} (z - \mu_{X+Y})^2 P_{X+Y}(z) \\
@@ -42,11 +43,11 @@ $$
 &= \sum_{w \in W} \sum_{\xi \in X} [(\xi - \mu_X)^2 + (w - \mu_Y)^2 + 2(\xi - \mu_X)(w - \mu_Y)] P_X(\xi) P_Y(w) \\
 &= \sum_{w \in W} \sum_{\xi \in X} (\xi - \mu_X)^2 P_X(\xi) P_Y(w) + \sum_{w \in W} \sum_{\xi \in X} (w - \mu_Y)^2 P_X(\xi) P_Y(w) + \sum_{w \in W} \sum_{\xi \in X} 2(\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
 &= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) + \sum_{w \in W} \sum_{\xi \in X} 2(\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
-&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) + 2 \sum_{w \in W} \sum_{\xi \in X} (\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
-&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) + 2 \sum_{w \in W} (\mu_X - \mu_X) (\mu_Y - \mu_Y) P_Y(w) \\
-&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) + 2 (\mu_X - \mu_X) (\mu_Y - \mu_Y) \\
-&= \sum_{w \in W} (\mu_X - \mu_X)^2 P_Y(w) + \sum_{\xi \in X} (\mu_Y - \mu_Y)^2 P_X(\xi) \\
-&= \sigma_Y^2 + \sigma_X^2 \\
+&= \sigma_X^2 + \sigma_Y^2 + 2 \sum_{w \in W} \sum_{\xi \in X} (\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
+&= \sigma_X^2 + \sigma_Y^2 + 2 \sum_{w \in W} (w - \mu_Y) P_Y(w) \sum_{\xi \in X} (\xi - \mu_X) P_X(\xi) \\
+&= \sigma_X^2 + \sigma_Y^2 + 2 \sum_{w \in W} (w - \mu_Y) P_Y(w) (\mu_X - \mu_X) \\
+&= \sigma_X^2 + \sigma_Y^2 \\
+
 
 \end{aligned}
 $$
