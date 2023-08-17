@@ -1,6 +1,5 @@
 ---
-title: Paper Reading - Neuro-computational mechanisms and individual biases in action-outcome
-learning under moral conflict
+title: Paper Reading - Neuro-computational mechanisms and individual biases in action-outcome learning under moral conflict
 subtitle: neuro science
 
 summary: Robotics Kinematics
