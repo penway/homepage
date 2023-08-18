@@ -42,6 +42,7 @@ $$
 &= \sum_{w \in W} \sum_{\xi \in X} [(\xi - \mu_X) + (w - \mu_Y)]^2 P_X(\xi) P_Y(w) \\
 &= \sum_{w \in W} \sum_{\xi \in X} [(\xi - \mu_X)^2 + (w - \mu_Y)^2 + 2(\xi - \mu_X)(w - \mu_Y)] P_X(\xi) P_Y(w) \\
 &= \sum_{w \in W} \sum_{\xi \in X} (\xi - \mu_X)^2 P_X(\xi) P_Y(w) + \sum_{w \in W} \sum_{\xi \in X} (w - \mu_Y)^2 P_X(\xi) P_Y(w) + \sum_{w \in W} \sum_{\xi \in X} 2(\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
+&= \sum_{w \in W}P_Y(w)\sigma_X^2 + \sum_{\xi \in X}P_X(\xi)\sigma_Y^2 + 2 \sum_{w \in W} \sum_{\xi \in X} (\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
 &= \sigma_X^2 + \sigma_Y^2 + 2 \sum_{w \in W} \sum_{\xi \in X} (\xi - \mu_X)(w - \mu_Y) P_X(\xi) P_Y(w) \\
 &= \sigma_X^2 + \sigma_Y^2 + 2 \sum_{w \in W} (w - \mu_Y) P_Y(w) \sum_{\xi \in X} (\xi - \mu_X) P_X(\xi) \\
 &= \sigma_X^2 + \sigma_Y^2 + 2 \sum_{w \in W} (w - \mu_Y) P_Y(w) (\mu_X - \mu_X) \\
