@@ -54,4 +54,68 @@ lenna_conved = imfilter(lenna, kernel);
 figure;
 imshow(lenna_conved);
 title('Convolved Image');
+
+% visualize the kernel in 3D plot
+figure;
+surf(kernel); % surf is a 3D plot function, it needs a 2D matrix as input
+title('Gaussian Kernel');
+```
+
+```matlab
+% Simple CNNs
+gpuInfo = gpuDevice();
+disp(gpuInfo);
+
+% 64x3 32x16 16x32 8x64
+% use full conv net
+net = [ ...
+    imageInputLayer([64 64 3])
+    convolution2dLayer(3, 16, 'Padding', 1, 'Stride', 2)  % 32x32x16
+    batchNormalizationLayer
+    leakyReluLayer(0.2)
+    convolution2dLayer(3, 32, 'Padding', 1, 'Stride', 2)  % 16x16x32
+    batchNormalizationLayer
+    leakyReluLayer(0.2)
+    convolution2dLayer(3, 64, 'Padding', 1, 'Stride', 2)  % 8x8x64
+    batchNormalizationLayer
+    leakyReluLayer(0.2)
+    convolution2dLayer(3, 128, 'Padding', 1, 'Stride', 2) % 4x4x128
+    batchNormalizationLayer
+    leakyReluLayer(0.2)
+    convolution2dLayer(3, 256, 'Padding', 1, 'Stride', 2) % 2x2x256
+    batchNormalizationLayer
+    leakyReluLayer(0.2)
+    convolution2dLayer(2, 3, 'Padding', 0, 'Stride', 2)   % 1x1x10, 10 classes
+    softmaxLayer
+    classificationLayer
+];
+
+% read in data
+imds = imageDatastore('ssb', ...
+    'IncludeSubfolders', true, ...
+    'LabelSource', 'foldernames');
+
+% split into training and validation
+[trainingImds, validationImds] = splitEachLabel(imds, 0.8, 'randomized');
+
+% preprocess into 64x64
+inputSize = [64 64 3];
+augmentedTrainingImds = augmentedImageDatastore(inputSize, trainingImds);
+augmentedValidationImds = augmentedImageDatastore(inputSize, validationImds);
+
+% define training options
+options = trainingOptions('sgdm', ...
+    'InitialLearnRate', 0.001, ...
+    'MaxEpochs', 20, ...
+    'Shuffle', 'every-epoch', ...
+    'ValidationData', augmentedValidationImds, ...
+    'ValidationFrequency', 30, ...
+    'Verbose', false, ...
+    'Plots', 'training-progress', ...
+    'ExecutionEnvironment', 'auto');
+
+% train network
+trainedNet = trainNetwork(augmentedTrainingImds, net, options);
+
+
 ```
