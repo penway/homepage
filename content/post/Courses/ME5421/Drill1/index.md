@@ -272,3 +272,69 @@ print("ATC1:\n", ATC1)
 ATC2 = matmulmul([ATC1, MakeRot(30, 'x')])
 print("ATC2:\n", ATC2)
 ```
+
+## Matrix Util
+
+Starting from problem 2, the below code is used to calculate the transformation matrix to make life easier.
+
+```python
+import numpy as np
+
+# limit output to 3 decimal places
+np.set_printoptions(precision=3)
+
+def MakeT(x, y, z, p):
+    return np.array([[x[0], y[0], z[0], p[0]],
+                     [x[1], y[1], z[1], p[1]],
+                     [x[2], y[2], z[2], p[2]],
+                     [0, 0, 0, 1]])
+
+def MakeRot(theta: float, axis: str) -> np.array:
+    # make theta from degrees to radians
+    theta = theta * np.pi / 180
+
+    rot_small = np.array([[np.cos(theta), -np.sin(theta)],
+                            [np.sin(theta), np.cos(theta)]])
+    if axis == 'x':
+        return np.array([[1, 0, 0, 0],
+                            [0, rot_small[0, 0], rot_small[0, 1], 0],
+                            [0, rot_small[1, 0], rot_small[1, 1], 0],
+                            [0, 0, 0, 1]])
+    elif axis == 'y':
+        return np.array([[rot_small[0, 0], 0, rot_small[0, 1], 0],
+                            [0, 1, 0, 0],
+                            [rot_small[1, 0], 0, rot_small[1, 1], 0],
+                            [0, 0, 0, 1]])
+    elif axis == 'z':
+        return np.array([[rot_small[0, 0], rot_small[0, 1], 0, 0],
+                            [rot_small[1, 0], rot_small[1, 1], 0, 0],
+                            [0, 0, 1, 0],
+                            [0, 0, 0, 1]])
+    else:
+        raise ValueError("axis must be 'x', 'y', or 'z'.")
+
+def MakeTrans(x, y, z):
+    return np.array([[1, 0, 0, x],
+                     [0, 1, 0, y],
+                     [0, 0, 1, z],
+                     [0, 0, 0, 1]])
+
+def reverseT(T):
+    # find the reverse of a homogenous transformation matrix
+
+    R = T[:3, :3] # Extract rotation part
+    T_vec = T[:3, 3] # Extract translation part
+    R_T = R.T # Transpose of rotation part
+    T_vec_reverse = -R_T.dot(T_vec) # Apply negative transpose to translation part
+    T_reverse = np.eye(4) # Initialize 4x4 identity matrix
+    T_reverse[:3, :3] = R_T # Set rotation part
+    T_reverse[:3, 3] = T_vec_reverse # Set translation part
+    return T_reverse
+
+def matmulmul(li):
+    # automatically multiply all matrices in the list
+    I = np.eye(4)
+    for i in li:
+        I = np.matmul(I, i)
+    return I
+```
