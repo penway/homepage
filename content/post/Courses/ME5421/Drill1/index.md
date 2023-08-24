@@ -162,7 +162,7 @@ np.set_printoptions(precision=3)
 print(ATB1)
 ```
 
-## Problem 2
+### Problem 2
 {{< math >}}
 $$
 \begin{align}
@@ -225,7 +225,7 @@ UTM4 = np.dot(UTC4, CTM)
 print("UTM4:\n", UTM4)
 ```
 
-## Problem 3
+### Problem 3
 {{< math >}}
 $$
 \begin{align}
@@ -275,7 +275,7 @@ print("ATC2:\n", ATC2)
 
 ## Matrix Util
 
-Starting from problem 2, the below code is used to calculate the transformation matrix to make life easier.
+Starting from problem 2, the below code is used to calculate the transformation matrix to make life easier.  
 
 ```python
 import numpy as np
