@@ -119,3 +119,8 @@ trainedNet = trainNetwork(augmentedTrainingImds, net, options);
 
 
 ```
+
+### Index color
+mapping one color to one index, and use the index to represent the color.
+such as 0 -> red, 1 -> green, 2 -> blue, 3 -> (0, 3, 6) ...
+Good for hardware, like using look up table to save memory and speed up processing.
