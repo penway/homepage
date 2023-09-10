@@ -138,7 +138,7 @@ These can reduce system to a lower order subsystem (i.e. 3rd order) for which cl
 As the first three joints are translational, we can write:
 $^0R_6 = f(q_4, q_5, q_6)$
 
-then we can solve for $q_4, q_5, q_6$. \\n
+then we can solve for $q_4, q_5, q_6$.
 
 Then we can solve for $q_1, q_2, q_3$ using $^0P_6 = f(q_1, q_2, q_3) (known: q_4, q_5, q_6)$
 {{< /math >}}
