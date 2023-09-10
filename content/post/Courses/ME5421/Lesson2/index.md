@@ -131,9 +131,9 @@ And we can do this recursively to solve for all $q_i$.
 
 These can reduce system to a lower order subsystem (i.e. 3rd order) for which closed form solutions are guaranteed.
 
-{{< math >}}
-**Example Case 1**: Cartesian Robot
 
+**Example Case 1**: Cartesian Robot
+{{< math >}}
 As the first three joints are translational, we can write:
 $^0R_6 = f(q_4, q_5, q_6)$
 
@@ -142,9 +142,9 @@ then we can solve for $q_4, q_5, q_6$
 Then we can solve for $q_1, q_2, q_3$ using $^0P_6 = f(q_1, q_2, q_3) (known: q_4, q_5, q_6)$
 
 So, we decoupled the problem into two subsystems.
-
+{{< /math >}}
 **Example Case 2**: PUMA Robot
-
+{{< math >}}
 The last three rotaional joints have co-intersecting axes, which means when rotating them, the $^0P_{cointersection} = f(q_1, q_2, q_3)$.
 
 Given $^0P_6$, $^0P_{co} = {}^0P_6 - r_6 {}^0z_6$, where $r_6$ is the distance between co to $O_6$
