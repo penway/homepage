@@ -141,12 +141,69 @@ then we can solve for $q_4, q_5, q_6$
 
 Then we can solve for $q_1, q_2, q_3$ using $^0P_6 = f(q_1, q_2, q_3) (known: q_4, q_5, q_6)$
 
-So, we decoupled the problem into two subsystems.
+So, we decoupled the problem into two subsystems, with orientaion decoupled.
 {{< /math >}}
+
 **Example Case 2**: PUMA Robot
 {{< math >}}
 The last three rotaional joints have co-intersecting axes, which means when rotating them, the $^0P_{cointersection} = f(q_1, q_2, q_3)$.
 
 Given $^0P_6$, $^0P_{co} = {}^0P_6 - r_6 {}^0z_6$, where $r_6$ is the distance between co to $O_6$
 
+So, we solve $^0R_4 = f(q_1, q_2, q_3)$ first and then $^0R_6 = f(q_1, q_2, q_3, q_4, q_5, q_6)$
+
+We decoupled position this time.
 {{< /math >}}
+
+#### Some useful closed form solutions are listed in the slides
+1. 
+{{< math >}}
+$$
+\left.
+\begin{array}{lr}
+    sin(\theta) = a, a \in [-1, 1]\\
+    cos(\theta) = b, b \in [-1, 1]
+\end{array}
+\right.
+\Rightarrow
+\theta = atan2(a, b)
+$$
+{{< /math >}}
+
+2. {{< math >}}
+$$
+\left.
+\begin{array}{lr}
+    sin(\theta) = a, a \in [-1, 1]\\
+    cos(\theta) = \pm\sqrt{1 - a^2}
+\end{array}
+\right.
+\Rightarrow
+\theta_0 = atan2(a, \pm\sqrt{1 - a^2})
+\Rightarrow
+\theta = \theta_0\ or\  180 - \theta_0
+$$
+Singularity will occur when $|a| = 1$, in which case $\theta_0 = \pm 90$, which leads to denegeracy of order 2.
+
+{{< /math >}}
+
+3. {{< math >}}
+$$
+acos(\theta) + bsin(\theta) = 0
+\Rightarrow
+\theta = atan2(-a, b)\ or\ atan2(a, -b)
+$$
+These two solutions are 180 degrees apart.
+
+Singularity when a = b = 0, which leads to infinite order degenracy.
+{{< /math >}}
+
+4. {{< math >}}
+$$
+\begin{align}
+acos(\theta) + bsin(\theta) = c &\Rightarrow\\
+& \theta = atan2(b, 1) + atan2(\pm\sqrt{a^2 + b^2 - c^2}, c)\\
+& a^2 + b^2 - c^2  < 0 \Rightarrow our\ of\ workspace \\
+& a^2 + b^2 - c^2  = 0 \Rightarrow singularity (one\ solution)\\
+& degeneracy\ order = 2
+\end{align}
