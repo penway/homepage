@@ -137,11 +137,11 @@ These can reduce system to a lower order subsystem (i.e. 3rd order) for which cl
 {{< math >}}
 As the first three joints are translational, we can write:
 $^0R_6 = f(q_4, q_5, q_6)$
-{{< /math >}}
-{{< math >}}
+
+
 then we can solve for $q_4, q_5, q_6$
-{{< /math >}}
-{{< math >}}
+
+
 Then we can solve for $q_1, q_2, q_3$ using $^0P_6 = f(q_1, q_2, q_3) (known: q_4, q_5, q_6)$
 {{< /math >}}
 So, we decoupled the problem into two subsystems, with orientaion decoupled.
