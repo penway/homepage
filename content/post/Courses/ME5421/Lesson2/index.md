@@ -150,13 +150,15 @@ So, we decoupled the problem into two subsystems, with orientaion decoupled.
 **Example Case 2**: PUMA Robot
 {{< math >}}
 The last three rotaional joints have co-intersecting axes, which means when rotating them, the $^0P_{cointersection} = f(q_1, q_2, q_3)$.
-
-Given $^0P_6$, $^0P_{co} = {}^0P_6 - r_6 {}^0z_6$, where $r_6$ is the distance between co to $O_6$
-
-So, we solve $^0R_4 = f(q_1, q_2, q_3)$ first and then $^0R_6 = f(q_1, q_2, q_3, q_4, q_5, q_6)$
-
-We decoupled position this time.
 {{< /math >}}
+{{< math >}}
+Given $^0P_6$, $^0P_{co} = {}^0P_6 - r_6 {}^0z_6$, where $r_6$ is the distance between co to $O_6$
+{{< /math >}}
+{{< math >}}
+So, we solve $^0R_4 = f(q_1, q_2, q_3)$ first and then $^0R_6 = f(q_1, q_2, q_3, q_4, q_5, q_6)$
+{{< /math >}}
+We decoupled position this time.
+
 
 #### Some useful closed form solutions are listed in the slides
 1. 
