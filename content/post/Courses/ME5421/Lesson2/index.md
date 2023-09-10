@@ -133,16 +133,19 @@ These can reduce system to a lower order subsystem (i.e. 3rd order) for which cl
 
 
 **Example Case 1**: Cartesian Robot
+
 {{< math >}}
 As the first three joints are translational, we can write:
 $^0R_6 = f(q_4, q_5, q_6)$
-
-then we can solve for $q_4, q_5, q_6$
-
-Then we can solve for $q_1, q_2, q_3$ using $^0P_6 = f(q_1, q_2, q_3) (known: q_4, q_5, q_6)$
-
-So, we decoupled the problem into two subsystems, with orientaion decoupled.
 {{< /math >}}
+{{< math >}}
+then we can solve for $q_4, q_5, q_6$
+{{< /math >}}
+{{< math >}}
+Then we can solve for $q_1, q_2, q_3$ using $^0P_6 = f(q_1, q_2, q_3) (known: q_4, q_5, q_6)$
+{{< /math >}}
+So, we decoupled the problem into two subsystems, with orientaion decoupled.
+
 
 **Example Case 2**: PUMA Robot
 {{< math >}}
@@ -170,7 +173,8 @@ $$
 $$
 {{< /math >}}
 
-2. {{< math >}}
+2. 
+{{< math >}}
 $$
 \left.
 \begin{array}{lr}
@@ -187,7 +191,8 @@ Singularity will occur when $|a| = 1$, in which case $\theta_0 = \pm 90$, which 
 
 {{< /math >}}
 
-3. {{< math >}}
+3. 
+{{< math >}}
 $$
 acos(\theta) + bsin(\theta) = 0
 \Rightarrow
@@ -198,7 +203,8 @@ These two solutions are 180 degrees apart.
 Singularity when a = b = 0, which leads to infinite order degenracy.
 {{< /math >}}
 
-4. {{< math >}}
+4. 
+{{< math >}}
 $$
 \begin{align}
 acos(\theta) + bsin(\theta) = c &\Rightarrow\\
