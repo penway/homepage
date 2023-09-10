@@ -138,9 +138,7 @@ These can reduce system to a lower order subsystem (i.e. 3rd order) for which cl
 As the first three joints are translational, we can write:
 $^0R_6 = f(q_4, q_5, q_6)$
 
-
-then we can solve for $q_4, q_5, q_6$
-
+then we can solve for $q_4, q_5, q_6$. \\n
 
 Then we can solve for $q_1, q_2, q_3$ using $^0P_6 = f(q_1, q_2, q_3) (known: q_4, q_5, q_6)$
 {{< /math >}}
@@ -152,13 +150,9 @@ So, we decoupled the problem into two subsystems, with orientaion decoupled.
 
 {{< math >}}
 The last three rotaional joints have co-intersecting axes, which means when rotating them, the $^0P_{cointersection} = f(q_1, q_2, q_3)$.
-{{< /math >}}
 
-{{< math >}}
 Given $^0P_6$, $^0P_{co} = {}^0P_6 - r_6 {}^0z_6$, where $r_6$ is the distance between co to $O_6$
-{{< /math >}}
 
-{{< math >}}
 So, we solve $^0R_4 = f(q_1, q_2, q_3)$ first and then $^0R_6 = f(q_1, q_2, q_3, q_4, q_5, q_6)$
 {{< /math >}}
 
