@@ -207,3 +207,5 @@ acos(\theta) + bsin(\theta) = c &\Rightarrow\\
 & a^2 + b^2 - c^2  = 0 \Rightarrow singularity (one\ solution)\\
 & degeneracy\ order = 2
 \end{align}
+$$
+{{< /math >}}
