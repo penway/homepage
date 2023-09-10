@@ -44,13 +44,14 @@ gallery_item:
 
 share: false
 ---
-{{< math >}}
+
 ## Denavit-Hartenberg Representation
 - two rules to limit 6 DOF to 4 variables representation
 1. z-axis is the axis of motion (Link i moves around or along z-axis of frame i-1)
 2. x-axis is the common normal of z-axis of frame i-1 and frame i
 
 ### Four parameters
+{{< math >}}
 The four parameters are the four elementary motions:
 1. $\theta_i$: bring $x_{i-1} // x_i$, around $z_{i-1}$
 2. $r_i$: bring $x_{i-1} = x_i$, along $z_{i-1}$
@@ -61,8 +62,10 @@ For each joint, only one parameter is variable.
 - Rotational joint: $\theta_i$
 - Translational joint: $r_i$
 These are called the **joint variables $q_i$**.
+{{< /math >}}
 
 ### Forward Kinematic Problem
+{{< math >}}
 > know joint, find hand
 
 **Given**: {q_i}, {DH parameters}; 
@@ -72,6 +75,7 @@ These are called the **joint variables $q_i$**.
 2. Identify joint variables and link kinematic parameters
 3. Define like transformation matrices. $^{i-1}T_i = A_i$
 4. Compute $^{0}T_N(q_1q_2...q_N) = A_1A_2...A_n$
+{{< /math >}}
 
 ### Inverse Kinematic Problem
 > know hand, find how to move joints
@@ -87,6 +91,7 @@ These are called the **joint variables $q_i$**.
     - is P is in Dexterous workspace, then there is a solution
 
 ### Solution for Inverse Kinematic Problem
+{{< math >}}
 Given:
 $$
 ^{0}T_N = \begin{bmatrix}
@@ -107,8 +112,10 @@ Find: $\mathbf{q} = q_1, q_2, ..., q_N$
 
 We know that: $^{0}T_N = A_1A_2...A_N$
 and $LHS(i,j) = RHS(i,j)$
+{{< /math >}}
 
 #### Approach 1: General Solution
+{{< math >}}
 $$
 A_1^{-1} {}^0T_N = A_2A_3...A_N = {}^1T_N
 $$
@@ -118,6 +125,7 @@ And examine the LHS and RHS, to look for constant elements in $^1T_N$. And $q_1$
 And we can do this recursively to solve for all $q_i$.
 
 *Note that there is no algorithmic approach that is 100% effective. And we need **geometric intuition.***
+{{< /math >}}
 
 #### Special Cases: DECOUPLED ROBOT GEOMETRIES
 1. Robots with any 3 joints are TRANSLATIONAL
@@ -125,6 +133,7 @@ And we can do this recursively to solve for all $q_i$.
 
 These can reduce system to a lower order subsystem (i.e. 3rd order) for which closed form solutions are guaranteed.
 
+{{< math >}}
 **Example Case 1**: Cartesian Robot
 
 As the first three joints are translational, we can write:
