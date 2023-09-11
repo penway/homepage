@@ -74,12 +74,12 @@ These are called the {{< math >}}**joint variables $q_i$**{{< /math >}}
 2. Identify joint variables and link kinematic parameters
 3. Define like transformation matrices. $^{i-1}T_i = A_i$
     - $^{i-1}T_i = Rot(z, \theta_i) Trans(0,0,r_i) Trans(d_i,0,0) Rot(x, \alpha_i)$
-    - $A_i(q_i) = {}^{i-1}T_i = \begin{bmatrix}
+    - {{< math >}}$A_i(q_i) = {}^{i-1}T_i = \begin{bmatrix}
         cos\theta_i & - sin\theta_i cos\alpha_i & sin\theta_i sin\alpha_i & d_i cos\theta_i \\
         sin\theta_i & cos\theta_i cos\alpha_i  & -cos\theta_i sin\alpha_i  & d_i sin\theta_i \\
         0 & sin \alpha_i & cos\alpha_i & r_i \\
         0 & 0 & 0 & 1
-    \end{bmatrix}$
+    \end{bmatrix}${{< /math >}}
 4. Compute {{< math >}}$^{0}T_N(q_1q_2...q_N) = A_1A_2...A_n${{< /math >}}
 
 ### Inverse Kinematic Problem
