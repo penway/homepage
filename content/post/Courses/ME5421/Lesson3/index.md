@@ -135,7 +135,8 @@ $$
 &+ \begin{bmatrix}{}^AR_B & {}^AP_B \\ 0 & 1\end{bmatrix}
 \begin{bmatrix}{}^B\omega_C{}^BR_C & {}^BU_C \\ 0 & 1\end{bmatrix} \\ \\
 
-\therefore {}^AU_C &= {}^A\hat{\omega}_B{}^AR_B{}^BP_C + {}^AU_B + {}^AR_B{}^BU_C + {}^AP_B \\
+\therefore 
+{}^AU_C &= {}^A\hat{\omega}_B{}^AR_B{}^BP_C + {}^AU_B + {}^AR_B{}^BU_C + {}^AP_B \\
 {}^A\omega_C{}^AR_B &= {}^A\hat{\omega}_B{}^AR_B{}^BR_C + {}^AR_B{}^B\omega_C{}^BR_C
 \end{aligned}
 $$
