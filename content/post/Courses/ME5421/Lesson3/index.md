@@ -127,8 +127,8 @@ Find: ${}^Au_C, {}^A\omega_C$.
 Solution:
 $$
 \begin{aligned}
-\because {}^AT_C = {}^AT_B {}^BT_C \\
-\therefore \dot{{}^AT_C} = \dot{{}^AT_B} {}^BT_C + {}^AT_B \dot{{}^BT_C}
+&\because {}^AT_C = {}^AT_B {}^BT_C \\
+&\therefore \dot{{}^AT_C} = \dot{{}^AT_B} {}^BT_C + {}^AT_B \dot{{}^BT_C}
 \end{aligned}
 $$
 {{< /math >}}
