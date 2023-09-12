@@ -123,4 +123,11 @@ Earth A, Plane B, Man C.
 Given: $\begin{matrix} {}^Au_B & ^Bu_C \\ {}^A\omega_B & {}^B\omega_C \end{matrix}$
 
 Find: ${}^Au_C, {}^A\omega_C$
+
+Solution:
+$$
+\because {}^AT_C = {}^AT_B {}^BT_C \\
+\therefore \dot{{}^AT_C} = \dot{{}^AT_B} {}^BT_C + {}^AT_B \dot{{}^BT_C}
+
+$$
 {{< /math >}}
