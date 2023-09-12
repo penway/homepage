@@ -106,6 +106,16 @@ $$
 However, if we want a intergrated version, using $\Delta R = \hat{\omega} R \Delta t$ is not a precise method. Converting R into Raw, Pitch, Yaw can get a precise result.
 {{< /math >}}
 
+#### Homogeneous Transformation Matrix
+{{< math >}}
+$$
+\dot{{}^AT_B} = \begin{bmatrix} 
+\hat{{}^A\omega_B}{}^AR_B & {}^AU_B \\ 
+0 & 0 
+\end{bmatrix}
+$$
+{{< /math >}}
+
 #### Example 0: Earth, Plane and Man
 {{< math >}}
 Earth A, Plane B, Man C.
