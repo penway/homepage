@@ -120,9 +120,9 @@ $$
 {{< math >}}
 Earth A, Plane B, Man C.
 
-Given: $\begin{matrix} {}^Au_B & ^Bu_C \\ {}^A\omega_B & {}^B\omega_C \end{matrix}$.
+Given: $$\begin{matrix} {}^Au_B & ^Bu_C \\ {}^A\omega_B & {}^B\omega_C \end{matrix}$$
 
-Find: $${}^Au_C, {}^A\omega_C$$.
+Find: $${}^Au_C, {}^A\omega_C$$
 
 Solution:
 $$
