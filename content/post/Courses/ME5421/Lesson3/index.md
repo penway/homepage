@@ -68,12 +68,12 @@ As u is a vector, it can be expressed in any frame. We need this notation is bec
 
 > The below formula shows that how Point C relative with B expressed in A is calculated.
 {{< math >}}
-> $$
+$$
 \begin{align}
 {}^B_AP_C &= {}^AR_B \cdot {}^B_BP_C \\
 {}^AP_C &= {}^AP_B + {}^AR_C \cdot {}^BP_C
 \end{align}
-> $$
+$$
 {{< /math >}}
 
 #### Rotational Velocity
@@ -126,8 +126,9 @@ Find: ${}^Au_C, {}^A\omega_C$.
 
 Solution:
 $$
+\begin{aligned}
 \because {}^AT_C = {}^AT_B {}^BT_C \\
 \therefore \dot{{}^AT_C} = \dot{{}^AT_B} {}^BT_C + {}^AT_B \dot{{}^BT_C}
-
+\end{aligned}
 $$
 {{< /math >}}
