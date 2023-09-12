@@ -82,4 +82,5 @@ Define: Rotational axis: k, then the rotational velocity is
 $$
 \omega = \begin{bmatrix} \omega_x \\ \omega_y \\ \omega_z \end{bmatrix}
 = \begin{bmatrix} k_x \\ k_y \\ k_z \end{bmatrix} \dot{\theta}
+$$
 {{< /math >}}
