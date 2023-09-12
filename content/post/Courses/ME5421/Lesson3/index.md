@@ -83,4 +83,34 @@ $$
 \omega = \begin{bmatrix} \omega_x \\ \omega_y \\ \omega_z \end{bmatrix}
 = \begin{bmatrix} k_x \\ k_y \\ k_z \end{bmatrix} \dot{\theta}
 $$
+But, we want to express it as $\dot{R}$, so we need to get $\dot{X}, \dot{Y}, \dot{Z}$.
+$$
+\begin{aligned}
+\dot{X} &= \omega \times X = \hat{\omega} X \\
+\dot{Y} &= \omega \times Y = \hat{\omega} Y \\
+\dot{Z} &= \omega \times Z = \hat{\omega} Z
+\end{aligned}
+$$
+Reason: the magnitude of point on X-axis can the direction can be expressed as
+$$
+\begin{aligned}
+mag &= |x| |\omega| sin\theta \\
+direction &= \omega \times X \\
+which\ makes\ \dot{X} &= \hat{\omega} X
+\end{aligned}
+$$
+SO, we can get
+$$
+\dot{R} = \hat{\omega} R \Leftrightarrow \hat{\omega} = \dot{R} R^T
+$$
+However, if we want a intergrated version, using $\Delta R = \hat{\omega} R \Delta t$ is not a precise method. Converting R into Raw, Pitch, Yaw can get a precise result.
+{{< /math >}}
+
+#### Example 0: Earth, Plane and Man
+{{< math >}}
+Earth A, Plane B, Man C.
+
+Given: $\begin{matrix} {}^Au_B & ^Bu_C \\ {}^A\omega_B & {}^B\omega_C \end{matrix}$
+
+Find: ${}^Au_C, {}^A\omega_C$
 {{< /math >}}
