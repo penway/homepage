@@ -196,3 +196,57 @@ $$
 
 #### What is Jacobian Matrix in Mathematics?
 In mathematics, the Jacobian matrix is the matrix of all first-order partial derivatives of a vector-valued function. When the matrix is a square matrix, both the matrix and its determinant are referred to as the Jacobian in literature. The matrix can be seen as a linear approximation of the multivariate function near a given point. The Jacobian matrix plays an important role in many applications such as change of variables in multiple integrals, implicit function theorem, etc.
+
+#### Example 1: Holding a Pen
+{{< math >}}
+Given:
+$$
+{}^0V_3 = {}^0J_3 \dot{q}_3
+$$
+
+Find:
+$$
+{}^0V_E
+$$
+
+Solution:
+$$
+\begin{aligned}
+{}^0\omega_E &= {}^0\omega_3 \\
+{}^0u_E &= {}^0u_3 + {}^0\omega_3 \times ({}^0R_3 {}^3P_E)\\
+&= {}^0u_3 + {}^0\omega_3 \times ({}^0P_E - {}^0P_3) \\
+\end{aligned} \\ \\
+\therefore
+\begin{bmatrix} {}^0u_E \\ {}^0\omega_E \end{bmatrix}
+=
+\begin{bmatrix} I & \hat{-({}^0P_E - {}^0P_3)} \\ 0 & I \end{bmatrix}
+\begin{bmatrix} {}^0u_3 \\ {}^0\omega_3 \end{bmatrix} \\
+\therefore
+{}^0J_E = \begin{bmatrix} I & \hat{-({}^0P_E - {}^0P_3)} \\ 0 & I \end{bmatrix} {}^0J_3
+$$
+{{< /math >}}
+
+### Jacobian Transformation
+{{< math >}}
+$$
+\begin{aligned}
+{}^AJ_N = \begin{bmatrix} {}^AR_B & 0 \\ 0 & {}^AR_B \end{bmatrix} {}^BJ_N \\
+{}^AV_N = \begin{bmatrix} {}^AR_B & 0 \\ 0 & {}^AR_B \end{bmatrix} {}^BV_N \\
+\end{aligned}
+$$
+{{< /math >}}
+
+## Summerize Example
+
+The robot starts at joint 0 and end at joint N. The base frame is A and the robot is hold a tool E.
+
+It is like A → 0 → ... → N → E.
+{{< math >}}
+$$
+\begin{aligned}
+{}^0V_N &= {}^0J_N \dot{q}_N \\
+{}^0V_E &= {}^0J_E \dot{q}_N, {}^0J_E = \begin{bmatrix} I & \hat{-({}^0P_E - {}^0P_N)} \\ 0 & I \end{bmatrix} {}^0J_N \\
+{}^AV_N &= \begin{bmatrix} {}^AR_0 & 0 \\ 0 & ^AR_0 \end{bmatrix} \dot{q}_N
+\end{aligned}
+$$
+{{< /math >}}
