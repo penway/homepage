@@ -1,5 +1,5 @@
 ---
-title: Material, Sensors, Actuators and Frabrication Lesson 1
+title: Material, Sensors, Actuators and Fabrication Lesson 1
 subtitle: ME5410 - Lesson 2, Topic 1 - Introduction to Robotic Materials
  
 summary: Material, Sensors, Actuators and Frabrication

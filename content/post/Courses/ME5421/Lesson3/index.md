@@ -45,6 +45,10 @@ gallery_item:
 share: false
 ---
 
+### TL;DR
+- [ ] Homogeneous Transformation Matrix
+- [ ] Jacobian Matrix
+
 ### Velocity Representation
 
 #### Translational Velocity
@@ -137,7 +141,58 @@ $$
 
 \therefore 
 {}^AU_C &= {}^A\hat{\omega}_B{}^AR_B{}^BP_C + {}^AU_B + {}^AR_B{}^BU_C \\
-{}^A\omega_C{}^AR_B &= {}^A\hat{\omega}_B{}^AR_B{}^BR_C + {}^AR_B{}^B\omega_C{}^BR_C
+{}^A\omega_C{}^AR_B &= {}^A\hat{\omega}_B{}^AR_B{}^BR_C + {}^AR_B{}^B\omega_C{}^BR_C \\\\
+
+\therefore
+{}^Au_C &= 
+\underbrace{{}^Au_B}_{\text{plane movement}} + 
+\underbrace{{}^AR_B{}^Bu_C}_{\text{human movement}} +
+\underbrace{{}^A\omega_B \times {}^AR_B{}^BP_C }_{\text{plane changing orientation}}
+\\
+{}^A\omega_C &= {}^A\omega_B + {}^AR_B {}^B\omega_C
 \end{aligned}
 $$
 {{< /math >}}
+
+## End-Effector Velocity from Joint Velocity
+### Total
+{{< math >}}
+$$
+{}^0V_N = \begin{bmatrix} {}^0u_N \\ {}^0\omega_N \end{bmatrix}
+= \sum_{i=1}^N {}^0J_i \dot{q}_i = {}^0J_N \dot{q}
+$$
+where $J_i \dot{q}_i $ is the effect of joint i on the end-effector alone
+{{< /math >}}
+0 can be replaced by any frame of expression and differentiation and N can be replaced by any frame of interest.
+
+### For only one joint
+One joint i is either rotating or translating with respect to Frame i-1.
+
+#### Rotational Joint
+{{< math >}}
+The joint rotate around $k = z_{i-1}$ with speed $\dot{q}_i$.
+$$
+\begin{aligned}
+\omega_i &= z_{i-1} \dot{q}_i \\
+u_i &= \omega \times (P_N - P_{i-1}) \\
+&= z_{i-1} \times (P_N - P_{i-1}) \dot{q}_i \\ \\
+\therefore
+J_i &= \begin{bmatrix} z_{i-1} \times (P_N - P_{i-1}) \\ z_{i-1} \end{bmatrix} \\
+v &= J_i \dot{q}_i
+\end{aligned}
+$$
+{{< /math >}}
+
+#### Translational Joint
+{{< math >}}
+$$
+\begin{aligned}
+u_i &= z_{i-1} \dot{q}_i \\
+\therefore
+J_i &= \begin{bmatrix} z_{i-1} \\ 0 \end{bmatrix} \\
+\end{aligned}
+$$
+{{< /math >}}
+
+#### What is Jacobian Matrix in Mathematics?
+In mathematics, the Jacobian matrix is the matrix of all first-order partial derivatives of a vector-valued function. When the matrix is a square matrix, both the matrix and its determinant are referred to as the Jacobian in literature. The matrix can be seen as a linear approximation of the multivariate function near a given point. The Jacobian matrix plays an important role in many applications such as change of variables in multiple integrals, implicit function theorem, etc.
