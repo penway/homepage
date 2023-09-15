@@ -84,6 +84,6 @@
     // max-width: calc(100% - 8em); /* Apply a different max-width for screens wider than 1000px */
     // I need a smaller max-width for the article container for larger screens for blog posts;
     // otherwise, the text is too wide and difficult to read.
-    max-width: min(100%, 50em);
+    max-width: calc(min(100%, 50em));
   }
 }
