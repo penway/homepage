@@ -331,12 +331,12 @@ If there are cases that it can only achieve the position by specify all the join
 {{< math >}}
 $$
 \begin{aligned}
-J = \begin{bmatrix}
+&J = \begin{bmatrix}
 a & b & c \\
 d & e & f \\
 \end{bmatrix}  \\
 
-J_{12} = \begin{bmatrix}
+&J_{12} = \begin{bmatrix}
 a & b \\
 d & e \\
 \end{bmatrix}
@@ -348,7 +348,7 @@ J_{13} = \begin{bmatrix}
 a & c \\
 d & f \\
 \end{bmatrix} \\
-\text{Either of these J is non-singular, then the system is non-singular.}
+&\text{Either of these J is non-singular, then the system is non-singular.}
 \end{aligned}
 $$
 {{< /math >}}

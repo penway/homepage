@@ -40,3 +40,20 @@ These methods take samples in the state space, and looking for a path connecting
 - Rapidly-exploring Random Tree (RRT)
 
 ### 3. Interpolating Curve Planners
+Input: given a set of waypoints
+
+Output: a smoother path
+    - trajectory continuity
+    - vehicle constraints
+    - obstacle avoidance
+
+Methods:
+    - Lines and Circles
+    - Clothoids (improved version of lines and circles with better continuity in curvature)
+    - Polynomial Curves
+    - Bezier Curves (a special case of polynomial curves, better computational efficiency)
+    - Splines (segmented, combined with poly, b-spline, or clothoid)
+
+### 4. Optimization Based Planners (Numerical Optimization)
+
+Use a cost function to jointly optimize parameters such as speed, steering, lateral acceleration and others.
