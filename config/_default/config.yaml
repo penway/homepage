@@ -81,7 +81,7 @@ related:
       weight: 70
 markup:
   highlight:
-    style: monokai
+    style: dracula
 security:
   funcs:
     getenv:
