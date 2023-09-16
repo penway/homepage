@@ -81,8 +81,7 @@ related:
       weight: 70
 markup:
   highlight:
-    style: github
-
+    style: monokai
 security:
   funcs:
     getenv:
