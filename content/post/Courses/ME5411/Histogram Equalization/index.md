@@ -76,9 +76,9 @@ def histo_eq(image: np.ndarray) -> np.ndarray:
     T = np.zeros(256, np.uint8)  # transformation function, i.e. mapping from old intensity to new intensity
     for i in range(256):  # for each intensity value
         # shape[0] * shape[1] = total number of pixels
-        # 255 is the maximum intensity value
-        # for each intensity, the new intensity is the number of pixels with intensity
-        # less than or equal to i
+        # so accum_hist[1] / (shape[0] * shape[1]) is the protion of the intensity out of all pixels
+        # as in the target, the portion of the pixel should be the same as the portion of the intensity
+        # so we multiply the portion by 255 to get the target intensity value
         T[i] = 255 * accum_hist[i] / (image.shape[0] * image.shape[1])
     image_eq = np.zeros(image.shape, np.uint8)
     for i in range(image.shape[0]):
