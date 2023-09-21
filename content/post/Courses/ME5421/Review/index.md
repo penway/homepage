@@ -85,7 +85,7 @@ I & 0 \\
 \end{aligned}
 $$
 
-> $
+> Note: $
 \begin{bmatrix} {}^Af_C \\ {}^An_C \end{bmatrix} =
 \begin{bmatrix}
 {}^AR_C & 0 \\
