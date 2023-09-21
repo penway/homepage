@@ -24,7 +24,7 @@ share: false
 ---
 
 ## Force of one joint
-{{<math>}}
+{{< math >}}
 $$
 \begin{aligned}
 & \sum F = 0 \\
@@ -48,33 +48,6 @@ T_i &= n_i^T z_{i-1} \text{ (rotational)} \\
 T_i &= f_i^T z_{i-1} \text{ (translational)}
 \end{aligned}
 $$
-{{</math>}}
+{{< /math >}}
 
-## Force and Jacobian
-{{<math>}}
-$\tau$ is the force the every joint. shape: (n, 1)
-$$
-\begin{aligned}
-\tau &= J^T F \\
-\end{aligned}
-$$
-{{</math>}}
-Singularity: J in not full rank.
-
-## Force transformation
-{{<math>}}
-Let $^AF_B$ be the force and moment experienced at B, $^AF_C$ be the force and moment excerted on C. B C are linked by a rigid body. Then:
-$$
-\begin{aligned}
-^Af_B &= {}^Af_C \\
-^An_B &= {}^An_C + (^Ap_B - {}^Ap_C) \times {}^Af_C \\
-\begin{bmatrix} {}^Af_B \\ ^An_B \end{bmatrix} &= 
-\begin{bmatrix} 
-I & 0 \\
-\hat{{}^AR_B{}^Bp_C} & I
-\end{bmatrix}
-\begin{bmatrix} {}^Af_C \\ {}^An_C \end{bmatrix} \\
-\end{aligned}
-$$
-{{</math>}}
 
