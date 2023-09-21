@@ -1,5 +1,5 @@
 ---
-title: Robotics Kinematics Review: Fast Version for Everything
+title: 'Robotics Kinematics Review: Fast Version for Everything'
 subtitle: Notes for ME5421
 
 # Summary for listings and search engines
