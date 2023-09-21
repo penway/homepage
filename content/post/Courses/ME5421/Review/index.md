@@ -85,12 +85,12 @@ I & 0 \\
 \end{aligned}
 $$
 
-> $$
+> $
 \begin{bmatrix} {}^Af_C \\ {}^An_C \end{bmatrix} =
 \begin{bmatrix}
 {}^AR_C & 0 \\
 0 & {}^AR_C
 \end{bmatrix}
 \begin{bmatrix} {}^Cf_C \\ {}^Cn_C \end{bmatrix} \\\\
-$$
+$
 {{</math>}}
