@@ -356,3 +356,7 @@ $$
 For any given mxn Matrix, to determin rank, we should calculate the determinant of all the sub-matrix of size min(m,n) x min(m,n). If any of them is non-zero, then it is full rank.
 
 For example J is 3x10, then we have to calculate all the 3x3 sub-matrix, when all of them are zero, then it loses 1 DOF. Further, we have to calculate all the 2x2 sub-matrix, when all of them are zero, then it loses 1 more DOF. Finally, if all entries are zero, then it loses 1 more DOF.
+
+## Resolved Motion Rate Control
+1. Given Trajectory {< math >}$ x(t) \in R^m ${{< /math >}}
+2. Devide Trajectory
