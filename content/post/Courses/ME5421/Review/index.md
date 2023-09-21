@@ -77,15 +77,17 @@ I & 0 \\
 
 \begin{bmatrix} {}^Bf_B \\ ^Bn_B \end{bmatrix} &=
 \begin{bmatrix}
-{}^BR_A{}^AR_C & 0 \\
-{}^BR_A (\hat{{}^AR_B{}^Bp_C}) {}^AR_C & {}^BR_A{}^AR_C
+{}^BR_C & 0 \\
+{{}^Bp_C} \times {}^BR_C & {}^BR_C
 \end{bmatrix}
 \begin{bmatrix} {}^Cf_C \\ {}^Cn_C \end{bmatrix} \\
 
 \end{aligned}
 $$
 
-> Note: $
+> Note: 
+
+$
 \begin{bmatrix} {}^Af_C \\ {}^An_C \end{bmatrix} =
 \begin{bmatrix}
 {}^AR_C & 0 \\
