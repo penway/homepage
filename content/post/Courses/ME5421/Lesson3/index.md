@@ -216,14 +216,15 @@ $$
 {}^0\omega_E &= {}^0\omega_3 \\
 {}^0u_E &= {}^0u_3 + {}^0\omega_3 \times ({}^0R_3 {}^3P_E)\\
 &= {}^0u_3 + {}^0\omega_3 \times ({}^0P_E - {}^0P_3) \\
-\end{aligned} \\ \\
+ \\ \\
 \therefore
 \begin{bmatrix} {}^0u_E \\ {}^0\omega_E \end{bmatrix}
-=
+&=
 \begin{bmatrix} I & \hat{-({}^0P_E - {}^0P_3)} \\ 0 & I \end{bmatrix}
 \begin{bmatrix} {}^0u_3 \\ {}^0\omega_3 \end{bmatrix} \\
 \therefore
-{}^0J_E = \begin{bmatrix} I & \hat{-({}^0P_E - {}^0P_3)} \\ 0 & I \end{bmatrix} {}^0J_3
+{}^0J_E &= \begin{bmatrix} I & \hat{-({}^0P_E - {}^0P_3)} \\ 0 & I \end{bmatrix} {}^0J_3
+\end{aligned}
 $$
 {{< /math >}}
 
