@@ -5,8 +5,8 @@ subtitle: Motion Planning
 summary: 
 projects: [Paper Reading]
 
-date: '2023-08-17T00:00:00Z'
-lastmod: '2023-08-17T00:00:00Z'
+date: '2023-09-15T00:00:00Z'
+lastmod: '2023-09-15T00:00:00Z'
 
 draft: false
 featured: false
