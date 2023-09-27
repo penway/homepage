@@ -43,10 +43,11 @@ $$
 
 {{< math >}}
 $$
-Given\ h f_1(x) f_2(x) = f_3(x), \text{where all f are Gaussian distribution, h is normalizing factor} \\
-Find\ \mu_3\ and\ \Sigma_3 \\ \\
-\text{As we have h, all the normalizing factors} \\
-\text{in X and Y will be absorbed into } h \\ \\
+\begin{aligned}
+&Given\ h f_1(x) f_2(x) = f_3(x), \text{where all f are Gaussian distribution, h is normalizing factor} \\
+&Find\ \mu_3\ and\ \Sigma_3 \\ \\
+&\text{As we have h, all the normalizing factors in X and Y will be absorbed into } h \\
+\end{aligned}
 $$
 $$
 \begin{aligned}
