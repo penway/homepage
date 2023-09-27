@@ -102,7 +102,7 @@ $$
 I cannot solve this one.
 
 
-## 4. Inversion of R + PQPT
+## 4. Inversion of {{< math >}}$R + PQP^T${{< /math >}}
 {{< math >}}
 $$
 \begin{aligned}
