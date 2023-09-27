@@ -43,12 +43,13 @@ $$
 
 {{< math >}}
 $$
-\begin{aligned}
 Given\ h f_1(x) f_2(x) = f_3(x), \text{where all f are Gaussian distribution, h is normalizing factor} \\
 Find\ \mu_3\ and\ \Sigma_3 \\ \\
 \text{As we have h, all the normalizing factors} \\
 \text{in X and Y will be absorbed into } h \\ \\
-
+$$
+$$
+\begin{aligned}
 \rho(x;\mu_1,Sigma_1) &= n_1 exp\{\frac{1}{2}(x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1)\} \\
 \rho(x;\mu_2,Sigma_2) &= n_2 exp\{\frac{1}{2}(x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)\} \\
 \rho(x;\mu_3,Sigma_3) &= n_3 exp\{\frac{1}{2}(x-\mu_3)^T\Sigma_3^{-1}(x-\mu_3)\} \\
