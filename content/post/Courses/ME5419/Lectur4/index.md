@@ -59,6 +59,9 @@ Under\ Convolution &:\ \rightarrow \Sigma_1 + \Sigma_2, \text{cov larger} \\ \\
 Product\ of\ N\ Gaussians\ &with\ normalization : \\
 \Sigma^{-1} &= \sum^N_{k=1} \Sigma_k^{-1} \\
 \Sigma^{-1}\mu &= \sum^N_{k=1} \Sigma_k^{-1}\mu_k \\
+In\ terms\ of\ Information\ &Matrix : \\
+I &= \sum^N_{k=1} I_k \\
+v &= \sum^N_{k=1} I_k v_k \\
 \end{aligned}
 $$
 {{</math>}}
@@ -90,19 +93,31 @@ So, we can only propagate(calculate) the mean and covariance.
     {{<math>}}$z_t=Dx_t+Edw_2${{</math>}}
 
     w are noises
-    
+
 2. "Kalman-Bucy Filter": Continuous Time, Linear Model
 3. "Extended Kalman Filter": Nonlinear Model, Discrete or Continuous Time version
     {{<math>}}$x_t=f(x_{t-1}, u)+Cdw_1${{</math>}}, 
     {{<math>}}$z_t=g(x_{t-1})+Edw_2${{</math>}}
 > I don't expect you to know all, but you should know there are different versions of Kalman Filter, and they are all based on Bayes Filter.
+
+### Information Filter
+> I am sure this is not included. I copied from Thrun's book, while in Prof's notation. And find it too specific to be included in the exam.
+
 {{<math>}}
 $$
 \begin{aligned}
+log\ \rho(x) &= const. + \frac{1}{2} x^T I x - x^T \vec{v} \\ \\
 
+Given\ v_{t-1}, &I_{t-1}, u_t, z_t: \\
+\bar{I_t} &= (A_t I_{t-1}^{-1}A_t^T + R_t) ^ {-1} \\
+\bar{v_t} &= \bar{I_t} (A_t I_{t-1}^{-1}v_{t-1} + B_t u_t) \\
+I_t &= \bar{I_t} + C_t^T Q_t^{-1} C_t \\
+v_t &= \bar{v_t} + C_t^T Q_t^{-1} z_t \\ \\
 \end{aligned}
 $$
 {{</math>}}
+
+For my unstanding, these filters are just secific implementations of Bayes Filter, adding upon different assumptions or mathematical properties.
 
 
 
