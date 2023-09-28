@@ -63,6 +63,40 @@ Product\ of\ N\ Gaussians\ &with\ normalization : \\
 $$
 {{</math>}}
 
+## Filters
+### Bayes Filter
+{{<math>}}
+$$
+\begin{aligned}
+&for\ t=1:T\\
+&\quad\quad Start\ with\ prior\ bel(x_{t-1}) \\
+&\quad\quad pred(x_t) = \int_{x_t-1} prop(x_t | x_{t-1}, u_t)\  bel(x_{t-1})\ dx_{t-1} \\
+&\quad\quad bel(x_t) = h\ meas(z_t|x_t)\ pred(x_t) \\
+&end
+\end{aligned}
+$$
+{{</math>}}
+
+### Kalman Filters
+Kalman Filter is basically Bayes Filter + (meas, prop, bel) are Gaussian, where conv, prod and cond are all closed.
+
+So, we can only propagate(calculate) the mean and covariance.
+
+**Kalman Filter Family**:
+1. "Kalman Filter": Discrete Time, Linear Model
+    {{<math>}}$x_t=Ax_{t-1}+Bu_t+Cdw_1${{</math>}}, {{<math>}}$z_t=Dx_t+Edw_2${{</math>}}
+    w are noises
+2. 
+{{<math>}}
+$$
+\begin{aligned}
+
+\end{aligned}
+$$
+{{</math>}}
+
+
+
 
 ## 1. Inverse of Block Matrix Sigma
     
@@ -225,10 +259,13 @@ But what we can learn from this is that, the conditional Gaussian is a Gaussian,
 
 
 ## 6. Product of N Gaussians
-I am tired, I will do this later.
+I am tired, I will do this later, or never.
 {{< math >}}
 $$
 \begin{aligned}
+Answer &: \\
+\Sigma^{-1} &= \sum^N_{k=1} \Sigma_k^{-1} \\
+\Sigma^{-1}\mu &= \sum^N_{k=1} \Sigma_k^{-1}\mu_k \\
 \end{aligned}
 $$
 {{< /math >}}
