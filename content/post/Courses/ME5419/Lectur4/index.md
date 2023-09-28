@@ -215,12 +215,13 @@ new\ \mu &= M \\
 new\ \Sigma &= I_{11}^{-1}
 \end{aligned}
 $$
-For $M$, I do not know how to derive to the final answer, it seems that only if $\Sigma_{12}\Sigma_{22}\Sigma_{12}^T = 0$ and $\Sigma_{12}^T\Sigma_{11}^{-1}\Sigma_{12} = 0$, then we can derive from eq.M2 to eq.M3.
+{{< /math >}}
 
-Also, eq.F1 is not fully expanded, only the quadratic terms are expanded, the linear terms are omitted, the answer can be get, but this cannot prove that the result is a Gaussian. The target form should be $(x - A)^T B (x - A) + V^T (x - A)$
+For{{<math>}}$M${{</math>}}, I do not know how to derive to the final answer, it seems that only if{{<math>}}$\Sigma_{12}\Sigma_{22}\Sigma_{12}^T = 0${{</math>}} and{{<math>}}\Sigma_{12}^T\Sigma_{11}^{-1}\Sigma_{12} = 0${{</math>}}, then we can derive from eq.M2 to eq.M3.
+
+Also, eq.F1 is not fully expanded, only the quadratic terms are expanded, the linear terms are omitted, the answer can be get, but this cannot prove that the result is a Gaussian. The target form should be{{<math>}}(x - A)^T B (x - A) + V^T (x - A)${{</math>}}
 
 But what we can learn from this is that, the conditional Gaussian is a Gaussian, and the mean and covariance can be derived from the original mean and covariance. Similar to the convolution of two Gaussian. Gaussian is closed under both convolution and conditional.
-{{< /math >}}
 
 
 ## 6. Product of N Gaussians
