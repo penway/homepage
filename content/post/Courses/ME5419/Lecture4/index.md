@@ -1,5 +1,5 @@
 ---
-title: Homework of Lecture 4
+title: More Gaussian, State Estimation, ProbMAN
 subtitle: Probabilistic Robotics
 
 summary: Probabilistic Robotics
@@ -122,6 +122,12 @@ $$
 
 For my unstanding, these filters are just secific implementations of Bayes Filter, adding upon different assumptions or mathematical properties.
 
+### Other methods
+- EKF(Extended Kalman Filter)
+- Unscented Kalman Filter
+- Particle Filter
+- Rao-Blackwell Filter
+
 ### Stocastic Control
 Modify the control input u to take the uncentainty in measeurement into account. (also not important)
 
@@ -129,7 +135,9 @@ Modify the control input u to take the uncentainty in measeurement into account.
 
 We want to answer the question: "What is the best estimate of the parameter vector {{<math>}}$\theta${{</math>}} given the data D?" or "What is the convariance of the estimated(sampled) theta from the true one {{<math>}}$\Psi(\theta)${{</math>}}?"
 
-### Cramer-Rao Lower Bound for PDFs
+**Cramer-Rao Lower Bound for PDFs**
+
+> This part contains too many information and I don't think it is important. I will skip it. 
 
 
 ## 1. Inverse of Block Matrix Sigma
@@ -167,9 +175,9 @@ $$
 $$
 $$
 \begin{aligned}
-\rho(x;\mu_1,&Sigma_1) = n_1 exp\{\frac{1}{2}(x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1)\} \\
-\rho(x;\mu_2,&Sigma_2) = n_2 exp\{\frac{1}{2}(x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)\} \\
-\rho(x;\mu_3,&Sigma_3) = n_3 exp\{\frac{1}{2}(x-\mu_3)^T\Sigma_3^{-1}(x-\mu_3)\} \\
+\rho(x;\mu_1,&\Sigma_1) = n_1 exp\{\frac{1}{2}(x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1)\} \\
+\rho(x;\mu_2,&\Sigma_2) = n_2 exp\{\frac{1}{2}(x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)\} \\
+Sigma_3) = n_3 exp\{\frac{1}{2}(x-\mu_3)^T\Sigma_3^{-1}(x-\mu_3)\} \\
 
 h f_1 f_2 &= h\ n_1\ n_2\ exp\{\frac{1}{2}(x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1)\}\ exp\{\frac{1}{2}(x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)\} \\
 

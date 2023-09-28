@@ -18,6 +18,34 @@ categories:
 - Course Notes
 ---
 
+## Random Variables and Probability Distributions
+{{< math >}}
+$$
+\begin{aligned}
+\text{Joint probability: }& P(X, Y) =^{indpendent} P(X)P(Y) \\
+\text{Conditional probability: }& P(X|Y) \dot{=} \frac{P(X, Y)}{P(Y)} \\
+\text{Sum or Integral: }& \sum_{x \in X} p(x) = 1;\ &\int_{x \in X} \rho(x) dx = 1 \\
+& \sum_{x \in X}\sum_{y \in Y} p(x, y) = 1;\ &\int_{x \in X} \int_{y \in Y} \rho(x, y) dy dx = 1 \\
+\text{Bayes Rule: }& P(X|Y) = \frac{P(Y|X)P(X)}{P(Y)} \\
+\text{Marginalization: }& P(X) = \sum_{y \in Y}P(X, Y);\ &\rho(x) = \int_{y \in Y} \rho(x, y) dy \\ \\
+\text{Mean: }& \mu = \sum_{x \in X} x\ p(x);\ &\mu = \int_{x \in X} x\ \rho(x)\ dx \\
+\text{Variance: }& \sigma = \sum_{x \in X} (x - \mu)^2 p(x);\ &\sigma = \int_{x \in X} (x - \mu)^2 \rho(x)\ dx \\
+\end{aligned} 
+$$
+{{< /math >}}
+
+## Convolution
+We want to know the probability distribution when two random variables are added together. For example, roll two dice and add the numbers together. The probability distribution of the sum is the convolution of the two dice.
+{{< math >}}
+$$
+\begin{aligned}
+\text{Convolution: }& P_{X+Y}(Z) = \sum_{\xi \in X} P_X(\xi) P_Y(z - \xi) \\
+& P_{X+Y}(Z) = \int_{\xi \in X} \rho_X(\xi) \rho_Y(z - \xi) d\xi \\
+\end{aligned}
+$$
+{{< /math >}}
+
+## Homework 1
 {{< math >}}
 Given independent variables $X$ and $Y$, what is the mean and variance of $X+Y$?
 
