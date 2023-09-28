@@ -127,6 +127,11 @@ Modify the control input u to take the uncentainty in measeurement into account.
 
 ## Parameter Estimation
 
+We want to answer the question: "What is the best estimate of the parameter vector {{<math>}}$\theta${{</math>}} given the data D?" or "What is the convariance of the estimated(sampled) theta from the true one {{<math>}}$\Psi(\theta)${{</math>}}?"
+
+### Cramer-Rao Lower Bound for PDFs
+
+
 ## 1. Inverse of Block Matrix Sigma
     
 {{< math >}}
