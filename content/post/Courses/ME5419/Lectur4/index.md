@@ -84,9 +84,18 @@ So, we can only propagate(calculate) the mean and covariance.
 
 **Kalman Filter Family**:
 1. "Kalman Filter": Discrete Time, Linear Model
-    {{<math>}}$x_t=Ax_{t-1}+Bu_t+Cdw_1${{</math>}}, {{<math>}}$z_t=Dx_t+Edw_2${{</math>}}
+
+    {{<math>}}$x_t=Ax_{t-1}+Bu_t+Cdw_1${{</math>}}, 
+    
+    {{<math>}}$z_t=Dx_t+Edw_2${{</math>}}
+
     w are noises
-2. 
+    
+2. "Kalman-Bucy Filter": Continuous Time, Linear Model
+3. "Extended Kalman Filter": Nonlinear Model, Discrete or Continuous Time version
+    {{<math>}}$x_t=f(x_{t-1}, u)+Cdw_1${{</math>}}, 
+    {{<math>}}$z_t=g(x_{t-1})+Edw_2${{</math>}}
+> I don't expect you to know all, but you should know there are different versions of Kalman Filter, and they are all based on Bayes Filter.
 {{<math>}}
 $$
 \begin{aligned}
