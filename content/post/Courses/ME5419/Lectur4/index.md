@@ -95,6 +95,9 @@ So, we can only propagate(calculate) the mean and covariance.
     w are noises
 
 2. "Kalman-Bucy Filter": Continuous Time, Linear Model
+
+    "This is Kalman filter with differential equations"
+
 3. "Extended Kalman Filter": Nonlinear Model, Discrete or Continuous Time version
     {{<math>}}$x_t=f(x_{t-1}, u)+Cdw_1${{</math>}}, 
     {{<math>}}$z_t=g(x_{t-1})+Edw_2${{</math>}}
@@ -119,8 +122,10 @@ $$
 
 For my unstanding, these filters are just secific implementations of Bayes Filter, adding upon different assumptions or mathematical properties.
 
+### Stocastic Control
+Modify the control input u to take the uncentainty in measeurement into account. (also not important)
 
-
+## Parameter Estimation
 
 ## 1. Inverse of Block Matrix Sigma
     
