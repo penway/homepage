@@ -29,8 +29,8 @@ $$
 \text{Bayes Rule: }& P(X|Y) = \frac{P(Y|X)P(X)}{P(Y)} \\
 \text{Marginalization: }& P(X) = \sum_{y \in Y}P(X, Y);\ &\rho(x) = \int_{y \in Y} \rho(x, y) dy \\ \\
 \text{Mean: }& \mu = \sum_{x \in X} x\ p(x);\ &\mu = \int_{x \in X} x\ \rho(x)\ dx \\
-\text{Variance: }& \sigma = \sum_{x \in X} (x - \mu)^2 p(x);\ &\sigma = \int_{x \in X} (x - \mu)^2 \rho(x)\ dx \\
-\end{aligned} 
+\text{Variance: }& \sigma^2 = \sum_{x \in X} (x - \mu)^2 p(x);\ &\sigma^2 = \int_{x \in X} (x - \mu)^2 \rho(x)\ dx \\
+\end{aligned} \\
 $$
 {{< /math >}}
 
@@ -41,6 +41,19 @@ $$
 \begin{aligned}
 \text{Convolution: }& P_{X+Y}(Z) = \sum_{\xi \in X} P_X(\xi) P_Y(z - \xi) \\
 & P_{X+Y}(Z) = \int_{\xi \in X} \rho_X(\xi) \rho_Y(z - \xi) d\xi \\
+Mean: & \mu_{X+Y} = \mu_X + \mu_Y \\
+Variance: & \sigma_{X+Y}^2 = \sigma_X^2 + \sigma_Y^2 \\
+\end{aligned}
+$$
+{{< /math >}}
+
+## Gaussian Distribution
+{{< math >}}
+$$
+\begin{aligned}
+\rho(x;\mu,\sigma^2) &= \frac{1}{\sqrt{2\pi}\sigma}e^{(x-\mu)^2/2\sigma^2} \\
+Convolution: \rho(x; \mu_1, \sigma_1^2) * \rho(x; \mu_2, \sigma_2^2) &= \rho(x; \mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2) \\
+
 \end{aligned}
 $$
 {{< /math >}}
