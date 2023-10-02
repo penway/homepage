@@ -1,12 +1,12 @@
 ---
-title: Basic Probability and Statistics
+title: Basic Probability and Statistics, ProbMAN 1
 subtitle: Probabilistic Robotics Lecture 1
 
 summary: Probabilistic Robotics
 projects: [ME5419]
 
 date: '2023-08-15T00:00:00Z'
-lastmod: '2023-08-15T00:00:00Z'
+lastmod: '2023-10-02T00:00:00Z'
 
 draft: false
 featureSigma_d: false
@@ -16,6 +16,7 @@ authors:
 
 categories:
 - Course Notes
+- Probabilistic Robotics
 ---
 
 ## Random Variables and Probability Distributions

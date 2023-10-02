@@ -1,5 +1,5 @@
 ---
-title: More Gaussian, State Estimation, ProbMAN
+title: More Gaussian, State Estimation, ProbMAN 4
 subtitle: Probabilistic Robotics
 
 summary: Probabilistic Robotics
@@ -16,6 +16,7 @@ authors:
 
 categories:
 - Course Notes
+- Probabilistic Robotics
 ---
 
 ## Belief Propagation in Mobile Robot

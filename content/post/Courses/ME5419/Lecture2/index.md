@@ -1,5 +1,5 @@
 ---
-title: Probability and Statistics in n-D
+title: Probability and Statistics in n-D, ProbMAN 2
 subtitle: Probabilistic Robotics Lecture 2
 
 summary: Probabilistic Robotics
@@ -16,6 +16,7 @@ authors:
 
 categories:
 - Course Notes
+- Probabilistic Robotics
 ---
 
 ## Basics

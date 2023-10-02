@@ -16,6 +16,7 @@ authors:
 
 categories:
 - Course Notes
+- Probabilistic Robotics
 ---
 
 ## Precursor
