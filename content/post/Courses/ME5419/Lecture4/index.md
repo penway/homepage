@@ -19,6 +19,21 @@ categories:
 - Probabilistic Robotics
 ---
 
+## Useful Gaussian Identities and other math
+
+Closed under convolution, product and conditional. While Product and Conditional need extra normalization factor, but the result is still a Gaussian.
+
+{{<math>}}
+$$
+\begin{aligned}
+\text{Convolution: } &\ \mu = \mu_1 + \mu_2,\ \Sigma = \Sigma_1 + \Sigma_2 \\
+\text{Product: } &\ \Sigma^{-1} = \Sigma_1^{-1} + \Sigma_2^{-1},\ \mu = \Sigma(\Sigma_1^{-1}\mu_1 + \Sigma_2^{-1}\mu_2) \\
+\text{Conditional: } &\ \mu = \mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(x_2-\mu_2),\ \Sigma = \Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21} \\ \\
+\text{Inversion Lemma: } &\ (R+PQP^T)^{-1} = R^{-1} - R^{-1}P(Q^{-1}+P^TR^{-1}P)^{-1}P^TR^{-1} \\ \\
+\end{aligned}
+$$
+{{</math>}}
+
 ## Belief Propagation in Mobile Robot
 
 Definition:
@@ -178,7 +193,6 @@ $$
 \begin{aligned}
 \rho(x;\mu_1,&\Sigma_1) = n_1 exp\{\frac{1}{2}(x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1)\} \\
 \rho(x;\mu_2,&\Sigma_2) = n_2 exp\{\frac{1}{2}(x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)\} \\
-Sigma_3) = n_3 exp\{\frac{1}{2}(x-\mu_3)^T\Sigma_3^{-1}(x-\mu_3)\} \\
 
 h f_1 f_2 &= h\ n_1\ n_2\ exp\{\frac{1}{2}(x-\mu_1)^T\Sigma_1^{-1}(x-\mu_1)\}\ exp\{\frac{1}{2}(x-\mu_2)^T\Sigma_2^{-1}(x-\mu_2)\} \\
 

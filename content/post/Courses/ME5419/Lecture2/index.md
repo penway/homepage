@@ -71,6 +71,40 @@ $$
 $$
 \begin{aligned}
 A\ \vec v &= \lambda\ \vec v \\
+A^n\ \vec v &= \lambda^n\ \vec v \\
+A &= Q\Lambda Q^T,\ Q\ is\ Eigen\ vectors,\ \Lambda\ is\ Eigen\ values \\
+A^n &= Q\Lambda^n Q^T \\
+\end{aligned}
+$$
+{{</math>}}
+
+## Homework 2: Entropy of Multivariate Gaussian
+mu is not important as we can always add this x - mu to the original x. to make it simpler, we can assume mu = 0.
+{{<math>}}
+$$
+\begin{aligned}
+S(f) &\dot= -\int_{x} f(x)logf(x) dx \\
+&= - \int_{x} \frac{1}{(2\pi)^{n/2}|det\Sigma|^{1/2}}exp\{-\frac{1}{2}x^T\Sigma^{-1}x\}log\frac{1}{(2\pi)^{n/2}|det\Sigma|^{1/2}}exp\{-\frac{1}{2}x^T\Sigma^{-1}x\} dx \\
+&= log(2\pi^{n/2}|det\Sigma|^{1/2}) \int_x \frac{-\frac{1}{2}x^T\Sigma^{-1}x}{2\pi^{n/2}|det\Sigma|^{1/2}} exp\{-\frac{1}{2}x^T\Sigma^{-1}x\} dx \\
+&= log(2\pi^{n/2}|det\Sigma|^{1/2}) E[x^T\Sigma^{-1}x] \\
+\\
+\because
+\Sigma &= E[(x - \mu)(x - \mu)^T] = E[xx^T] \\
+&= \int x x^T N(x; 0,\Sigma) dx \\
+
+\\
+\therefore
+E[x^T\Sigma^{-1}x]
+&= E[tr(x^T\Sigma^{-1}x)] \\
+&= tr(\Sigma^{-1}E[xx^T]) \\
+&= tr(\Sigma^{-1}\Sigma) \\
+&= tr(I) \\
+&= n \\
+\\
+\therefore
+S(f) &= log(2\pi^{n/2}|det\Sigma|^{1/2}) E[x^T\Sigma^{-1}x] \\
+&= log(2\pi^{n/2}|det\Sigma|^{1/2}) n \\
+
 \end{aligned}
 $$
 {{</math>}}

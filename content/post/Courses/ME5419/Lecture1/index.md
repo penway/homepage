@@ -42,8 +42,8 @@ $$
 \begin{aligned}
 \text{Convolution: }& P_{X+Y}(Z) = \sum_{\xi \in X} P_X(\xi) P_Y(z - \xi) \\
 & P_{X+Y}(Z) = \int_{\xi \in X} \rho_X(\xi) \rho_Y(z - \xi) d\xi \\
-Mean: & \mu_{X+Y} = \mu_X + \mu_Y \\
-Variance: & \sigma_{X+Y}^2 = \sigma_X^2 + \sigma_Y^2 \\
+\text{Mean: }& \mu_{X+Y} = \mu_X + \mu_Y \\
+\text{Variance: }& \sigma_{X+Y}^2 = \sigma_X^2 + \sigma_Y^2 \\
 \end{aligned}
 $$
 {{< /math >}}
@@ -58,6 +58,29 @@ Convolution: \rho(x; \mu_1, \sigma_1^2) * \rho(x; \mu_2, \sigma_2^2) &= \rho(x; 
 \end{aligned}
 $$
 {{< /math >}}
+
+## Gaussian Integral
+{{< math >}}
+$$
+\begin{aligned}
+I &= \int_{-\infty}^{\infty} e^{-1/2x^2} dx = ? \\ \\
+
+I^2 &= (\int_{-\infty}^{\infty} e^{-1/2x^2} dx) \cdot (\int_{-\infty}^{\infty} e^{-1/2y^2} dy) \\
+&= \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} e^{-1/2(x^2 + y^2)} dx dy \\
+let\ & x^2+y^2 = r, dxdy = rdrd\theta \\
+I^2 &= \int_{r=0}^{\infty} \int_{\theta=0}^{2\pi} e^{-1/2 r^2} rdrd\theta \\
+&= 2\pi \int_{r=0}^{\infty} e^{-1/2 r^2} rdr \\
+let \ & u = -1/2 r^2, du = -rdr \\
+I^2 &= -2\pi \int_{u=0}^{-\infty} e^{u} du \\
+&= 2\pi \\
+\\
+I &= \sqrt{2\pi} \\
+
+\end{aligned}
+$$
+{{< /math >}}
+
+With this result, we can using shifting and scaling to get the integral of any Gaussian distribution.
 
 ## Homework 1
 {{< math >}}
