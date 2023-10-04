@@ -51,8 +51,6 @@ Whenever we choose generalized coordinates measured from equilibrium points, we 
 We can throw away higher order term q', but keep q and q".
 And also change cos(q) to 1, sin(q) to q.
 
-{{<math>}}
-
 ## System subject to noice level 0: Random Walk
 ### 1. Discrete time and space
 **Setting**: Particle in 1D. At each time step, the particle moves either left or right with step 1 with equal probability.
