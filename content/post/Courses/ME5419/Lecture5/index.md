@@ -48,13 +48,64 @@ $$
 $$
 {{</math>}}
 
-#### Curvature
+### Unsigned Curvature
+Kappa is the unsigned curvature. N1 is the (principal) normal vector.
 {{<math>}}
 $$
 \begin{aligned}
-\kappa(s) &= (\frac{du}{ds} \cdot \frac{du}{ds})^{1/2} = (\frac{d^2x}{ds^2} \cdot \frac{d^2x}{ds^2})^{1/2} \\
+\kappa(s) &= (\frac{du}{ds} \cdot \frac{du}{ds})^{1/2} = (\frac{d^2x}{ds^2} \cdot \frac{d^2x}{ds^2})^{1/2} = ||u'(s)|| \\
 n_1(s) &\dot{=} \frac{1}{\kappa(s)}\frac{du}{ds} \\
-\kappa(s) &= 
+\end{aligned}
+$$
+{{</math>}}
+
+
+**Example: Circle**
+{{<math>}}
+$$
+\begin{aligned}
+x_1(s) &= r\cos(\frac{s}{r}) \\
+x_2(s) &= r\sin(\frac{s}{r}) \\
+\end{aligned}
+$$
+Actually this needs experience to know this perfect parameterization. $$ $$
+The second part is the calculate the unit tangent vector. Only this derivative is naturally unit. (by good parameterization)
+$$
+\begin{aligned}
+& u_1(s) = x_1'(s) = -\sin(\frac{s}{r}) \\
+& u_2(s) = x_2'(s) = \cos(\frac{s}{r}) \\
+& u_1^2(s) + u_2^2(s) = 1 \\
+& u_1'(s) = -\frac{1}{r}\cos(\frac{s}{r}) \\
+& u_2'(s) = -\frac{1}{r}\sin(\frac{s}{r}) \\
+\end{aligned}
+$$
+And we can see that
+$$
+u'(s) = \frac{1}{r}\begin{pmatrix} -c \\ -s \end{pmatrix} \\
+\therefore \kappa(s) = ||u'(s)|| = \frac{1}{r}
+$$
+{{</math>}}
+
+### Signed Curvature
+{{<math>}}
+$$
+\begin{aligned}
+k(s) = \sigma(s)\kappa(s)
+\end{aligned}
+$$
+{{</math>}}
+
+**Example:  curve**
+{{<math>}}
+$$
+\begin{aligned}
+y &= x^3 \\
+x(t) &= t \\
+y(t) &= t^3 \\
+x'(t) &= 1 \\
+y'(t) &= 3t^2 \\
+\kappa(t) &= \sqrt{x'^2(t) + y'^2(t)} = \sqrt{1 + 9t^4} \\
+\sigma(t) &= \frac{y''(t)x'''(t) - x''(t)y'''(t)}{\kappa^3(t)} = \frac{6t^2}{\kappa^3(t)} \\
 \end{aligned}
 $$
 {{</math>}}

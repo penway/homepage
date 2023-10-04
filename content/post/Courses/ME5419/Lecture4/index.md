@@ -21,7 +21,7 @@ categories:
 
 ## Useful Gaussian Identities and other math
 
-Closed under convolution, product and conditional. While Product and Conditional need extra normalization factor, but the result is still a Gaussian.
+Closed under convolution, product and conditional. While Product and Conditional need extra normalization factor, but the result is still a Gaussian. Product is also called Information Fusion.
 
 {{<math>}}
 $$
@@ -29,7 +29,14 @@ $$
 \text{Convolution: } &\ \mu = \mu_1 + \mu_2,\ \Sigma = \Sigma_1 + \Sigma_2 \\
 \text{Product: } &\ \Sigma^{-1} = \Sigma_1^{-1} + \Sigma_2^{-1},\ \mu = \Sigma(\Sigma_1^{-1}\mu_1 + \Sigma_2^{-1}\mu_2) \\
 \text{Conditional: } &\ \mu = \mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(x_2-\mu_2),\ \Sigma = \Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21} \\ \\
-\text{Inversion Lemma: } &\ (R+PQP^T)^{-1} = R^{-1} - R^{-1}P(Q^{-1}+P^TR^{-1}P)^{-1}P^TR^{-1} \\ \\
+\text{Inversion Lemma: } &\ (R+PQP^T)^{-1} = R^{-1} - R^{-1}P(Q^{-1}+P^TR^{-1}P)^{-1}P^TR^{-1} \\ \\ \\
+\text{Isserlis' Theorm: } &\ \text{if } f(x) = \rho(x; 0, \Sigma) \text{ then} \\
+& E[(xx^T)(xx^T)] = tr(\Sigma)\Sigma + 2\Sigma^2 \\
+& E[xx^T A xx^T] = tr(A\Sigma)\Sigma + \Sigma A \Sigma + \Sigma A^T \Sigma \\ \\
+
+\text{Product of N Gaussian} &\text{ with normalization :} \\
+& \Sigma^{-1} = \sum^N_{k=1} \Sigma_k^{-1} \\
+& \Sigma^{-1}\mu = \sum^N_{k=1} \Sigma_k^{-1}\mu_k \\ \\
 \end{aligned}
 $$
 {{</math>}}
@@ -38,8 +45,8 @@ $$
 
 Definition:
 1. Belief of state of time t
-2. Propagation Model: State at time t, depend on where you are at previous time and current control
-3. Measurement Model: Measurement at time t, solely depend on what you are measuring now
+2. Propagation Model: State at time t, depend on where you are at previous time and current control, (actually this is based on Markov Assumption)
+3. Measurement Model: Measurement at time t, solely depend on what you are measuring now (also based on Conditional Independence Assumption)
 {{<math>}}
 $$
 \begin{aligned}
@@ -49,9 +56,10 @@ meas(z_t|x_t) &\dot= p(z_t|x_t) \\ \\
 \end{aligned}
 $$
 
-Prediction: Integrating over x_{t-1} combining propagation model and belief of previous state, i.e. propagating the prior belief to current time
+Prediction: Integrating over $x_{t-1}$ combining propagation model and belief of previous state, i.e. propagating the prior belief to current time
+
 $$
-pred(x_t) \dot= \int_{x_t-1} prop(x_t|x_{t-1},u_t) bel(x_{t-1}) dx_{t-1}
+pred(x_t) \dot= \int_{x_{t-1}} prop(x_t|x_{t-1},u_t) bel(x_{t-1}) dx_{t-1}
 $$
 Often, $prop(x_t|x_{t-1}, u_t) = prop(x_t-x_{t-1}|0, u_t)$, when written like this, the calculation of pred becomes a convolution.
 
