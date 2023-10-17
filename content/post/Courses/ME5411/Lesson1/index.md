@@ -6,7 +6,7 @@ summary: Robotics Vision and AI
 projects: [ME5411]
 
 date: '2023-08-15T00:00:00Z'
-lastmod: '2023-08-15T00:00:00Z'
+lastmod: '2023-10-08T00:00:00Z'
 
 draft: false
 featureSigma_d: false
@@ -17,6 +17,83 @@ authors:
 categories:
 - Course Notes
 ---
+
+> This note is for revision, so I give up telling the story and just write down the key points.
+
+## 1. Image Representation
+
+### Continuous Image Function
+f(x,y) or f(x,y,t) for video
+
+The value is intensity that can be determined by illumination, reflection. Or for some other cases, it can be temperature, pressure, distance, etc.
+
+### Image Digitalization
+- Sampling: turn continuous x, y into discrete
+- Quantization: turn intensity into discrete values
+- so it can be represented as a matrix
+- each element of this matrix is called a pixel
+
+### Pixel
+- smallest unit
+- point sample
+- has a position
+- color capability: bits (or bit-depth) (such as 2-bit for black and white, 8-bit for 256 colors, 24-bit for 16M colors)
+
+## 2. Image Sampling and Quantization
+
+### Sampling
+- sampling will make the shape different
+- spatial resolution (image resolution): pixel per unit area (pixel / inch, PPI)
+- raster dimension (image dimension): the number of pixels in width and height (width x height)
+- p(i,j): i is the column, j is the row in the matrix. While in programming, we call image[y, x], either in python or matlab.
+
+### Quantization
+- bit-depth: K = 2^n
+- index color: 8 bit but encode 256 colors, good for hardware to make a look up table
+- this level better be fine enough for human eyes to distinguish, (human do well at 60 gray levels, so we use 8-bit for gray scale)
+
+## 3. Digital Image Properties
+
+### Metric and Topology
+
+- Set
+- Metric Space: a set with a distance function
+- Topological Space: a mathematical structure that allows formal definition of concepts such as convergence, connectedness, continuity, etc.
+- connecivity of a set: a set is connected if it cannot be divided into two disjoint nonempty open sets
+
+distances:
+1. Euclidean distance
+2. City Block distance (Manhattan distance)
+3. Chessboard distance
+
+Typical Connectivity:
+1. 4-connectivity
+2. 8-connectivity
+
+### Histogram
+
+- a graph showing count of intensity values
+- can detect
+    - low contrast / high contrast
+    - brightness / overexposure / underexposure
+- more than one image can have the same histogram
+- can remove background by thresholding
+- invariant to translation, rotation, scaling, etc
+- does not contain spatial information (shape)
+
+### Visual Perception
+
+1. Contrast
+    - local change in brightness
+    - for human, object from background
+2. Acuity
+    - the ability to detect detail
+    - the resolution of eye
+3. perceptual grouping
+
+
+
+
 
 example codes in MATLAB:
 
